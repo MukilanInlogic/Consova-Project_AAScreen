@@ -1,16 +1,14 @@
 package demotest.action;
 
-import commonpage.toolbox.*;
-import commonpage.util.TestdataConstants;
+import commonpage.toolbox.Element;
+import commonpage.toolbox.Sync;
+import commonpage.toolbox.Textbox;
 import demotest.Repository.HomePageUI;
-import org.openqa.selenium.By;
+import demotest.Repository.TestPageUI;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-import java.util.List;
-
-public class HomePageActions extends HomePageUI {
-    public HomePageActions(WebDriver driver) {
+public class TestPageActions extends TestPageUI {
+    public TestPageActions(WebDriver driver) {
         super(driver);
     }
 
@@ -24,7 +22,7 @@ public class HomePageActions extends HomePageUI {
         return isVerified;
     }
 
-    public boolean enterURL(String url) {
+    public boolean enterUR(String url) {
         boolean isEntered = false;
         Sync.Delay(5000);
         if (driver!=null){

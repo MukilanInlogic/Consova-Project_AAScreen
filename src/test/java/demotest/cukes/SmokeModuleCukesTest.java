@@ -5,10 +5,10 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "test/resources/Feature/EndToEnd.feature",
+@CucumberOptions(features = "test/resources/Feature/Smoke_Module.feature",
         glue = {"demotest.stepdefinition", "demotest.util"},
         format = {"json:cucumber-html-reports/cucumber.json",
-                "html:cucumber-html-reports/MySample"},tags = {"@MT-83285"},monochrome = true
+                "html:cucumber-html-reports/MySample"},tags = {"@MT-123456"},monochrome = true
 )
 
 public class SmokeModuleCukesTest {

@@ -8,12 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class HomePageUI {
+public class TestPageUI {
 
 
     protected final WebDriver driver;
 
-    public HomePageUI(WebDriver driver) {
+    public TestPageUI(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
