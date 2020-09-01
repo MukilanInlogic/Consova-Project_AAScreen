@@ -13,8 +13,8 @@ import java.util.Map;
 public class ActionContainer {
 
     private SharedDriver sharedDriver;
+    public ClientPageActions clientPageActions;
     public HomePageActions homePageActions;
-    public TestPageActions testPageActions;
 
     static public int i = 0;
     public static LinkedHashMap<String, String> printTestDataMap = new LinkedHashMap<String, String>();
@@ -35,8 +35,8 @@ public class ActionContainer {
      * Date of Development:13-Aug-2019
      */
     private void initPages() {
+        clientPageActions = new ClientPageActions(sharedDriver);
         homePageActions = new HomePageActions(sharedDriver);
-        testPageActions = new TestPageActions(sharedDriver);
     }
 
     /**

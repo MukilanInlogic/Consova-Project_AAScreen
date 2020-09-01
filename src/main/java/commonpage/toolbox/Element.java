@@ -70,9 +70,7 @@ public class Element implements Comparator {
     public static boolean verifyElements(WebDriver driver, String strLocator, String strElement) {
         boolean blResult = false;
         try {
-            WebElement elmntLocator = Sync.waitForElement(driver, By
-                    .xpath(strLocator.replace("<<REPLACECONTENT>>",
-                            strElement)));
+            WebElement elmntLocator = Sync.waitForElement(driver, By.xpath(strLocator.replace("<<REPLACECONTENT>>",strElement)));
             blResult = Element.verifyElement(elmntLocator);
         } catch (Exception e) {
             log.error(e);
@@ -132,9 +130,7 @@ public class Element implements Comparator {
     public static boolean click(WebDriver driver, String strElement, String strLocator) {
         boolean blResult = false;
         try {
-            WebElement elmntLocator = Sync.waitForElement(driver, By
-                    .xpath(strLocator.replace("<<REPLACECONTENT>>",
-                            strElement)));
+            WebElement elmntLocator = Sync.waitForElement(driver, By.xpath(strLocator.replace("<<REPLACECONTENT>>",strElement)));
             blResult = Element.click(driver, elmntLocator);
         } catch (Exception e) {
             log.error(e);

@@ -28,9 +28,6 @@ public class HomePageUI {
             .append("')]").toString();
 
 
-    @FindBy(how = How.XPATH, using = "//img[@alt='Consova']")
-    protected WebElement lblConsovaPage;
-
     @FindBy(how = How.XPATH, using = "//input[@id='username']")
     protected WebElement TxtBoxUserName;
 
@@ -47,85 +44,37 @@ public class HomePageUI {
     protected WebElement logoffButtonInCore;
 
     @FindBy(how = How.XPATH, using = "//button[@type='submit']//@disabled")
+    protected WebElement disabledSubmitButton1;
+
+    @FindBy(how = How.XPATH, using = "//button[@disabled='']")
     protected WebElement disabledSubmitButton;
 
     @FindBy(how = How.XPATH, using = "//button[@type='submit']")
     protected WebElement submitButton;
 
-    @FindBy(how = How.NAME, using = "FirstName")
-    protected WebElement firstName;
-
-    @FindBy(how = How.NAME, using = "LastName")
-    protected WebElement lastName;
-
-    @FindBy(how = How.NAME, using = "UserName")
-    protected WebElement userName;
-
-    @FindBy(how = How.NAME, using = "PhoneNumber")
-    protected WebElement phoneNumber;
-
-    @FindBy(how = How.NAME, using = "Email")
-    protected WebElement emailAddress;
-
-    @FindBy(how = How.NAME, using = "WorkLocation")
-    protected WebElement workLocation;
-
-    @FindBy(how = How.NAME, using = "department")
-    protected WebElement departmentName;
-
-    @FindBy(how = How.NAME, using = "RandomPercentage")
-    protected WebElement randomPercentage;
-
-    @FindBy(how = How.NAME, using = "ManagerId")
-    protected WebElement managerId;
-
-    @FindBy(how = How.XPATH, using = "//select[@name='ManagerId']//option")
-    protected List<WebElement> managerIdDropdownList;
-
-    @FindBy(how = How.XPATH, using = "//span[@class='slider round']")
-    protected List<WebElement> sliderSwitchButton;
-
-
     @FindBy(how = How.XPATH, using = "//span[text()='System and Data Configuration']")
     protected WebElement systemAndDataConfiguration;
-
-    @FindBy(how = How.XPATH, using = "//span[text()='Client Configuration']")
-    protected WebElement clientConfiguration;
-
-    @FindBy(how = How.XPATH, using = "//button[text()='Add Client']")
-    protected WebElement addClientButton;
-
-    @FindBy(how = How.NAME, using = "clientEditName")
-    protected WebElement clientName;
-
-    @FindBy(how = How.NAME, using = "clientEditUrl")
-    protected WebElement clientSiteLink;
-
-    @FindBy(how = How.NAME, using = "clientEditLogoutUrl")
-    protected WebElement clientLogoutUrl;
-
-    @FindBy(how = How.NAME, using = "clientEditWiki")
-    protected WebElement wikiLink;
-
-    @FindBy(how = How.NAME, using = "clientEditPhone")
-    protected WebElement clientPhoneNo;
-
-    @FindBy(how = How.NAME, using = "phoneId")
-    protected WebElement clientPhoneId;
-
-    @FindBy(how = How.NAME, using = "editAssignedPeriodFrom")
-    protected WebElement assignedPeriodFrom;
-
-    @FindBy(how = How.NAME, using = "editAssignedPeriodTo")
-    protected WebElement assignedPeriodTo;
-
-    @FindBy(how = How.NAME, using = "logoUpload")
-    protected WebElement logoUpload;
-    protected String ClientLogo="Accenture_Logo";
 
     @FindBy(how = How.XPATH, using = "//button[text()='Add']")
     protected WebElement addButton;
 
+    @FindBy(how = How.XPATH, using = "//button[text()='Cancel']")
+    protected WebElement cancelButton;
+
+    @FindBy(how = How.XPATH, using = "//button[text()='Edit']")
+    protected WebElement editButton;
+
+    @FindBy(how = How.XPATH, using = "//button[text()='Update']")
+    protected WebElement updateButton;
+
+    @FindBy(how = How.XPATH, using = "//span[text()='Create']")
+    protected WebElement createButton;
+
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-times-circle')]")
+    protected WebElement closeButtonInModal;
+
+    @FindBy(how = How.XPATH, using = "//button[contains(text(),'Save')]")
+    protected WebElement saveButton;
 
 
 }

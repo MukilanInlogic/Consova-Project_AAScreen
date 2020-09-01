@@ -8,10 +8,10 @@ import demotest.util.ActionContainer;
 
 import static org.junit.Assert.assertTrue;
 
-public class HomePageSteps {
+public class LettersPageSteps {
     private ActionContainer actionContainer;
 
-    public HomePageSteps(ActionContainer actionContainer) {
+    public LettersPageSteps(ActionContainer actionContainer) {
         this.actionContainer = actionContainer;
     }
 
