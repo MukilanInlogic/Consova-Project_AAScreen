@@ -53,7 +53,7 @@ public class ClientPageUI {
 
     @FindBy(how = How.NAME, using = "logoUpload")
     protected WebElement logoUpload;
-    protected String ClientLogo="Accenture_Logo.jpg";
+    protected String ClientLogo="Tulips.jpg";
 
     @FindBy(how = How.XPATH, using = "//td[contains(@class,'ui-datepicker-today')]")
     protected WebElement TodayInBootstrapCalender;
@@ -218,7 +218,10 @@ public class ClientPageUI {
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-plus')]")
     protected WebElement addSubClientLogoIcon;
 
-    @FindBy(how = How.XPATH, using = "//a[text()='View']")
+    @FindBy(how = How.ID, using = "new-audit")
+    protected WebElement AddNewAudit;
+
+    @FindBy(how = How.XPATH, using = "//span[contains(text(),'View')]")
     protected WebElement viewSubClientLogo;
 
     @FindBy(how = How.XPATH, using = "//div[contains(text(),'Subclient has no logo to display')]")
@@ -256,14 +259,17 @@ public class ClientPageUI {
     @FindBy(how = How.ID, using = "add-deadline")
     protected WebElement addDeadline;
 
-    @FindBy(how = How.XPATH, using = "//input[@class='form-control ng-untouched ng-pristine ng-invalid']")
-    protected WebElement deadlineName;
+    @FindBy(how = How.XPATH, using = "//input[contains(@class,'ng-untouched ng-pristine ng-invalid')]")
+    protected WebElement deadlineNameTxtBox;
 
     @FindBy(how = How.XPATH, using = "//select[contains(@class,'ng-pristine ng-invalid')]")
     protected WebElement dropdownType;
 
-    @FindBy(how = How.XPATH, using = "//option[contains(text(),'AuditDate')]")
-    protected WebElement AuditDateDeadline;
+    @FindBy(how = How.XPATH, using = "//option[contains(text(),'Deadline1')]")
+    protected WebElement DeadlineOneDeadlineType;
+
+    @FindBy(how = How.XPATH, using = "//option[contains(text(),'InitialLetter')]")
+    protected List<WebElement> InitialLetterDeadlineType;
 
     @FindBy(how = How.XPATH, using = "//select[contains(@class,'ng-pristine ng-valid')]")
     protected WebElement frequencyTypeDropdown;
@@ -288,9 +294,6 @@ public class ClientPageUI {
 
     @FindBy(how = How.XPATH, using = "//input[@class='ng-untouched ng-pristine ng-valid']")
     protected WebElement schedularDisabled;
-
-    @FindBy(how = How.XPATH, using = "//span[text()='Success']")
-    protected WebElement successfulMessage;
 
     @FindBy(how = How.XPATH, using = "//p[contains(text(),'Client logo updated')]")
     protected WebElement SuccessfullyLogoUpdatedMessage;
@@ -355,10 +358,13 @@ public class ClientPageUI {
     @FindBy(how = How.XPATH, using = "//span[text()='Add']")
     protected WebElement addButton;
 
+    @FindBy(how = How.XPATH, using = "//button[text()='Add']")
+    protected WebElement addButtonInModal;
+
     @FindBy(how = How.XPATH, using = "//span[text()='Edit Incomplete Code']")
     protected WebElement editIncompleteCodeModal;
 
-    @FindBy(how = How.XPATH, using = "//span[text()='Edit Document']")
+    @FindBy(how = How.XPATH, using = "//span[text()='Edit Document as Alternate']")
     protected WebElement editDocumentModal;
 
     @FindBy(how = How.XPATH, using = "//input[@class='form-control filter-input-element']")
@@ -444,6 +450,9 @@ public class ClientPageUI {
     @FindBy(how = How.XPATH, using = "//div[contains(text(),'Print Options')]")
     protected WebElement printLanguagesLbl;
 
+    @FindBy(how = How.XPATH, using = "//div[contains(text(),'Languages')]")
+    protected WebElement LanguagesLbl;
+
     @FindBy(how = How.XPATH, using = "//button[contains(text(),'Configure')]")
     protected WebElement configureButton;
 
@@ -453,31 +462,10 @@ public class ClientPageUI {
     @FindBy(how = How.XPATH, using = "//button[contains(text(),'Add Sub Type')]")
     protected WebElement AddSubTypeButton;
 
-    @FindBy(how = How.XPATH, using = "//div[@class='ui-dropdown-label-container']")
-    protected WebElement dependentTypeDropdown;
-
     protected String spanText = new StringBuilder("//span[contains(text(),'").append("<<REPLACECONTENT>>").append("')]").toString();
-
-    @FindBy(how = How.XPATH, using = "//div[@class='ui-multiselect-label-container']")
-    protected WebElement dependentSubTypeDropdown;
 
     @FindBy(how = How.XPATH, using = "//div[contains(@class,'ui-multiselect-header')]//div[contains(@class,'ui-chkbox-box')]")
     protected WebElement selectAllInMultiselector;
-
-    @FindBy(how = How.XPATH, using = "//span[text()='Spouse']")
-    protected WebElement spouseDependentTypeList;
-
-    @FindBy(how = How.XPATH, using = "//span[text()='Child']")
-    protected WebElement childDependentTypeList;
-
-    @FindBy(how = How.XPATH, using = "//span[text()='Domestic Partner']")
-    protected WebElement domesticPartnerDependentTypeList;
-
-    @FindBy(how = How.XPATH, using = "//span[text()='Court Order']")
-    protected WebElement courtOrderDependentTypeList;
-
-    @FindBy(how = How.XPATH, using = "//span[text()='Handicap Dependent']")
-    protected WebElement handicapDependentTypeList;
 
     @FindBy(how = How.XPATH, using = "//div[@class='ui-table-scrollable-body']//tbody[@class='ui-table-tbody']")
     protected WebElement addedTableInGrid;
@@ -487,15 +475,6 @@ public class ClientPageUI {
 
     @FindBy(how = How.XPATH, using = "//span[text()='Project Information']")
     protected WebElement projectInformationLbl;
-
-    @FindBy(how = How.XPATH, using = "//th[text()='Audit Id']")
-    protected WebElement AuditIdLbl;
-
-    @FindBy(how = How.XPATH, using = "//th[text()='Audit Name']")
-    protected WebElement AuditNameLbl;
-
-    @FindBy(how = How.XPATH, using = "//th[text()='Audit Date']")
-    protected WebElement AuditDateLbl;
 
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-exclamation')]")
     protected List<WebElement> exclamationWarningSymbol;
@@ -509,5 +488,37 @@ public class ClientPageUI {
     @FindBy(how = How.XPATH, using = "//p[contains(@class,'flex-wrap')]//span[contains(@class,'fa-check consova-orange')]")
     protected List<WebElement> selectedAlternateDocuments;
 
+    @FindBy(how = How.XPATH, using = "//i[@class='fa fa-upload']")
+    protected List<WebElement> FileUpload;
+
+    @FindBy(how = How.XPATH, using = "//label[text()='Select Template']")
+    protected WebElement SelectTemplateDropdown;
+
+    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Milestone Template')]//button[contains(text(),'Add')]")
+    protected WebElement AddMilestoneTemplate;
+
+    @FindBy(how = How.NAME, using = "milestoneName")
+    protected WebElement MilestoneTemplateName;
+
+    @FindBy(how = How.XPATH, using = "//div[contains(@style,'width:calc')]//input[@class='form-control ng-untouched ng-pristine ng-invalid']")
+    protected WebElement EventDaysOutTxtBox;
+
+    @FindBy(how = How.XPATH, using = "//div[contains(@style,'width:calc')]//select[@class='form-control ng-untouched ng-pristine ng-invalid']")
+    protected WebElement MilestoneTypeDropdown;
+
+    @FindBy(how = How.XPATH, using = "//option[contains(text(),'InitialLetter')]")
+    protected WebElement clickInitialLetter;
+
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-pencil')]")
+    protected List<WebElement> EditIcon;
+
+    @FindBy(how = How.ID, using = "edit-audit-1")
+    protected WebElement EditAuditIcon;
+
+    @FindBy(how = How.XPATH, using = "//span[contains(@class,'pi-calendar')]")
+    protected List<WebElement> Calendar;
+
+    @FindBy(how = How.XPATH, using = "//td[contains(@class,'ui-datepicker-other-month')]//span[contains(text(),' 1 ')]")
+    protected WebElement DatePick;
 
 }

@@ -146,6 +146,26 @@ public class DateUtil {
         return calDate;
     }
 
+    public static String getTommorrowsDateThree() {
+        DateFormat formatter = new SimpleDateFormat("MM");
+        SimpleDateFormat monthParse = new SimpleDateFormat("MM");
+        DateFormat dformatter = new SimpleDateFormat("DD");
+        SimpleDateFormat dateParse = new SimpleDateFormat("DD");
+        Calendar cal = Calendar.getInstance();
+        String month = Integer.toString(cal.get(Calendar.MONTH) + 1);
+        String date = Integer.toString(cal.get(Calendar.DATE) + 3);
+        try {
+            month = formatter.format(monthParse.parse(month));
+            date = dformatter.format(dateParse.parse(date));
+        } catch (ParseException e) {
+            log.error(e);
+            System.out.println("getTommorrowsDate" + e.getMessage());
+        }
+        String year = Integer.toString(cal.get(Calendar.YEAR));
+        String calDate = month + "/" + date + "/" + year;
+        return calDate;
+    }
+
     /**
      * Description:This method is to get the tommorrow's date value from the Current System Date and Time in a specified Format
      * @return calDate

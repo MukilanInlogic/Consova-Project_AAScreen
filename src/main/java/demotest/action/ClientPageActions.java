@@ -222,15 +222,6 @@ public class ClientPageActions extends ClientPageUI {
         return isVerified;
     }
 
-    public boolean verifyAddedClientInClientList() {
-        boolean isVerified = false;
-        Sync.Delay(5000);
-        if (clientList.size()!=0){
-            isVerified = true;
-        }
-        return isVerified;
-    }
-
     public boolean verifyClientPage() {
         boolean isVerified = false;
         Sync.Delay(5000);
@@ -589,7 +580,7 @@ public class ClientPageActions extends ClientPageUI {
 
     public boolean verifyNoSubClientLogoNotToDisplay() {
         boolean isVerified = false;
-        Sync.Delay(15000);
+        Sync.Delay(5000);
         if (viewSubClientLogo.isDisplayed()){
             Element.notVerifyElement(driver,noSubClientLogoToDisplay);
             isVerified = true;
@@ -602,7 +593,7 @@ public class ClientPageActions extends ClientPageUI {
         Sync.Delay(5000);
         if (addSubClientLogoIcon.isDisplayed()){
             Element.click(driver,addSubClientLogoIcon);
-            //addSubClientLogoIcon.sendKeys("C:\\Users\\amukilan\\Desktop\\Consova-Project_Core\\resources\\UploadFilesAndImages\\"+ClientLogo);
+//            addSubClientLogoIcon.sendKeys("C:\\Users\\amukilan\\Desktop\\Consova-Project_Core\\resources\\UploadFilesAndImages\\"+ClientLogo);
             isClicked = true;
         }
         Sync.Delay(15000);
@@ -797,12 +788,12 @@ public class ClientPageActions extends ClientPageUI {
             Element.click(driver,calender.get(5));
             Sync.Delay(2000);
             Element.click(driver,TodayInBootstrapCalender);
-            Element.click(driver,calender.get(6));
-            Sync.Delay(2000);
-            Element.click(driver,TodayInBootstrapCalender);
-            Element.click(driver,calender.get(7));
-            Sync.Delay(2000);
-            Element.click(driver,TodayInBootstrapCalender);
+//            Element.click(driver,calender.get(6));
+//            Sync.Delay(2000);
+//            Element.click(driver,TodayInBootstrapCalender);
+//            Element.click(driver,calender.get(7));
+//            Sync.Delay(2000);
+//            Element.click(driver,TodayInBootstrapCalender);
             isEntered = true;
         }
         return isEntered;
@@ -848,11 +839,21 @@ public class ClientPageActions extends ClientPageUI {
         return isClicked;
     }
 
-    public boolean AuditDateDeadline() {
+    public boolean selectDeadlineOneDeadlineType() {
         boolean isClicked = false;
         Sync.Delay(5000);
-        if (AuditDateDeadline.isDisplayed()){
-            Element.click(driver,AuditDateDeadline);
+        if (DeadlineOneDeadlineType.isDisplayed()){
+            Element.click(driver,DeadlineOneDeadlineType);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean selectInitialLetterDeadlineType() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (InitialLetterDeadlineType.size()!=0){
+            Element.click(driver,InitialLetterDeadlineType.get(1));
             isClicked = true;
         }
         return isClicked;
@@ -898,12 +899,11 @@ public class ClientPageActions extends ClientPageUI {
         return isClicked;
     }
 
-    public boolean newDeadlineOneTxtBox(String auditName) {
+    public boolean newDeadlineNameTxtBox(String auditName) {
         boolean isEntered = false;
         Sync.Delay(2000);
-        if (deadlineName.isDisplayed()) {
-            Element.click(driver,deadlineName);
-            Textbox.enterValue(driver,deadlineName,auditName);
+        if (deadlineNameTxtBox.isDisplayed()) {
+            Textbox.enterValue(driver,deadlineNameTxtBox,auditName);
             isEntered = true;
         }
         return isEntered;
@@ -925,7 +925,8 @@ public class ClientPageActions extends ClientPageUI {
         Sync.Delay(5000);
         if (endDate.isDisplayed()){
             Element.click(driver,endDate);
-            Element.click(driver,TodayInBootstrapCalenderInEndDate);
+            js.executeScript("arguments[0].click();",TodayInBootstrapCalender);
+            //Element.click(driver,TodayInBootstrapCalender);
             isClicked = true;
         }
         return isClicked;
@@ -941,10 +942,10 @@ public class ClientPageActions extends ClientPageUI {
         return isClicked;
     }
 
-    public boolean verifyDeadlineOneTxtBox() {
+    public boolean verifyDeadlineNameTxtBox() {
         boolean isEntered = false;
         Sync.Delay(2000);
-        if (deadlineName.isDisplayed()) {
+        if (deadlineNameTxtBox.isDisplayed()) {
             isEntered = true;
         }
         return isEntered;
@@ -1010,15 +1011,6 @@ public class ClientPageActions extends ClientPageUI {
             isClicked = true;
         }
         return isClicked;
-    }
-
-    public boolean verifySuccessfulMessage() {
-        boolean isVerified = false;
-        Sync.Delay(2000);
-        if (successfulMessage.isDisplayed()){
-            isVerified = true;
-        }
-        return isVerified;
     }
 
     public boolean verifyTrashButton() {
@@ -1226,6 +1218,16 @@ public class ClientPageActions extends ClientPageUI {
         Sync.Delay(2000);
         if (addButton.isDisplayed()){
             Element.click(driver,addButton);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickaddButtonInModal() {
+        boolean isClicked = false;
+        Sync.Delay(2000);
+        if (addButtonInModal.isDisplayed()){
+            Element.click(driver,addButtonInModal);
             isClicked = true;
         }
         return isClicked;
@@ -1472,8 +1474,10 @@ public class ClientPageActions extends ClientPageUI {
     public boolean verifyLanguages() {
         boolean isVerified = false;
         Sync.Delay(2000);
-        if (printLanguagesLbl.isDisplayed()){
-            isVerified=true;
+        if (LanguagesLbl.isDisplayed()) {
+            if (printLanguagesLbl.isDisplayed()) {
+                isVerified = true;
+            }
         }
         return isVerified;
     }
@@ -1491,6 +1495,15 @@ public class ClientPageActions extends ClientPageUI {
         boolean isVerified = false;
         Sync.Delay(2000);
         if (addSubClientLogoIcon.isDisplayed()){
+            isVerified=true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyNewAuditIcon() {
+        boolean isVerified = false;
+        Sync.Delay(2000);
+        if (AddNewAudit.isDisplayed()){
             isVerified=true;
         }
         return isVerified;
@@ -1525,81 +1538,11 @@ public class ClientPageActions extends ClientPageUI {
         return isClicked;
     }
 
-    public boolean clickDependentTypeDropdown() {
-        boolean isClicked = false;
-        Sync.Delay(5000);
-        if (dependentTypeDropdown.isDisplayed()){
-            Element.click(driver,dependentTypeDropdown);
-            isClicked = true;
-        }
-        return isClicked;
-    }
-
-    public boolean clickDependentSubTypeDropdown() {
-        boolean isClicked = false;
-        Sync.Delay(5000);
-        if (dependentSubTypeDropdown.isDisplayed()){
-            Element.click(driver,dependentSubTypeDropdown);
-            isClicked = true;
-        }
-        return isClicked;
-    }
-
     public boolean clickSelectAllInMultiselector() {
         boolean isClicked = false;
         Sync.Delay(5000);
         if (selectAllInMultiselector.isDisplayed()){
             Element.click(driver,selectAllInMultiselector);
-            isClicked = true;
-        }
-        return isClicked;
-    }
-
-    public boolean clickSpouseDependentTypeList() {
-        boolean isClicked = false;
-        Sync.Delay(5000);
-        if (ConfigureDependentSubTypesLbl.isDisplayed()){
-            Element.click(driver,spouseDependentTypeList);
-            isClicked = true;
-        }
-        return isClicked;
-    }
-
-    public boolean clickChildDependentTypeList() {
-        boolean isClicked = false;
-        Sync.Delay(5000);
-        if (ConfigureDependentSubTypesLbl.isDisplayed()){
-            Element.click(driver,childDependentTypeList);
-            isClicked = true;
-        }
-        return isClicked;
-    }
-
-    public boolean clickDomesticPartnerDependentTypeList() {
-        boolean isClicked = false;
-        Sync.Delay(5000);
-        if (ConfigureDependentSubTypesLbl.isDisplayed()){
-            Element.click(driver,domesticPartnerDependentTypeList);
-            isClicked = true;
-        }
-        return isClicked;
-    }
-
-    public boolean clickCourtOrderDependentTypeList() {
-        boolean isClicked = false;
-        Sync.Delay(5000);
-        if (ConfigureDependentSubTypesLbl.isDisplayed()){
-            Element.click(driver,courtOrderDependentTypeList);
-            isClicked = true;
-        }
-        return isClicked;
-    }
-
-    public boolean clickHandicapDependentDependentTypeList() {
-        boolean isClicked = false;
-        Sync.Delay(5000);
-        if (ConfigureDependentSubTypesLbl.isDisplayed()){
-            Element.click(driver,handicapDependentTypeList);
             isClicked = true;
         }
         return isClicked;
@@ -1632,23 +1575,10 @@ public class ClientPageActions extends ClientPageUI {
         return isVerified;
     }
 
-    public boolean verifyAuditHeaders() {
-        boolean isVerified = false;
-        Sync.Delay(7000);
-        if (AuditIdLbl.isDisplayed()){
-            if (AuditNameLbl.isDisplayed()){
-                if (AuditDateLbl.isDisplayed()){
-                    isVerified=true;
-                }
-            }
-        }
-        return isVerified;
-    }
-
     public boolean verifyCreateAuditPlusIcon() {
         boolean isVerified = false;
         Sync.Delay(5000);
-        if (addSubClientLogoIcon.isDisplayed()){
+        if (AddNewAudit.isDisplayed()){
             isVerified = true;
         }
         return isVerified;
@@ -1694,8 +1624,6 @@ public class ClientPageActions extends ClientPageUI {
     public boolean selectAddedDocument(String addedDoc) {
         boolean isClicked = false;
         Sync.Delay(3000);
-        System.out.println(addedDoc);
-        System.out.println(spanText);
         if (editAlternateDocuments.isDisplayed()){
             Element.click(driver,addedDoc,spanText);
             isClicked = true;
@@ -1710,5 +1638,106 @@ public class ClientPageActions extends ClientPageUI {
             isVerified = true;
         }
         return isVerified;
+    }
+
+    public boolean clickFileUpload() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (FileUpload.size()!=0){
+            Element.click(driver,FileUpload.get(FileUpload.size()-1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickSelectTemplateDropdown() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (SelectTemplateDropdown.isDisplayed()){
+            Element.click(driver,SelectTemplateDropdown);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickAddMilestoneTemplate() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (AddMilestoneTemplate.isDisplayed()){
+            Element.click(driver,AddMilestoneTemplate);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean enterMilestoneTemplateName(String TemplateName) {
+        boolean isEntered = false;
+        Sync.Delay(5000);
+        if (MilestoneTemplateName.isDisplayed()) {
+            Textbox.enterValue(driver,MilestoneTemplateName,TemplateName);
+            isEntered = true;
+        }
+        return isEntered;
+    }
+
+    public boolean enterEventDaysOutTxtBox(String TemplateName) {
+        boolean isEntered = false;
+        Sync.Delay(5000);
+        if (EventDaysOutTxtBox.isDisplayed()) {
+            Textbox.enterValue(driver,EventDaysOutTxtBox,TemplateName);
+            isEntered = true;
+        }
+        return isEntered;
+    }
+
+    public boolean clickMilestoneTypeDropdown() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (MilestoneTypeDropdown.isDisplayed()){
+            Element.click(driver,MilestoneTypeDropdown);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickInitialLetter() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (clickInitialLetter.isDisplayed()){
+            Element.click(driver,clickInitialLetter);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickEditButton() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (EditIcon.size()!=0){
+            Element.click(driver,EditIcon.get(0));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickEditAuditIcon() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (EditAuditIcon.isDisplayed()){
+            Element.click(driver,EditAuditIcon);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean selectDeadlineDate() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (Calendar.size()!=0){
+            Element.click(driver,Calendar.get(2));
+            Element.click(driver,DatePick);
+            isClicked = true;
+        }
+        return isClicked;
     }
 }

@@ -60,6 +60,28 @@ public class Element implements Comparator {
         return blResult;
     }
 
+
+    /**
+     * Description:This method is used to not verify whether a element is displayed
+     * @param element
+     * @return blResult
+     * Author Name:Mukilan
+     * Date of Development:13-Aug-2019
+     */
+    public static boolean notVerifyElement(WebElement element) {
+        boolean blResult = false;
+        try {
+            if (!element.isDisplayed()) {
+                blResult = true;
+            } else {
+                blResult = false;
+            }
+        } catch (Exception e) {
+            log.error(e);
+        }
+        return blResult;
+    }
+
     /**
      * Description:This method is used to replace content and verify whether a element is displayed
      * @param driver,strLocator,strElement
@@ -72,6 +94,24 @@ public class Element implements Comparator {
         try {
             WebElement elmntLocator = Sync.waitForElement(driver, By.xpath(strLocator.replace("<<REPLACECONTENT>>",strElement)));
             blResult = Element.verifyElement(elmntLocator);
+        } catch (Exception e) {
+            log.error(e);
+        }
+        return blResult;
+    }
+
+    /**
+     * Description:This method is used to replace content and verify whether a element is displayed
+     * @param driver,strLocator,strElement
+     * @return blResult
+     * Author Name:Mukilan
+     * Date of Development:13-Aug-2019
+     */
+    public static boolean notVerifyElements(WebDriver driver, String strLocator, String strElement) {
+        boolean blResult = false;
+        try {
+            WebElement elmntLocator = Sync.waitForElement(driver, By.xpath(strLocator.replace("<<REPLACECONTENT>>",strElement)));
+            blResult = Element.notVerifyElement(elmntLocator);
         } catch (Exception e) {
             log.error(e);
         }
@@ -127,7 +167,7 @@ public class Element implements Comparator {
      * Author Name:Sankar Ganesh
      * Date of Development:13-Aug-2019
      */
-    public static boolean click(WebDriver driver, String strElement, String strLocator) {
+    public static boolean click(WebDriver driver, String strLocator, String strElement) {
         boolean blResult = false;
         try {
             WebElement elmntLocator = Sync.waitForElement(driver, By.xpath(strLocator.replace("<<REPLACECONTENT>>",strElement)));
@@ -137,6 +177,24 @@ public class Element implements Comparator {
         }
         return blResult;
     }
+
+//    /**
+//     * Description:This method is used to replace content and click on the web element
+//     * @param driver,strElement,strLocator
+//     * @return blResult
+//     * Author Name:Mukilan
+//     * Date of Development:13-Aug-2019
+//     */
+//    public static boolean click(WebDriver driver, String strLocator, String strElement) {
+//        boolean blResult = false;
+//        try {
+//            WebElement elmntLocator = Sync.waitForElement(driver, By.xpath(strLocator.replace("<<REPLACECONTENT>>",strElement)));
+//            blResult = Element.click(driver, elmntLocator);
+//        } catch (Exception e) {
+//            log.error(e);
+//        }
+//        return blResult;
+//    }
 
 
     /**

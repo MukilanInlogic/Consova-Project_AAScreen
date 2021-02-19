@@ -114,11 +114,6 @@ public class ClientPageSteps {
         assertTrue(actionContainer.clientPageActions.clientSearchTxtBox(Testdata.getValue(clientname)));
     }
 
-    @And("^I should verify the added client from left sided client list$")
-    public void iShouldVerifyTheAddedClientFromLeftSidedClientList() {
-        assertTrue(actionContainer.clientPageActions.verifyAddedClientInClientList());
-    }
-
     @And("^I should verify client page$")
     public void iShouldVerifyClientPage() {
         assertTrue(actionContainer.clientPageActions.verifyClientPage());
@@ -127,16 +122,6 @@ public class ClientPageSteps {
     @And("^I should click the added client from left sided client list$")
     public void iShouldClickTheAddedClientFromLeftSidedClientList() {
         assertTrue(actionContainer.clientPageActions.clickAddedClientInClientList());
-    }
-
-    @And("^I should verify the edit client button in selected client page$")
-    public void iShouldVerifyTheEditClientButtonInSelectedClientPage() {
-        assertTrue(actionContainer.homePageActions.verifyEditButton());
-    }
-
-    @And("^I should click the edit client button in selected client page$")
-    public void iShouldClickTheEditClientButtonInSelectedClientPage() {
-        assertTrue(actionContainer.homePageActions.editButton());
     }
 
     @And("^I should verify Employee and Dependent has ten criteria fields$")
@@ -301,7 +286,7 @@ public class ClientPageSteps {
 
     @And("^I should upload the logo via plus icon$")
     public void iShouldUploadTheLogoViaPlusIcon() {
-        assertTrue(actionContainer.clientPageActions.subClientLogoUpload());
+//        assertTrue(actionContainer.clientPageActions.subClientLogoUpload());
     }
 
     @And("^I should not get the popup message of no logo to display$")
@@ -452,7 +437,7 @@ public class ClientPageSteps {
 
     @And("^I should enter the (.*) in the deadline one textbox$")
     public void iShouldEnterTheDeadlineoneInTheDeadlineOneTextbox(String deadline) {
-        assertTrue(actionContainer.clientPageActions.newDeadlineOneTxtBox(Testdata.getValue(deadline)));
+        assertTrue(actionContainer.clientPageActions.newDeadlineNameTxtBox(Testdata.getValue(deadline)));
     }
 
     @And("^I should select the type from type dropdown$")
@@ -462,7 +447,12 @@ public class ClientPageSteps {
 
     @And("^I should select the deadline one type from dropdown list$")
     public void iShouldSelectTheDeadlineTypeFromDropdownList() {
-        assertTrue(actionContainer.clientPageActions.AuditDateDeadline());
+        assertTrue(actionContainer.clientPageActions.selectDeadlineOneDeadlineType());
+    }
+
+    @And("^I should select the initial letter type from dropdown list$")
+    public void iShouldSelectTheInitialLetterTypeFromDropdownList() {
+        assertTrue(actionContainer.clientPageActions.selectInitialLetterDeadlineType());
     }
 
     @And("^I should enable the schedule$")
@@ -497,7 +487,7 @@ public class ClientPageSteps {
 
     @And("^I should verify the deadline one textbox$")
     public void iShouldVerifyTheDeadlineOneTextbox() {
-        assertTrue(actionContainer.clientPageActions.verifyDeadlineOneTxtBox());
+        assertTrue(actionContainer.clientPageActions.verifyDeadlineNameTxtBox());
     }
 
     @And("^I should verify the type from type dropdown$")
@@ -528,11 +518,6 @@ public class ClientPageSteps {
     @And("^I should select De Spanish language in all options$")
     public void iShouldSelectDeSpanishLanguageInAllOptions() {
         assertTrue(actionContainer.clientPageActions.selectSpanishLanguage());
-    }
-
-    @And("^I should verify successful message$")
-    public void iShouldVerifySuccessfulMessage() {
-        assertTrue(actionContainer.clientPageActions.verifySuccessfulMessage());
     }
 
     @And("^I should de select English language in all options$")
@@ -622,7 +607,7 @@ public class ClientPageSteps {
 
     @And("^I should click on Add button in modal$")
     public void iShouldClickOnAddButtonInModal() {
-        assertTrue(actionContainer.clientPageActions.clickAddButton());
+        assertTrue(actionContainer.clientPageActions.clickaddButtonInModal());
     }
 
     @And("^I should verify edit incomplete code modal$")
@@ -755,6 +740,11 @@ public class ClientPageSteps {
         assertTrue(actionContainer.clientPageActions.verifyAddIcon());
     }
 
+    @And("^I should verify add new audit icon$")
+    public void iShouldVerifyAddNewAuditIcon() {
+        assertTrue(actionContainer.clientPageActions.verifyNewAuditIcon());
+    }
+
     @And("^I should verify toggle icons$")
     public void iShouldVerifyToggleIcons() {
         assertTrue(actionContainer.clientPageActions.verifyToggleIcons());
@@ -780,44 +770,9 @@ public class ClientPageSteps {
         assertTrue(actionContainer.clientPageActions.clickAddSubTypeButton());
     }
 
-    @And("^I should click on Dependent type dropdown$")
-    public void iShouldClickOnDependentTypeDropdown() {
-        assertTrue(actionContainer.clientPageActions.clickDependentTypeDropdown());
-    }
-
-    @And("^I should click on Dependent sub type dropdown$")
-    public void iShouldClickOnDependentSubTypeDropdown() {
-        assertTrue(actionContainer.clientPageActions.clickDependentSubTypeDropdown());
-    }
-
     @And("^I should select Select All in the list displayed$")
     public void iShouldSelectSelectAllInTheListDisplayed() {
         assertTrue(actionContainer.clientPageActions.clickSelectAllInMultiselector());
-    }
-
-    @And("^I should select child from the displayed dropdown$")
-    public void iShouldSelectChildFromTheDisplayedDropdown() {
-        assertTrue(actionContainer.clientPageActions.clickChildDependentTypeList());
-    }
-
-    @And("^I should select spouse from the displayed dropdown$")
-    public void iShouldSelectSpouseFromTheDisplayedDropdown() {
-        assertTrue(actionContainer.clientPageActions.clickSpouseDependentTypeList());
-    }
-
-    @And("^I should select domestic partner from the displayed dropdown$")
-    public void iShouldSelectDomesticPartnerFromTheDisplayedDropdown() {
-        assertTrue(actionContainer.clientPageActions.clickDomesticPartnerDependentTypeList());
-    }
-
-    @And("^I should select court order from the displayed dropdown$")
-    public void iShouldSelectCourtOrderFromTheDisplayedDropdown() {
-        assertTrue(actionContainer.clientPageActions.clickCourtOrderDependentTypeList());
-    }
-
-    @And("^I should select handicap dependent from the displayed dropdown$")
-    public void iShouldSelectHandicapDependentFromTheDisplayedDropdown() {
-        assertTrue(actionContainer.clientPageActions.clickHandicapDependentDependentTypeList());
     }
 
     @And("^I should click on download grid icon in documents requirement grid$")
@@ -843,11 +798,6 @@ public class ClientPageSteps {
     @And("^I should verify create new audit plus icon$")
     public void iShouldVerifyCreateNewAuditPlusIcon() {
         assertTrue(actionContainer.clientPageActions.verifyCreateAuditPlusIcon());
-    }
-
-    @And("^I should verify audit headers Audit ID Audit Name and Audit Date$")
-    public void iShouldVerifyAuditHeadersAuditIDAuditNameAndAuditDate() {
-        assertTrue(actionContainer.clientPageActions.verifyAuditHeaders());
     }
 
     @And("^I should verify client logo updated successfully notification$")
@@ -878,5 +828,60 @@ public class ClientPageSteps {
     @And("^I should verify added alternate document$")
     public void iShouldVerifyAddedAlternateDocument() {
         assertTrue(actionContainer.clientPageActions.verifySelectedAlternateDocuments());
+    }
+
+    @And("^I should click on file upload icon from the created client audit$")
+    public void iShouldClickOnFileUploadIconFromTheCreatedClientAudit() {
+        assertTrue(actionContainer.clientPageActions.clickFileUpload());
+    }
+
+    @And("^I should click on select template version drop down$")
+    public void iShouldClickOnSelectTemplateVersionDropDown() {
+        assertTrue(actionContainer.clientPageActions.clickSelectTemplateDropdown());
+    }
+
+    @And("^I should click on new milestone template icon$")
+    public void iShouldClickOnNewMilestoneTemplateIcon() {
+        assertTrue(actionContainer.clientPageActions.clickAddMilestoneTemplate());
+    }
+
+    @And("^I should enter the (.*) in the enter milestone template name$")
+    public void iShouldEnterTheMilestomeNameInTheEnterMilestoneTemplateName(String templateName) {
+        assertTrue(actionContainer.clientPageActions.enterMilestoneTemplateName(Testdata.getValue(templateName)));
+    }
+
+    @And("^I should enter the (.*) in the Event Days Out textbox$")
+    public void iShouldEnterTheEventDaysOutInTheEventDaysOutTextbox(String templateName) {
+        assertTrue(actionContainer.clientPageActions.enterEventDaysOutTxtBox(Testdata.getValue(templateName)));
+    }
+
+    @And("^I should click on select milestone type dropdown in modal$")
+    public void iShouldClickOnSelectMilestoneTypeDropdownInModal() {
+        assertTrue(actionContainer.clientPageActions.clickMilestoneTypeDropdown());
+    }
+
+    @And("^I should click on Initial Letter from dropdown$")
+    public void iShouldClickOnInitialLetterFromDropdown() {
+        assertTrue(actionContainer.clientPageActions.clickInitialLetter());
+    }
+
+    @And("^I should click edit icon in the grid$")
+    public void iShouldClickEditIconInTheGrid() {
+        assertTrue(actionContainer.clientPageActions.clickEditButton());
+    }
+
+    @And("^I should enable Is Employee Milestone$")
+    public void iShouldEnableIsEmployeeMilestone() {
+        
+    }
+
+    @And("^I should click on edit audit pencil icon$")
+    public void iShouldClickOnEditAuditPencilIcon() {
+        assertTrue(actionContainer.clientPageActions.clickEditAuditIcon());
+    }
+
+    @And("^I should select date within thirty days$")
+    public void iShouldSelectDateWithinThirtyDays() {
+        assertTrue(actionContainer.clientPageActions.selectDeadlineDate());
     }
 }

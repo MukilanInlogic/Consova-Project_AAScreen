@@ -771,5 +771,24 @@ public class Sync {
         return blResult;
     }
 
+    /**
+     * Description:This method is used to make the web driver wait for until the Seconds Ends - Implicity Wait
+     * @param driver,by
+     * @return isElementDisplays
+     * Author Name:vimalan
+     * Date of Development:18-March-2020
+     */
+    public static boolean ImplicityDelay(WebDriver driver,int Value) {
+        boolean isElementDisplays = false;
+        try {
+            driver.manage().timeouts().implicitlyWait(Value,TimeUnit.SECONDS);
+            isElementDisplays = true;
+
+        } catch (Exception e) {
+            log.error(e);
+        }
+        return isElementDisplays;
+    }
+
 
 }

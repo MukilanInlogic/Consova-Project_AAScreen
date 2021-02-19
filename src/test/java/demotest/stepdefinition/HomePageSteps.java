@@ -41,39 +41,14 @@ public class HomePageSteps {
         assertTrue(actionContainer.homePageActions.logoffButtonInCore());
     }
 
-    @And("^I should click on Add button$")
-    public void iShouldClickOnAddButton() {
-        assertTrue(actionContainer.homePageActions.addButton());
-    }
-
-    @And("^I should click on system and data configuration$")
-    public void iShouldClickOnSystemAndDataConfiguration() {
-        assertTrue(actionContainer.homePageActions.systemAndDataConfiguration());
-    }
-
-    @And("^I should click on Cancel button$")
-    public void iShouldClickOnCancelButton() {
-        assertTrue(actionContainer.homePageActions.cancelButton());
-    }
-
-    @And("^I should click on Update button$")
-    public void iShouldClickOnUpdateButton() {
-        assertTrue(actionContainer.homePageActions.updateButton());
-    }
-
-    @And("^I should click on Edit button$")
-    public void iShouldClickOnEditButton() {
-        assertTrue(actionContainer.homePageActions.editButton());
-    }
-
-    @And("^I should click on create button$")
-    public void iShouldClickOnCreateButton() {
-        assertTrue(actionContainer.homePageActions.createButton());
-    }
-
     @And("^I should verify disabled submit button$")
     public void iShouldVerifyDisabledSubmitButton() {
         assertTrue(actionContainer.homePageActions.verifyDisabledSubmitButton());
+    }
+
+    @And("^I should verify disabled bold button$")
+    public void iShouldVerifyDisabledBoldButton() {
+        assertTrue(actionContainer.homePageActions.verifyDisabledBoldButton());
     }
 
     @And("^I should close the displayed modal$")
@@ -81,8 +56,148 @@ public class HomePageSteps {
         assertTrue(actionContainer.homePageActions.closeTheModal());
     }
 
-    @And("^I should click on Save button$")
-    public void iShouldClickOnSaveButton() {
-        assertTrue(actionContainer.homePageActions.clickSaveButton());
+    @And("^I should click on (.*) In Span$")
+    public void iShouldClickOnLettersAndFormsInSpan(String inSpan) {
+        assertTrue(actionContainer.homePageActions.clickInSpan(Testdata.getValue(inSpan)));
+    }
+
+    @And("^I should click on (.*) In Button$")
+    public void iShouldClickOnLettersAndFormsInButton(String inButton) {
+        assertTrue(actionContainer.homePageActions.clickInButton(Testdata.getValue(inButton)));
+    }
+
+    @And("^I should click on (.*) In List$")
+    public void iShouldClickOnInitialInList(String inList) {
+        assertTrue(actionContainer.homePageActions.clickInList(Testdata.getValue(inList)));
+    }
+
+    @And("^I should verify warning message$")
+    public void iShouldVerifyWarningMessage() {
+        assertTrue(actionContainer.homePageActions.verifyWarningMessage());
+    }
+
+    @And("^I should verify (.*) text In Span$")
+    public void iShouldVerifyLettersTextInSpan(String inSpan) {
+        assertTrue(actionContainer.homePageActions.verifyInSpan(Testdata.getValue(inSpan)));
+    }
+
+    @And("^I should verify (.*) text In Div$")
+    public void iShouldVerifyLetterTextInDiv(String inDiv) {
+        assertTrue(actionContainer.homePageActions.verifyInDiv(Testdata.getValue(inDiv)));
+    }
+
+    @And("^I should click on (.*) In Div$")
+    public void iShouldClickOnLetterInDiv(String inDiv) {
+        assertTrue(actionContainer.homePageActions.clickInDiv(Testdata.getValue(inDiv)));
+    }
+
+    @And("^I should verify (.*) In Button$")
+    public void iShouldVerifyOKInButton(String inButton) {
+        assertTrue(actionContainer.homePageActions.verifyInButton(Testdata.getValue(inButton)));
+    }
+
+    @And("^I should verify (.*) In Label$")
+    public void iShouldVerifyHistoryInLabel(String inLabel) {
+        assertTrue(actionContainer.homePageActions.verifyInLabel(Testdata.getValue(inLabel)));
+    }
+
+    @And("^I should click on (.*) In Label$")
+    public void iShouldClickOnHistoryInLabel(String inLabel) {
+        assertTrue(actionContainer.homePageActions.clickInLabel(Testdata.getValue(inLabel)));
+    }
+
+    @And("^I should delay$")
+    public void iShouldDelay() {
+        assertTrue(actionContainer.homePageActions.DelaySometime());
+    }
+
+    @And("^I should enter (.*) in second filterBy textbox$")
+    public void iShouldEnterTheSearchItemInSecondFilterByTextbox(String filterItem) {
+        assertTrue(actionContainer.homePageActions.ThirdFilterBy(Testdata.getValue(filterItem)));
+    }
+
+    @And("^I should click on (.*) In Options$")
+    public void iShouldClickOnSelectInOptions(String inOption) {
+        assertTrue(actionContainer.homePageActions.clickInOption(Testdata.getValue(inOption)));
+    }
+
+    @And("^I should verify (.*) text In Options$")
+    public void iShouldVerifySelectInOptions(String inOption) {
+        assertTrue(actionContainer.homePageActions.verifyInOption(Testdata.getValue(inOption)));
+    }
+
+    @And("^I should click on (.*) In Bold$")
+    public void iShouldClickOnSelectInBold(String inBold) {
+        assertTrue(actionContainer.homePageActions.clickInBold(Testdata.getValue(inBold)));
+    }
+
+    @And("^I should verify (.*) text In Bold$")
+    public void iShouldVerifySelectInBold(String inBold) {
+        assertTrue(actionContainer.homePageActions.verifyInBold(Testdata.getValue(inBold)));
+    }
+
+    @And("^I should enter (.*) in first filterBy textbox$")
+    public void iShouldEnterTheSearchItemInFirstFilterByTextbox(String filterItem) {
+        assertTrue(actionContainer.homePageActions.FirstFilterBy(Testdata.getValue(filterItem)));
+    }
+
+    @And("^I should not verify (.*) element in the display$")
+    public void iShouldNotVerifyElementElementInTheDisplay(String NotVerify) {
+        assertTrue(actionContainer.homePageActions.NotVerifyElementInDisplay(Testdata.getValue(NotVerify)));
+    }
+
+    @And("^I should verify (.*) text in Table Header$")
+    public void iShouldVerifyClientNameInTableHeader(String header) {
+        assertTrue(actionContainer.homePageActions.verifyTableHeader(Testdata.getValue(header)));
+    }
+
+    @And("^I should click on (.*) text in Table Header$")
+    public void iShouldClickOnClientNameInTableHeader(String header) {
+        assertTrue(actionContainer.homePageActions.verifyTableHeader(Testdata.getValue(header)));
+    }
+
+    @And("^I should verify (.*) text in Table Data$")
+    public void iShouldVerifyClientNameInTableData(String Data) {
+        assertTrue(actionContainer.homePageActions.verifyTableData(Testdata.getValue(Data)));
+    }
+
+    @And("^I should click on (.*) in Table Data$")
+    public void iShouldClickOnClientNameInTableData(String Data) {
+        assertTrue(actionContainer.homePageActions.clickTableData(Testdata.getValue(Data)));
+    }
+
+    @And("^I should click on System and Client Configuration$")
+    public void iShouldClickOnSystemAndClientConfiguration() {
+        assertTrue(actionContainer.homePageActions.clickSystemAndClientConfiguration());
+    }
+
+    @And("^I should click on Client Configuration$")
+    public void iShouldClickOnClientConfiguration() {
+        assertTrue(actionContainer.homePageActions.clickClientConfiguration());
+    }
+
+    @And("^I should click on My Inventory$")
+    public void iShouldClickOnMyInventory() {
+        assertTrue(actionContainer.homePageActions.clickMyInventory());
+    }
+
+    @And("^I should navigate to newly opened window$")
+    public void iShouldNavigateToNewlyOpenedWindow() {
+        assertTrue(actionContainer.homePageActions.navigateToNewTab());
+    }
+
+    @And("^I should close the newly opened tab$")
+    public void iShouldCloseTheNewlyOpenedTab() {
+        assertTrue(actionContainer.homePageActions.closeCurrentTab());
+    }
+
+    @And("^I should enter (.*) in textarea$")
+    public void iShouldEnterCommentsInTextarea(String Comment) {
+        assertTrue(actionContainer.homePageActions.EnterCommentInTextarea(Testdata.getValue(Comment)));
+    }
+
+    @And("^I should click on first checkbox in the list$")
+    public void iShouldClickOnFirstCheckboxInTheList() {
+        assertTrue(actionContainer.homePageActions.SelectCheckbox());
     }
 }

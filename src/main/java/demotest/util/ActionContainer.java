@@ -15,6 +15,9 @@ public class ActionContainer {
     private SharedDriver sharedDriver;
     public ClientPageActions clientPageActions;
     public HomePageActions homePageActions;
+    public AccountPageActions accountPageActions;
+    public LettersPageActions lettersPageActions;
+    public IvacPageActions ivacPageActions;
 
     static public int i = 0;
     public static LinkedHashMap<String, String> printTestDataMap = new LinkedHashMap<String, String>();
@@ -35,8 +38,11 @@ public class ActionContainer {
      * Date of Development:13-Aug-2019
      */
     private void initPages() {
+        accountPageActions = new AccountPageActions(sharedDriver);
         clientPageActions = new ClientPageActions(sharedDriver);
         homePageActions = new HomePageActions(sharedDriver);
+        ivacPageActions = new IvacPageActions(sharedDriver);
+        lettersPageActions = new LettersPageActions(sharedDriver);
     }
 
     /**

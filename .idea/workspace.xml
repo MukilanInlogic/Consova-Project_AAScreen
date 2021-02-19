@@ -1,27 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eeba7f17-48d7-4872-b9ef-199e2e500a81" name="Default Changelist" comment="Commit initiate for Core">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demotest/action/LettersPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/ClientPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/LettersPageSteps.java" afterDir="false" />
+    <list default="true" id="eeba7f17-48d7-4872-b9ef-199e2e500a81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Consova-Project_A&amp;AScreen.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/UploadFilesAndImages/Affidavit - English.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/UploadFilesAndImages/BirthCertificate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/UploadFilesAndImages/English_Template.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/AccountPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/IvacPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/LettersPageUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demotest/action/AccountPageActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demotest/action/IvacPageActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/AccountPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IvacPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/drivers/chromedriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/resources/drivers/chromedriver.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/testdata/testdata.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/testdata/testdata.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commonpage/toolbox/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commonpage/toolbox/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commonpage/toolbox/Sync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commonpage/toolbox/Sync.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commonpage/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commonpage/util/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/ClientPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/ClientPageUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/HomePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/HomePageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/TestPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/ClientPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/ClientPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/ClientPageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/HomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/HomePageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/TestPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/ClientPageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/LettersPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/LettersPageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/util/ActionContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/util/ActionContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/cukes/SmokeModuleCukesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/cukes/SmokeModuleCukesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/ClientPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/ClientPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/LettersPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/LettersPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/commonpage/toolbox/Element.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commonpage/toolbox/Element.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commonpage/toolbox/Sync.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commonpage/toolbox/Sync.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commonpage/util/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commonpage/util/DateUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/Repository/HomePageUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/Repository/HomePageUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/HomePageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/HomePageActions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/util/ActionContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/util/ActionContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/cukes/SmokeModuleCukesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/cukes/SmokeModuleCukesTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/HomePageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/HomePageSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/Feature/Smoke_Module.feature" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/Feature/Smoke_Module.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/resources/Feature/Smoke_Module.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +78,14 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="framework" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Consova-Project_IVAC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Consova-Project_Core" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demotest.action" />
       <recent name="demotest.Repository" />
       <recent name="demotest.cukes" />
-      <recent name="demotest.action" />
       <recent name="demotest.stepdefinition" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -83,16 +101,16 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: EVS-:As a user I should be able to edit an existing audit on the project configuration page">
-    <configuration name="Scenario: EVS-1383:As a user, I should select the alternate documents" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: EVS-64:As a user I should see edit icons that can be clicked on to allow editing of employee and dependent information">
+    <configuration name="Scenario: EVS-39:As a user I should see employee details on the account screen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Smoke_Module.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Consova-Project_Core" />
-      <option name="NAME_FILTER" value="^EVS\-1383\:As a user\, I should select the alternate documents$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-1383\:As a user\, I should select the alternate documents$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-1383:As a user, I should select the alternate documents" />
+      <module name="Consova-Project_A&amp;AScreen" />
+      <option name="NAME_FILTER" value="^EVS\-39\:As a user I should see employee details on the account screen$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-39\:As a user I should see employee details on the account screen$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-39:As a user I should see employee details on the account screen" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -103,15 +121,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-1384:As a user, I should see mapped alternate documents" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-425:As a system I should mark all documents as N/A if the auditor marks the dependent as ineligible" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Smoke_Module.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Consova-Project_Core" />
-      <option name="NAME_FILTER" value="^EVS\-1384\:As a user\, I should see mapped alternate documents$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-1384\:As a user\, I should see mapped alternate documents$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-1384:As a user, I should see mapped alternate documents" />
+      <module name="Consova-Project_A&amp;AScreen" />
+      <option name="NAME_FILTER" value="^EVS\-425\:As a system I should mark all documents as N\/A if the auditor marks the dependent as ineligible$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-425\:As a system I should mark all documents as N\/A if the auditor marks the dependent as ineligible$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-425:As a system I should mark all documents as N/A if the auditor marks the dependent as ineligible" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -122,15 +140,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-148:As a user I should be able to edit an existing audit on the project configuration page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-64:As a user I should see edit icons that can be clicked on to allow editing of employee and dependent information" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Smoke_Module.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Consova-Project_Core" />
-      <option name="NAME_FILTER" value="^EVS\-148\:As a user I should be able to edit an existing audit on the project configuration page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-148\:As a user I should be able to edit an existing audit on the project configuration page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-148:As a user I should be able to edit an existing audit on the project configuration page" />
+      <module name="Consova-Project_A&amp;AScreen" />
+      <option name="NAME_FILTER" value="^EVS\-64\:As a user I should see edit icons that can be clicked on to allow editing of employee and dependent information$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-64\:As a user I should see edit icons that can be clicked on to allow editing of employee and dependent information$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-64:As a user I should see edit icons that can be clicked on to allow editing of employee and dependent information" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -141,15 +159,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-455:As a user I should be able to edit an existing audit on the project configuration page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-76:As a user I should be able to add new documents on the auditing screen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Smoke_Module.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Consova-Project_Core" />
-      <option name="NAME_FILTER" value="^EVS\-455\:As a user I should be able to edit an existing audit on the project configuration page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-455\:As a user I should be able to edit an existing audit on the project configuration page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-455:As a user I should be able to edit an existing audit on the project configuration page" />
+      <module name="Consova-Project_A&amp;AScreen" />
+      <option name="NAME_FILTER" value="^EVS\-76\:As a user I should be able to add new documents on the auditing screen$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-76\:As a user I should be able to add new documents on the auditing screen$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-76:As a user I should be able to add new documents on the auditing screen" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -160,15 +178,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-:As a user I should be able to edit an existing audit on the project configuration page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-80:As a user I should see locks at the account level" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Smoke_Module.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="Consova-Project_Core" />
-      <option name="NAME_FILTER" value="^EVS\-\:As a user I should be able to edit an existing audit on the project configuration page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-\:As a user I should be able to edit an existing audit on the project configuration page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-:As a user I should be able to edit an existing audit on the project configuration page" />
+      <module name="Consova-Project_A&amp;AScreen" />
+      <option name="NAME_FILTER" value="^EVS\-80\:As a user I should see locks at the account level$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-80\:As a user I should see locks at the account level$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-80:As a user I should see locks at the account level" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -192,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: EVS-:As a user I should be able to edit an existing audit on the project configuration page" />
-        <item itemvalue="Cucumber java.Scenario: EVS-455:As a user I should be able to edit an existing audit on the project configuration page" />
-        <item itemvalue="Cucumber java.Scenario: EVS-148:As a user I should be able to edit an existing audit on the project configuration page" />
-        <item itemvalue="Cucumber java.Scenario: EVS-1384:As a user, I should see mapped alternate documents" />
-        <item itemvalue="Cucumber java.Scenario: EVS-1383:As a user, I should select the alternate documents" />
+        <item itemvalue="Cucumber java.Scenario: EVS-64:As a user I should see edit icons that can be clicked on to allow editing of employee and dependent information" />
+        <item itemvalue="Cucumber java.Scenario: EVS-39:As a user I should see employee details on the account screen" />
+        <item itemvalue="Cucumber java.Scenario: EVS-425:As a system I should mark all documents as N/A if the auditor marks the dependent as ineligible" />
+        <item itemvalue="Cucumber java.Scenario: EVS-76:As a user I should be able to add new documents on the auditing screen" />
+        <item itemvalue="Cucumber java.Scenario: EVS-80:As a user I should see locks at the account level" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592891471442</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Commit initiate for Core">
+      <created>1598930557521</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1598930557521</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,65 +349,45 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit initiate for Core" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="180" key="#Notifications" timestamp="1592891149164">
+    <state x="761" y="388" width="397" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606886148602">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="180" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1592891149164" />
-    <state x="365" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592895435650">
+    <state x="761" y="388" width="397" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1606886148602" />
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1613182730886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="365" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592895435650" />
-    <state x="544" y="117" key="CommitChangelistDialog2" timestamp="1592891974694">
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1613182730886" />
+    <state width="1875" height="197" key="GridCell.Tab.0.bottom" timestamp="1613709028393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="544" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592891974694" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1594138552562">
+    <state width="1875" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
+    <state width="1875" height="197" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613709028393" />
+    <state width="1875" height="197" key="GridCell.Tab.0.center" timestamp="1613709028393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594138552562" />
-    <state width="1875" height="207" key="GridCell.Tab.0.bottom" timestamp="1598890392749">
+    <state width="1875" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
+    <state width="1875" height="197" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613709028393" />
+    <state width="1875" height="197" key="GridCell.Tab.0.left" timestamp="1613709028393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598890392749" />
-    <state width="1875" height="207" key="GridCell.Tab.0.center" timestamp="1598890392749">
+    <state width="1875" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
+    <state width="1875" height="197" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613709028393" />
+    <state width="1875" height="197" key="GridCell.Tab.0.right" timestamp="1613709028393">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598890392749" />
-    <state width="1875" height="207" key="GridCell.Tab.0.left" timestamp="1598890392749">
+    <state width="1875" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
+    <state width="1875" height="197" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613709028393" />
+    <state x="667" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1612439867045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598890392749" />
-    <state width="1875" height="207" key="GridCell.Tab.0.right" timestamp="1598890392749">
+    <state x="667" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612439867045" />
+    <state x="616" y="235" width="672" height="677" key="run.anything.popup" timestamp="1612940958399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598890392749" />
-    <state x="463" y="151" key="SettingsEditor" timestamp="1592890589439">
+    <state x="616" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612940958399" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606986101491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592890589439" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1592891921392">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592891921392" />
-    <state x="667" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1598257570794">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="667" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598257570794" />
-    <state x="771" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592891170710">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="771" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592891170710" />
-    <state x="0" y="219" width="1488" height="780" maximized="true" key="dock-window-1" timestamp="1596020824149">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="0" y="219" width="1488" height="780" maximized="true" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1596020824149" />
-    <state x="616" y="235" width="672" height="677" key="run.anything.popup" timestamp="1597841566502">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597841566502" />
-    <state x="623" y="225" width="672" height="160" key="search.everywhere.popup" timestamp="1596022335404">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="160" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596022335404" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606986101491" />
   </component>
 </project>
