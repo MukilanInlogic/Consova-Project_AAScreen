@@ -151,6 +151,9 @@ public class AccountPageUI {
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-check')]")
     protected List<WebElement> CheckIcon;
 
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-arrow-left')]")
+    protected WebElement ArrowLeft;
+
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-check')]")
     protected List<WebElement> DependentTypes;
 
@@ -207,6 +210,12 @@ public class AccountPageUI {
 
     @FindBy(how = How.XPATH, using = "//div[contains(@class,'ui-paginator-bottom')]")
     protected WebElement Pagination;
+
+    @FindBy(how = How.XPATH, using = "//button[@disabled=''][contains(text(),'Linkable')]")
+    protected WebElement DisabledLinkableButton;
+
+    @FindBy(how = How.XPATH, using = "//button[text()='Link']")
+    protected WebElement ActiveLinkButton;
 
 
 }

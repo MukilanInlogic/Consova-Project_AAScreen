@@ -1790,4 +1790,74 @@ public class ClientPageActions extends ClientPageUI {
         }
         return isClicked;
     }
+
+    public boolean clickWalmartLettersAndForms() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (WalmartLettersAndForms.isDisplayed()){
+            Element.click(driver,WalmartLettersAndForms);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickUploadEnglishTemplateButton() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (UploadEnglishTemplateButton.isDisplayed()){
+            Element.click(driver,UploadEnglishTemplateButton);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickUploadSpanishTemplateButton() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (UploadSpanishTemplateButton.isDisplayed()){
+            Element.click(driver,UploadSpanishTemplateButton);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickActiveSlider() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (ActiveSlider.isDisplayed()){
+            Element.click(driver,ActiveSlider);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickSelectAffidavitsType() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (SelectAffidavitsType.isDisplayed()){
+            Element.click(driver,SelectAffidavitsType);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickSelectAffidavitConfigurationType() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (SelectAffidavitConfigurationType.isDisplayed()){
+            Element.click(driver,SelectAffidavitConfigurationType);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean EnterAffidavitName(String affidavitName) {
+        boolean isEntered = false;
+        Sync.Delay(3000);
+        if (AffidavitsVersionName.isDisplayed()) {
+            Textbox.enterValue(driver,AffidavitsVersionName,affidavitName);
+            isEntered = true;
+        }
+        return isEntered;
+    }
 }

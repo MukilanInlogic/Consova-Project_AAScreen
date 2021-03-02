@@ -530,7 +530,28 @@ public class ClientPageUI {
     @FindBy(how = How.XPATH, using = "//td[contains(@class,'ui-datepicker-other-month')]//span[contains(text(),' 1 ')]")
     protected WebElement DatePick;
 
-    @FindBy(how = How.XPATH, using = "//div[contains(@id,'1000')]//span[text()='Project Configuration']")
+    @FindBy(how = How.XPATH, using = "//div[contains(@class,'show')]//span[text()='Project Configuration']")
     protected WebElement WalmartProjectConfiguration;
+
+    @FindBy(how = How.XPATH, using = "//div[contains(@class,'show')]//span[text()='Letters And Forms']")
+    protected WebElement WalmartLettersAndForms;
+
+    @FindBy(how = How.XPATH, using = "//h6[contains(text(),'Upload English Template')]")
+    protected WebElement UploadEnglishTemplateButton;
+
+    @FindBy(how = How.XPATH, using = "//h6[contains(text(),'Upload Spanish Template')]")
+    protected WebElement UploadSpanishTemplateButton;
+
+    @FindBy(how = How.XPATH, using = "//span[@class='ui-inputswitch-slider']")
+    protected WebElement ActiveSlider;
+
+    @FindBy(how = How.XPATH, using = "//label[text()='Select Affidavits Type']")
+    protected WebElement SelectAffidavitsType;
+
+    @FindBy(how = How.XPATH, using = "//label[text()='Select Affidavit Configuration Type']")
+    protected WebElement SelectAffidavitConfigurationType;
+
+    @FindBy(how = How.NAME, using = "AffidavitsVersionName")
+    protected WebElement AffidavitsVersionName;
 
 }

@@ -976,6 +976,171 @@ Feature: Smoke Module
       | URL          | userName          | password          | accountURL          | accountNumber      |
       | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
+  @EVS-2099
+  Scenario Outline: EVS-2099:As a user, I should be able to see affidavits with always available option - iVerify
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should click on System and Client Configuration
+    And I should click on Client Configuration
+#    And I should search the added <clientname> from left sided client list
+#    And I should click the added client from left sided client list
+    And I should click on Walmart In Span
+    And I should click on Letters and Forms for walmart client
+    And I should verify Affidavits text In Span
+    And I should click on Add Affidavit In Button
+    And I should verify Upload Affidavits text In Span
+    And I should verify Enter Affidavits Version name In Label
+    And I should verify Is this active template In Label
+    And I should verify Select Affidavits Type In Label
+    And I should verify Select Affidavit Configuration Type In Label
+    And I should verify upload english template
+    And I should verify upload spanish template
+    And I should click on back arrow button
+    And I should click on Add Affidavit In Button
+    And I should enter <affidavitsName1> affidavits name in the version name textbox
+    And I should click on active template toggle
+    And I should click on Select Affidavits Type
+    And I should click on Domestic Partner In Span
+    And I should click on Select Affidavit Configuration Type
+    And I should click on Always available In Span
+    And I should upload English template in the upload templates dialog
+    And I should upload Spanish template in the upload templates dialog
+    And I should click on Submit In Button
+    And I should verify Affidavits uploaded successfully text In Div
+    And I should click on OK In Button
+    And I should click on back arrow button
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <ivacURL>
+    When I should Login to application with <lastName> , <accountNumber> and <sSN>
+    And I should click on Login button from Login screen
+    And I should verify Communications text In Div
+    And I should verify Documents text In Span
+    And I should verify Communications text In Span
+    And I should verify Forms text In Span
+    And I should click on Forms In Span
+    And I should verify Domestic Partner text In Span
+    And I should verify  View Affidavit text In Span
+    And I should click on latest View Affidavit link
+    And I should close the displayed modal
+    And I should logoff from home screen
+    Examples:
+      | URL          | userName          | password          | clientname          | affidavitsName1         | accountNumber                  | ivacURL          | lastName                      | sSN                      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.TESTCLIENT | DP:LOGIN.AFFIDAVITNAME1 | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.NONRESPONDERLASTNAME | DP:LOGIN.NONRESPONDERSSN |
+
+  @EVS-63
+  Scenario Outline: EVS-63:As a user I should be able to link affidavits to a dependent from the account screen
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should click on System and Client Configuration
+    And I should click on Client Configuration
+#    And I should search the added <clientname> from left sided client list
+#    And I should click the added client from left sided client list
+    And I should click on Walmart In Span
+    And I should click on Letters and Forms for walmart client
+    And I should verify Affidavits text In Span
+    And I should click on Add Affidavit In Button
+    And I should enter <affidavitsName2> affidavits name in the version name textbox
+    And I should click on active template toggle
+    And I should click on Select Affidavits Type
+    And I should click on Domestic Partner In Span
+    And I should click on Select Affidavit Configuration Type
+    And I should click on Linkable In Span
+    And I should upload English template in the upload templates dialog
+    And I should upload Spanish template in the upload templates dialog
+    And I should click on Submit In Button
+    And I should verify Affidavits uploaded successfully text In Div
+    And I should click on OK In Button
+    And I should click on back arrow button
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on Forms In Button
+    And I should verify Available Forms text In Span
+    And I should verify Name text In Bold
+    And I should verify Type text In Bold
+    And I should verify Approval text in Table Header
+    And I should verify Link to iVerify text in Table Header
+    And I should verify Last Link Date text in Table Header
+    And I should verify scrollable table
+    And I should enter <affidavitsName2> in first filterBy textbox
+    And I should verify Domestic Partner text In Span
+    And I should verify disabled linkable button in approval column
+    And I should verify active link button in link to iverify column
+    And I should click on active link button in link to iverify column
+    And I should verify Linked In Button
+    And I should close the displayed modal
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <ivacURL>
+    When I should Login to application with <lastName> , <accountNumber> and <sSN>
+    And I should click on Login button from Login screen
+    And I should verify Communications text In Div
+    And I should verify Documents text In Span
+    And I should verify Communications text In Span
+    And I should verify Forms text In Span
+    And I should click on Forms In Span
+    And I should verify Domestic Partner text In Span
+    And I should verify  View Affidavit text In Span
+    And I should click on latest View Affidavit link
+    And I should close the displayed modal
+    And I should logoff from home screen
+    Examples:
+      | URL          | userName          | password          | clientname          | affidavitsName2         | accountURL          | accountNumber                  | ivacURL          | lastName                      | sSN                      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.TESTCLIENT | DP:LOGIN.AFFIDAVITNAME2 | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.NONRESPONDERLASTNAME | DP:LOGIN.NONRESPONDERSSN |
+
+  @EVS-2100
+  Scenario Outline: EVS-2100:As a user, I should be able to see affidavits that require approval from the audit and account screen (forms modal)
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should click on System and Client Configuration
+    And I should click on Client Configuration
+    And I should search the added <clientname> from left sided client list
+    And I should click the added client from left sided client list
+#    And I should click on Walmart In Span
+    And I should click on Letters and Forms for walmart client
+    And I should verify Affidavits text In Span
+    And I should click on Add Affidavit In Button
+    And I should enter <affidavitsName3> affidavits name in the version name textbox
+    And I should click on active template toggle
+    And I should click on Select Affidavits Type
+    And I should click on Domestic Partner In Span
+    And I should click on Select Affidavit Configuration Type
+    And I should click on Always available In Span
+    And I should upload English template in the upload templates dialog
+    And I should upload Spanish template in the upload templates dialog
+    And I should click on Submit In Button
+    And I should verify Affidavits uploaded successfully text In Div
+    And I should click on OK In Button
+    And I should click on back arrow button
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on Forms In Button
+    And I should enter Child s in first filterBy textbox
+
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <ivacURL>
+    When I should Login to application with <lastName> , <accountNumber> and <sSN>
+    And I should click on Login button from Login screen
+    And I should verify Communications text In Div
+    And I should verify Documents text In Span
+    And I should verify Communications text In Span
+    And I should verify Forms text In Span
+    And I should click on Forms In Span
+    And I should verify Domestic Partner text In Span
+    And I should verify  View Affidavit text In Span
+    And I should click on View Affidavit
+    And I should logoff from home screen
+    Examples:
+      | URL          | userName          | password          | clientname          | affidavitsName3         | accountURL          | accountNumber                  | ivacURL          | lastName                      | sSN                      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.TESTCLIENT | DP:LOGIN.AFFIDAVITNAME3 | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.NONRESPONDERLASTNAME | DP:LOGIN.NONRESPONDERSSN |
+
+
+
+
 
 
 

@@ -445,6 +445,16 @@ public class AccountPageActions extends AccountPageUI {
         return isVerified;
     }
 
+    public boolean clickArrowLeft() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (ArrowLeft.isDisplayed()){
+            Element.click(driver,ArrowLeft);
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
     public boolean CompleteFirstTask() {
         boolean isVerified = false;
         Sync.Delay(3000);
@@ -685,6 +695,34 @@ public class AccountPageActions extends AccountPageUI {
             isEntered=true;
         }
         return isEntered;
+    }
+
+    public boolean verifyDisabledLinkable() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (DisabledLinkableButton.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyActiveLinkButton() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (ActiveLinkButton.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean clickActiveLinkButton() {
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if (ActiveLinkButton.isDisplayed()){
+            Element.click(driver,ActiveLinkButton);
+            isClicked = true;
+        }
+        return isClicked;
     }
 
 }

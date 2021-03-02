@@ -895,6 +895,11 @@ public class ClientPageSteps {
         assertTrue(actionContainer.clientPageActions.clickWalmartProjectConfiguration());
     }
 
+    @And("^I should click on Letters and Forms for walmart client$")
+    public void iShouldClickOnLettersAndFormsForWalmartClient() {
+        assertTrue(actionContainer.clientPageActions.clickWalmartLettersAndForms());
+    }
+
     @And("^I should select the last day in this month$")
     public void iShouldSelectTheLastDayInThisMonth() {
         assertTrue(actionContainer.clientPageActions.selectLastDateInMonth());
@@ -903,5 +908,35 @@ public class ClientPageSteps {
     @And("^I should click on sort icon in the dialog box$")
     public void iShouldClickOnSortIconInTheDialogBox() {
         assertTrue(actionContainer.clientPageActions.clickLastSortIcon());
+    }
+
+    @And("^I should verify upload english template$")
+    public void iShouldVerifyUploadEnglishTemplate() {
+        assertTrue(actionContainer.clientPageActions.clickUploadEnglishTemplateButton());
+    }
+
+    @And("^I should verify upload spanish template$")
+    public void iShouldVerifyUploadSpanishTemplate() {
+        assertTrue(actionContainer.clientPageActions.clickUploadSpanishTemplateButton());
+    }
+
+    @And("^I should enter (.*) affidavits name in the version name textbox$")
+    public void iShouldEnterAffidavitsNameAffidavitsNameInTheVersionNameTextbox(String affidavitName) {
+        assertTrue(actionContainer.clientPageActions.EnterAffidavitName(Testdata.getValue(affidavitName)));
+    }
+
+    @And("^I should click on active template toggle$")
+    public void iShouldClickOnActiveTemplateToggle() {
+        assertTrue(actionContainer.clientPageActions.clickActiveSlider());
+    }
+
+    @And("^I should click on Select Affidavits Type$")
+    public void iShouldClickOnSelectAffidavitsType() {
+        assertTrue(actionContainer.clientPageActions.clickSelectAffidavitsType());
+    }
+
+    @And("^I should click on Select Affidavit Configuration Type$")
+    public void iShouldClickOnSelectAffidavitConfigurationtype() {
+        assertTrue(actionContainer.clientPageActions.clickSelectAffidavitConfigurationType());
     }
 }

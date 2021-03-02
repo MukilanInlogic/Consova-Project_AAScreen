@@ -49,4 +49,9 @@ public class IvacPageSteps {
     public void iShouldClickOnContactUsIcon() {
         assertTrue(actionContainer.ivacPageActions.clickContactIcon());
     }
+
+    @And("^I should click on latest View Affidavit link$")
+    public void iShouldClickOnLatestViewAffidavitLink() {
+        assertTrue(actionContainer.ivacPageActions.clickViewAffidavit());
+    }
 }

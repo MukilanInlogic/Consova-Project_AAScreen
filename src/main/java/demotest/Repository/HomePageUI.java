@@ -77,4 +77,7 @@ public class HomePageUI {
     @FindBy(how = How.XPATH, using = "//div[contains(@class,'custom-checkbox')]")
     protected List<WebElement> Checkboxes;
 
+    @FindBy(how = How.XPATH, using = "//table[contains(@class,'table-scrollable-body-table')]")
+    protected WebElement ScrollableTable;
+
 }

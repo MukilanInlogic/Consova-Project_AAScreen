@@ -368,4 +368,24 @@ public class AccountPageSteps {
     public void iShouldEnterTheSearchItemInThirdFilterInputTextbox(String filterItem) {
         assertTrue(actionContainer.accountPageActions.ThirdFilterTextbox(Testdata.getValue(filterItem)));
     }
+
+    @And("^I should click on back arrow button$")
+    public void iShouldClickOnBackArrowButton() {
+        assertTrue(actionContainer.accountPageActions.clickArrowLeft());
+    }
+
+    @And("^I should verify disabled linkable button in approval column$")
+    public void iShouldVerifyDisabledLinkableButtonInApprovalColumn() {
+        assertTrue(actionContainer.accountPageActions.verifyDisabledLinkable());
+    }
+
+    @And("^I should verify active link button in link to iverify column$")
+    public void iShouldVerifyActiveLinkButtonInLinkToIverifyColumn() {
+        assertTrue(actionContainer.accountPageActions.verifyActiveLinkButton());
+    }
+
+    @And("^I should click on active link button in link to iverify column$")
+    public void iShouldClickOnActiveLinkButtonInLinkToIverifyColumn() {
+        assertTrue(actionContainer.accountPageActions.clickActiveLinkButton());
+    }
 }

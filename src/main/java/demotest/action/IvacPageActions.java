@@ -97,5 +97,15 @@ public class IvacPageActions extends IvacPageUI {
         return isClicked;
     }
 
+    public boolean clickViewAffidavit() {
+        boolean isClicked = false;
+        Sync.Delay(7000);
+        if (ViewAffidavit.size()!=0){
+            Element.click(driver,ViewAffidavit.get(ViewAffidavit.size()-1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
 
 }

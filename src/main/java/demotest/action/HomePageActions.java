@@ -84,6 +84,7 @@ public class HomePageActions extends HomePageUI {
         boolean isVerified = false;
         Sync.Delay(2000);
         if (disabledSubmitButton.isDisplayed()){
+            Element.verifyElement(disabledSubmitButton);
             isVerified = true;
         }
         return isVerified;
@@ -402,6 +403,16 @@ public class HomePageActions extends HomePageUI {
         Sync.Delay(3000);
         if (Checkboxes.size()!=0) {
             Element.click(driver,Checkboxes.get(0));
+            isEntred = true;
+        }
+        return isEntred;
+    }
+
+    public boolean verifyScrollableTable() {
+        boolean isEntred = false;
+        Sync.Delay(3000);
+        if (ScrollableTable.isDisplayed()) {
+            Element.verifyElement(ScrollableTable);
             isEntred = true;
         }
         return isEntred;

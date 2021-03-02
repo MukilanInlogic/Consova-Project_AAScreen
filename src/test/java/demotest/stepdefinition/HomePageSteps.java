@@ -210,4 +210,9 @@ public class HomePageSteps {
     public void iShouldClickOnFirstCheckboxInTheList() {
         assertTrue(actionContainer.homePageActions.SelectCheckbox());
     }
+
+    @And("^I should verify scrollable table$")
+    public void iShouldVerifyScrollableTable() {
+        assertTrue(actionContainer.homePageActions.verifyScrollableTable());
+    }
 }
