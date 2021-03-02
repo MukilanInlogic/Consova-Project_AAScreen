@@ -417,6 +417,9 @@ public class ClientPageUI {
     @FindBy(how = How.NAME, using = "version")
     protected WebElement versionName;
 
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'pi-sort')]")
+    protected List<WebElement> SortIcon;
+
     @FindBy(how = How.XPATH, using = "//span[text()='Edit Ineligible Code']")
     protected WebElement EditIneligibleCodeLabel;
 
@@ -518,7 +521,16 @@ public class ClientPageUI {
     @FindBy(how = How.XPATH, using = "//span[contains(@class,'pi-calendar')]")
     protected List<WebElement> Calendar;
 
+    @FindBy(how = How.XPATH, using = "//div[contains(@class,'align-items-center')]//span[contains(@class,'pi-calendar')]")
+    protected List<WebElement> LastCalendarDate;
+
+    @FindBy(how = How.XPATH, using = "//a[contains(@class,'ui-state-default')]")
+    protected List<WebElement> LastDateInMonth;
+
     @FindBy(how = How.XPATH, using = "//td[contains(@class,'ui-datepicker-other-month')]//span[contains(text(),' 1 ')]")
     protected WebElement DatePick;
+
+    @FindBy(how = How.XPATH, using = "//div[contains(@id,'1000')]//span[text()='Project Configuration']")
+    protected WebElement WalmartProjectConfiguration;
 
 }

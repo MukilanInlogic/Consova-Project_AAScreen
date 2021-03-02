@@ -23,8 +23,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|firstName|lastName|ssn|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|DP:LOGIN.FIRSTNAME|DP:LOGIN.LASTNAME|DP:LOGIN.SSN|
+      | URL          | userName          | password          | accountURL          | accountNumber      | firstName          | lastName          | ssn          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.FIRSTNAME | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
   @EVS-64
   Scenario Outline: EVS-64:As a user I should see edit icons that can be clicked on to allow editing of employee and dependent information
@@ -70,8 +70,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|emailId|middleName|address|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|DP:LOGIN.EMAILID|DP:LOGIN.MIDDLENAME|DP:LOGIN.ADDRESS|
+      | URL          | userName          | password          | accountURL          | accountNumber      | emailId          | middleName          | address          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.EMAILID | DP:LOGIN.MIDDLENAME | DP:LOGIN.ADDRESS |
 
   @EVS-35
   Scenario Outline: EVS-35:As a user I should see dependent information (tabs) on the account screen
@@ -81,27 +81,42 @@ Feature: Smoke Module
     And I should enter account url <accountURL> with <accountNumber>
     And I should verify <accountNumber> text In Bold
     And I should verify the active dependent tab with dependent name
-    And I should click the second dependent tab
-    And I should verify the active dependent tab with dependent name
+    And I should verify Gender In Label
+    And I should verify Edit text In Span
     And I should verify Dependent Id In Label
+    And I should verify SSN In Label
+    And I should verify Dependent Id In Label
+    And I should verify Unique Id In Label
+    And I should verify Date of Birth In Label
+    And I should verify Medical text In Span
+    And I should verify Dental text In Span
+    And I should verify Vision text In Span
+    And I should verify Life text In Span
+    And I should verify AD&D text In Span
+    And I should verify the criteria in employee and dependent
+#    And I should click the second dependent tab
+#    And I should verify the active dependent tab with dependent name
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-48
   Scenario Outline: EVS-48:As a user I should see timelines on the account screen at the employee and dependent levels
+#    Need to reframe
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
     And I should click on System and Client Configuration
     And I should click on Client Configuration
     And I should click on Walmart In Span
-    And I should click on Project Configuration In Span
+    And I should click on Project Configuration for walmart client
     And I should click on edit audit pencil icon
-    And I should select date within thirty days
     And I should enable Is Employee Milestone
+#    And I should select date within thirty days
+    And I should select the last day in this month
+#    And I should enable Is Employee Milestone
     And I should click on Update In Span
     And I should enter account url <accountURL> with <accountNumber>
     And I should verify <accountNumber> text In Bold
@@ -112,19 +127,22 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-65
   Scenario Outline: EVS-65:As a user I should be able to work account tasks on the account screen
     Given I should enter login url <ivacURL>
     When I should Login to application with <lastName> , <accountNumber> and <sSN>
     And I should click on Login button from Login screen
-#    And I should click on Accept In Button
-#    And I should accept disclaimer Notice if displayed
     And I should click on Upload Documents In Span
     And I should select desired document by Browse icon
     And I should click on Upload button in dialog box
+    And I should click on OK In Button
+    And I should click on Contact Us icon
+    And I should enter Comments in textarea
+    And I should click on Submit In Button
+    And I should verify Portal Inquiry received text In Div
     And I should click on OK In Button
     And I should logoff from home screen
     Given I should enter login url <URL>
@@ -132,17 +150,43 @@ Feature: Smoke Module
     And I should click on Login button from Login screen
     And I should enter account url <accountURL> with <accountNumber>
     And I should verify <accountNumber> text In Bold
+    And I should click on Claim In Button
+    And I should verify Are you sure you want to claim the task(s)? text In Span
+    And I should verify Cancel In Button
+    And I should verify Proceed In Button
+    And I should click on Proceed In Button
     And I should verify tasks header
+    And I should verify escalation icon next to Tasks header
     And I should verify Created Date in table header
     And I should verify Due Date in table header
     And I should verify Action in table header
     And I should verify NewPackage in table data
+    And I should verify PortalInquiry text in Table Data
     And I should verify Complete All In Button
+    And I should click on first task
+    And I should verify Confirmation text In Span
+    And I should verify Are you sure you want mark this task completed? text In Span
+    And I should verify Cancel In Button
+    And I should verify Proceed In Button
+    And I should verify escalation icon next to Tasks header
+    And I should click on Proceed In Button
+    And I should click on first task
+    And I should verify Complete Portal Inquiry text In Span
+    And I should verify Contact Name In Label
+    And I should verify Contact Number In Label
+    And I should verify Comments In Label
+    And I should verify Select Outcome In Label
+    And I should verify Add Note (Required) In Label
+    And I should verify Cancel In Button
+    And I should verify Save In Button
+    And I should verify outcome icons
+    And I should click on call completed icon
+    And I should click on Save In Button
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|ivacURL|lastName|sSN|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|DP:LOGIN.IVACURL|DP:LOGIN.LASTNAME|DP:LOGIN.SSN|
+      | URL          | userName          | password          | accountURL          | accountNumber      | ivacURL          | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
   @EVS-58
   Scenario Outline: EVS-58:As a user I should see dependent information on the account and auditing screen
@@ -157,18 +201,11 @@ Feature: Smoke Module
     And I should verify the date in the given format
     And I should verify SSN In Label
     And I should verify Dependent Id In Label
-    And I should click the second dependent tab
-    And I should verify the active dependent tab with dependent name
-    And I should verify the dependent relation
-    And I should verify Date of Birth In Label
-    And I should verify the date in the given format
-    And I should verify SSN In Label
-    And I should verify Dependent Id In Label
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-1971
   Scenario Outline: EVS-1971:As a user, I should see audit screen details for dependents with removed from audit
@@ -190,8 +227,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-1433
   Scenario Outline: EVS-1433:As a user, I should be able to change dependent relationship
@@ -204,16 +241,27 @@ Feature: Smoke Module
     And I should click on Change Relation In Button
     And I should verify Edit Relationship text In Span
     And I should verify Current Relation In Label
+    And I should verify Please select a reason for Changing Relationship: In Label
     And I should click on Select Relationship In Label
-    And I should click on Spouse In Span
+    And I should click on other relation excluding current relation type
+    And I should click on Select Reason In Label
+    And I should verify Client request text In Span
+    And I should verify Documentation Received text In Span
+    And I should click on Client request In Span
+    And I should click on Cancel In Bold
+    And I should click on Change Relation In Button
+    And I should verify Edit Relationship text In Span
+    And I should verify Current Relation In Label
+    And I should click on Select Relationship In Label
+    And I should click on other relation excluding current relation type
     And I should click on Select Reason In Label
     And I should click on Client request In Span
     And I should click on Save In Bold
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-134
   Scenario Outline: EVS-134:As a user, I should capture dependent types for SP
@@ -229,8 +277,31 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
+
+  @EVS-80
+  Scenario Outline: EVS-80:As a user I should see locks at the account level
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on lock icon on the account level
+    And I should click on Add button
+    And I should verify Cancel In Button
+    And I should verify Save In Button
+    And I should verify Add new Authorized Caller text In Span
+    And I should close the displayed modal
+    And I shoud verify disabled Ineligible Codes button
+    And I shoud verify disabled Complete Date button
+    And I should verify locked icon on the dependent level
+    And I should release locked icon on the account level
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-57
   Scenario Outline: EVS-57:As a user I should see locks at the dependent level
@@ -241,12 +312,20 @@ Feature: Smoke Module
     And I should verify <accountNumber> text In Bold
     And I should verify the active dependent tab with dependent name
     And I should click on lock icon on the dependent level
+    And I should click on Add button
+    And I should verify Cancel In Button
+    And I should verify Save In Button
+    And I should verify Add new Authorized Caller text In Span
+    And I should close the displayed modal
+    And I shoud verify disabled Ineligible Codes button
+    And I shoud verify disabled Complete Date button
     And I should verify locked icon on the dependent level
+    And I should release locked icon on the account level
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-1534
   Scenario Outline: EVS-1534:As a user, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder
@@ -255,6 +334,7 @@ Feature: Smoke Module
     And I should click on Login button from Login screen
     And I should enter account url <accountURL> with <accountNumber>
     And I should verify <accountNumber> text In Bold
+    And I should click on lock icon on the account level
     And I should click on employee alert button
     And I should verify Employee Alerts text In Span
     And I should select one alert
@@ -269,11 +349,12 @@ Feature: Smoke Module
     And I should click on dependent alert button
     And I should verify the enabled alert
     And I should click on Cancel In Button
+    And I should release locked icon on the account level
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-82
   Scenario Outline: EVS-82:As a user I should be able to add action notes to the account on Account screen
@@ -350,8 +431,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|contactName|contactNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|DP:LOGIN.CONTACTNAME|DP:LOGIN.PHONENO|
+      | URL          | userName          | password          | accountURL          | accountNumber      | contactName          | contactNumber    |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.CONTACTNAME | DP:LOGIN.PHONENO |
 
   @EVS-284
   Scenario Outline: EVS-284:As a user I should be able to add action notes to the account on Audit screen
@@ -430,8 +511,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountNumber|contactName|contactNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTNO|DP:LOGIN.CONTACTNAME|DP:LOGIN.PHONENO|
+      | URL          | userName          | password          | accountNumber      | contactName          | contactNumber    |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO | DP:LOGIN.CONTACTNAME | DP:LOGIN.PHONENO |
 
   @EVS-1575
   Scenario Outline: EVS-1575:As a user, I should see employee mile stones on the account screen
@@ -453,8 +534,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-40
   Scenario Outline: EVS-40:As a user I should be able to add an authorized caller to the account
@@ -467,9 +548,9 @@ Feature: Smoke Module
     And I should click on Add In Button
     And I should verify Add new Authorized Caller text In Span
     And I should enter <callerName> in caller name textbox
-    And I should click on Cancel button in dialog box
-    And I should verify Authorized Callers text In Span
+    And I should click on Cancel button in dialog
     And I should close the displayed modal
+    And I should verify Authorized Caller text In Div
     And I should click on Add In Button
     And I should verify Add new Authorized Caller text In Span
     And I should verify Name In Label
@@ -478,16 +559,27 @@ Feature: Smoke Module
     And I should click on Select Relationship In Options
     And I should click on Domestic Partner In Options
     And I should click on Save button in dialog box
-#    And I should click on View All In Span
-#    And I should verify Authorized Callers text In Span
-#    And I should click on delete icon in dialog box
-#    And I should click on refresh icon in dialog box
-#    And I should close the displayed modal
+    And I should close the displayed modal
+    And I should click on View All In Span
+    And I should verify Add Caller In Button
+    And I should verify Name text in Table Header
+    And I should verify Relationship text in Table Header
+    And I should verify Authorized By text in Table Header
+    And I should verify Authorized Date text in Table Header
+    And I should verify Exp Date text in Table Header
+    And I should verify refresh icon
+    And I should verify pencil icon
+    And I should verify trash icon
+    And I should click on delete icon in dialog box
+    And I should verify today date
+    And I should click on refresh icon in dialog box
+    And I should verify today date extended to next year
+    And I should close the displayed modal
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|callerName|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|DP:LOGIN.CALLERNAME|
+      | URL          | userName          | password          | accountURL          | accountNumber      | callerName          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.CALLERNAME |
 
   @EVS-54
   Scenario Outline: EVS-54:As a user I should see client information on the top of the page
@@ -500,8 +592,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-224
   Scenario Outline: EVS-224:As a user, I should be able to escalate employee tasks
@@ -511,32 +603,39 @@ Feature: Smoke Module
     And I should enter account url <accountURL> with <accountNumber>
     And I should verify <accountNumber> text In Bold
     And I should click on escalation icon
+    And I should verify Escalate/De-escalate text In Span
+    And I should verify Employee Name text In Bold
+    And I should verify Consova PIN text In Bold
+    And I should verify Client Name text In Bold
+    And I should verify Escalate or De-escalate In Label
     And I should click on select escalation type dropdown
     And I should click on Escalate In Options
+    And I should verify Escalate To In Label
     And I should click on select type untoched dropdown
     And I should verify Management text In Options
     And I should verify Client Services text In Options
     And I should click on Management In Options
+    And I should verify Comment In Label
     And I should enter Comments in textarea
-    And I should click on first checkbox in the list
+    And I should verify Escalate text in Table Header
+    And I should verify Reason text in Table Header
+    And I should verify Type text in Table Header
+    And I should verify Due Date text in Table Header
+    And I should verify Details text in Table Header
+    And I should verify Package text In Span
+    And I should verify Portal Inquiry text In Span
+    And I should select the task type
+    And I should click on select reason dropdown
+    And I should select the reason for remove audit
     And I should click on Save In Button
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-61
   Scenario Outline: EVS-61:As a user I should see web inquiry tasks get created by the system
-    Given I should enter login url <ivacURL>
-    When I should Login to application with <lastName> , <accountNumber> and <sSN>
-    And I should click on Login button from Login screen
-    And I should click on Contact Us icon
-    And I should enter Comments in textarea
-    And I should click on Submit In Button
-    And I should verify Portal Inquiry received text In Div
-    And I should click on OK In Button
-    And I should logoff from home screen
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
@@ -553,8 +652,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|ivacURL|lastName|sSN|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|DP:LOGIN.IVACURL|DP:LOGIN.LASTNAME|DP:LOGIN.SSN|
+      | URL          | userName          | password          | accountURL          | accountNumber      | ivacURL          | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
   @EVS-231
   Scenario Outline: EVS-231:As a user, I should complete QR tasks as Incorrect
@@ -569,8 +668,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-51
   Scenario Outline: EVS-51:As a user I should be able to remove employees and dependents from a project
@@ -588,49 +687,43 @@ Feature: Smoke Module
     And I should accept the alert to remove from audit
     And I should verify Consova discretion text In Div
     And I should verify Removed from Audit text In Span
+    And I should click on Edit Result In Button
+    And I should click delete audit button in the dependent section
+    And I should verify Remove From Audit text In Span
+    And I should click on Select Reason In Label
+    And I should click on Consova discretion In Span
+    And I should click on Remove From Audit In Button
+    And I should accept the alert to remove from audit
+    And I should verify Consova discretion text In Div
+    And I should verify Removed from Audit text In Span
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-38
   Scenario Outline: EVS-38:As a user I should be able to add employees and dependents to a project
+#    Need to reframe
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
     And I should enter account url <accountURL> with <accountNumber>
     And I should verify <accountNumber> text In Bold
     And I should verify Removed from Audit text In Span
-    And I should click on add audit icon
+    And I should click on add icon
     And I should verify Add To Audit text In Span
     And I should click on required audit name
     And I should verify Add To Event text In Span
     And I should verify Available Event Types to Add In Label
     And I should click on eligibility to add event type
-    And I should click on audit type
     And I should click on Select Benefits In Button
     And I should click on Add to Audit In Button
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
-
-  @EVS-80
-  Scenario Outline: EVS-80:As a user I should see locks at the account level
-    Given I should enter login url <URL>
-    When I should Login to core application with <userName> and <password>
-    And I should click on Login button from Login screen
-    And I should enter account url <accountURL> with <accountNumber>
-    And I should verify <accountNumber> text In Bold
-    And I should click on lock icon on the dependent level
-    And I should verify locked icon on the dependent level
-    And I should click on profile icon in core
-    And I should logoff from core login
-    Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-76
   Scenario Outline: EVS-76:As a user I should be able to add new documents on the auditing screen
@@ -647,9 +740,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
-
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-425
   Scenario Outline: EVS-425:As a system I should mark all documents as N/A if the auditor marks the dependent as ineligible
@@ -667,9 +759,222 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      |URL|userName          | password          |accountURL|accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
+  @EVS-430
+  Scenario Outline: EVS-430:As a system I should derive document status from alternate documents status on account
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should click on System and Client Configuration
+    And I should click on client configuration
+    And I should search the added <clientname> from left sided client list
+    And I should click the added client from left sided client list
+    And I should click on System codes
+    And I should verify Documents label
+    And I should click on manage documents
+    And I should click on add documents
+    And I should click on language dropdown
+    And I should click on English Language
+    And I should enter <englishVerbiage> code in verbiage textarea
+    And I should click on language dropdown
+    And I should click on Spanish Language
+    And I should enter <spanishVerbiage> code in verbiage textarea
+    And I should select all dependents in ineligible modal
+    And I should click on choose document type dropdown in documents modal
+    And I should select document type dropdown in documents modal
+    And I should click on Add button
+    And I should click on add documents
+    And I should click on language dropdown
+    And I should click on English Language
+    And I should enter <englishVerbiage1> code in verbiage textarea
+    And I should click on language dropdown
+    And I should click on Spanish Language
+    And I should enter <spanishVerbiage1> code in verbiage textarea
+    And I should select all dependents in ineligible modal
+    And I should click on choose document type dropdown in documents modal
+    And I should select document type dropdown in documents modal
+    And I should click on Map as Alternate Document In Button
+    And I should verify Map to Primary Document text In Span
+    And I should check the newly added document
+    And I should click on Save In Button
+    And I should click on Add button
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on Add Document In Button
+    And I should select last added document
+    And I should select event type from the modal
+    And I should click on Save In Bold
+    And I should click on MIS In Bold
+    And I should click on N/A In Bold
+    And I should click on N/A In Bold
+    And I should click on ALT In Bold
+    And I should verify Add Alternate Documents text In Span
+    And I should click on <englishVerbiage> In Div
+    And I should click on Save In Button
+    And I should verify MIS text In Bold
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber      | clientname          | englishVerbiage      | spanishVerbiage      | englishVerbiage1      | spanishVerbiage1      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.WALMARTCLIENT | DP:LOGIN.ENGVERBIAGE | DP:LOGIN.SPAVERBIAGE | DP:LOGIN.ENGVERBIAGE1 | DP:LOGIN.SPAVERBIAGE1 |
+
+  @EVS-387
+  Scenario Outline: EVS-387:As a system I should derive document status from alternate documents status on audit
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should click on My Inventory
+    And I should enter <accountNumber> in first filterBy textbox
+    And I should click on load audit icon
+    And I should verify <accountNumber> text In Bold
+    And I should click on MIS In Bold
+    And I should click on N/A In Bold
+    And I should click on N/A In Bold
+    And I should click on ALT In Bold
+    And I should verify Add Alternate Documents text In Span
+    And I should click on <englishVerbiage> In Div
+    And I should click on Save In Button
+    And I should verify MIS text In Bold
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountNumber      | englishVerbiage      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO | DP:LOGIN.ENGVERBIAGE |
+
+  @EVS-67
+  Scenario Outline: EVS-67:As a user I should see overall audit statuses related to ineligible and incomplete reasons
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should click on System and Client Configuration
+    And I should click on client configuration
+    And I should search the added <clientname> from left sided client list
+    And I should click the added client from left sided client list
+    And I should click on System codes
+    And I should click on Manage Incomplete Codes In Button
+    And I should click on Add Incomplete Code In Button
+    And I should click on language dropdown
+    And I should click on English Language
+    And I should enter <englishVerbiage> code in verbiage textarea
+    And I should enter <englishVerbiage> code in action item verbiage textarea
+    And I should click on choose document type dropdown
+    And I should verify search textbox inside choose document type dropdown
+    And I should click on checkboxes by selecting all
+    And I should click on language dropdown
+    And I should click on Spanish Language
+    And I should enter <spanishVerbiage> code in verbiage textarea
+    And I should enter <spanishVerbiage> code in action item verbiage textarea
+    And I should click on Add button in modal
+    And I should click on System codes
+    And I should click on Manage Ineligible Codes In Button
+    And I should click on Add Ineligible Code In Button
+    And I should click on add ineligible codes
+    And I should click on language dropdown
+    And I should click on English Language
+    And I should enter <englishVerbiage> code in verbiage textarea
+    And I should click on language dropdown
+    And I should click on Spanish Language
+    And I should enter <spanishVerbiage> code in verbiage textarea
+    And I should verify disabled submit button
+    And I should click on Select SubClients In Span
+    And I should click on checkboxes by selecting all
+    And I should select all dependents in ineligible modal
+    And I should click on Add button
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | clientname          | englishVerbiage      | spanishVerbiage      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.TESTCLIENT | DP:LOGIN.ENGVERBIAGE | DP:LOGIN.SPAVERBIAGE |
+
+  @EVS-1132
+  Scenario Outline: EVS-1132:As a user, I should see the history tab on the account screen
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should verify history header in account screen
+    And I should verify Communication Activity In Button
+    And I should verify Web Portal Activity In Button
+    And I should verify Assistance Center Activity In Button
+    And I should verify Document Submission In Button
+    And I should verify  Date  text in Table Header
+    And I should verify  Activity Type  text in Table Header
+    And I should verify  Type  text in Table Header
+    And I should verify  Details  text in Table Header
+    And I should verify filterBy textbox in panel
+    And I should verify  Clear Filters text In Span
+    And I should verify  Showing 1 of  text In Span
+    And I should click on Web Portal Activity In Button
+    And I should click on view activity from the grid
+    And I should verify Portal Activity header
+    And I should verify Dashboard Viewed  text In Span
+    And I should verify <accountNumber> text In Span
+    And I should verify iVerify text In Span
+    And I should close the displayed modal
+    And I should verify User Login text In Span
+    And I should verify Accept Disclaimer text In Span
+    And I should verify Dashboard Viewed text In Span
+    And I should verify Self-Declare a Dependent Ineligible text In Span
+    And I should verify Upload Activity text In Span
+    And I should verify Submit Comment text In Span
+    And I should click on Web Portal Activity In Button
+    And I should click on Document Submission In Button
+    And I should verify Uploaded Document text In Span
+    And I should click on View Document In Span
+    And I should verify Uploaded Document text In Span
+    And I should close the displayed modal
+    And I should click on Document Submission In Button
+    And I should click on Assistance Center Activity In Button
+#    And I should verify Outbound Call text In Span
+#    And I should verify Inbound Call text In Span
+    And I should verify Escalation Call text In Span
+    And I should verify Action Note text In Span
+    And I should click on view details from the grid
+    And I should verify Action Note header
+    And I should click on download icon
+    And I should click on printer icon
+    And I should navigate to newly opened window
+    And I should close the newly opened tab
+    And I should close the displayed modal
+    And I should click on Assistance Center Activity In Button
+    And I should click on Communication Activity In Button
+    And I should click on Communication Activity In Button
+    And I should verify the pagination located at the bottom
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
+
+  @EVS-66
+  Scenario Outline: EVS-66:As a user I should see all history information for the account in the History menu
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should verify history header in account screen
+    And I should click on Web Portal Activity In Button
+    And I should click on Clear Filters In Span
+    And I should click on Web Portal Activity In Button
+    And I should click on clear filter icon
+    And I should enter Portal Activity in first filterBy textbox
+    And I should click on Clear Filters In Span
+    And I should enter Portal Activity in first filterBy textbox
+    And I should click on clear filter icon
+    And I should enter Portal in third filter input textbox
+    And I should click on Clear Filters In Span
+    And I should enter Portal in third filter input textbox
+    And I should click on clear filter icon
+    And I should verify the pagination located at the bottom
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
 
 
@@ -683,7 +988,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should verify Add Client icon
     And I should verify client page
@@ -725,8 +1029,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ADDCLIENTNAME|
+      | URL          | userName          | password          | clientname             |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ADDCLIENTNAME |
 
   @EVS-132
   Scenario Outline: EVS-132:As a user I should be able to edit client information by clicking on the primary pencil icon
@@ -734,27 +1038,19 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should verify client page
     And I should search the added <clientname> from left sided client list
     And I should verify <clientname> text In Span
     And I should click the added client from left sided client list
-    And I should verify the edit client button in selected client page
-    And I should click the edit client button in selected client page
-    And I should enter the <userName> in the clientname textbox
-    And I should click on Cancel button
-    And I should verify the edit client button in selected client page
-    And I should click the edit client button in selected client page
     And I should enter the <newclientname> in the clientname textbox
     And I should verify Employee and Dependent has ten criteria fields
-    And I should click on Update button
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|newclientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ADDCLIENTNAME|DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname             | newclientname       |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ADDCLIENTNAME | DP:LOGIN.CLIENTNAME |
 
   @EVS-137
   Scenario Outline: EVS-137:As a user I should be able see existing client info on the client configuration page
@@ -762,7 +1058,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should verify client page
     And I should search the added <clientname> from left sided client list
@@ -771,16 +1066,14 @@ Feature: Smoke Module
     And I should click on the Client Configuration sub menu option
     And I should verify client logo on the page
     And I should verify client information on the main panel
-    And I should click the edit client button in selected client page
     And I should verify add new logo beneath the client logo
     And I should verify Employee and Dependent has ten criteria fields
-    And I should click on Cancel button
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-139
   Scenario Outline: EVS-139:As a user I should be able to add a new logo under the client logo box on the screen
@@ -788,12 +1081,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
-    And I should click on client configuration
-    And I should search the added <clientname> from left sided client list
-    And I should click the added client from left sided client list
-    And I should verify client logo on the page
-    And I should click the edit client button in selected client page
     And I should select logo for the client
 #    And I should verify client logo updated successfully notification
 #    And I should click on Update button
@@ -801,8 +1088,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-144
   Scenario Outline: EVS-144:As a user I should be able to edit or create a new subclient with a modal
@@ -810,7 +1097,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should verify client page
     And I should search the added <clientname> from left sided client list
@@ -841,7 +1127,6 @@ Feature: Smoke Module
     And I should enter today date in the edit sub client phoneassignmentfrom textbox
     And I should enter today date in the edit sub client phoneassignmentto textbox
     And I should check round checkboxes for Iverify IverifyPro and upload docs
-    And I should click on Cancel button
     And I should verify Edit Sub Client pencil icon
     And I should click on Edit Sub Client pencil icon
     And I should verify edit sub client header in displayed modal
@@ -855,13 +1140,12 @@ Feature: Smoke Module
     And I should enter today date in the edit sub client phoneassignmentfrom textbox
     And I should enter today date in the edit sub client phoneassignmentto textbox
     And I should check round checkboxes for Iverify IverifyPro and upload docs
-    And I should click on Update button
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|subclientname|clientsite|phoneno|code|subclientphoneid|editsubclientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.SUBCLIENTNAME|DP:LOGIN.CLIENTSITE|DP:LOGIN.PHONENO|DP:LOGIN.CODE|DP:LOGIN.PHONENOID|DP:LOGIN.EDITSUBCLIENTNAME|
+      | URL          | userName          | password          | clientname          | subclientname          | clientsite          | phoneno          | code          | subclientphoneid   | editsubclientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.SUBCLIENTNAME | DP:LOGIN.CLIENTSITE | DP:LOGIN.PHONENO | DP:LOGIN.CODE | DP:LOGIN.PHONENOID | DP:LOGIN.EDITSUBCLIENTNAME |
 
   @EVS-136
   Scenario Outline: EVS-136:As a user I should be able to upload a new subclient logo by clicking on the + icon
@@ -869,7 +1153,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -881,8 +1164,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-141
   Scenario Outline: EVS-141:As a user I should be able to view an existing logo for subclients by clicking on the view button
@@ -890,7 +1173,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -901,8 +1183,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-138
   Scenario Outline: EVS-138:As a user I should see subclient information on the client configuration page
@@ -910,7 +1192,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -925,8 +1206,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|subclientname|clientsite|code|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.EDITSUBCLIENTNAME|DP:LOGIN.CLIENTSITE|DP:LOGIN.CODE|
+      | URL          | userName          | password          | clientname          | subclientname              | clientsite          | code          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.EDITSUBCLIENTNAME | DP:LOGIN.CLIENTSITE | DP:LOGIN.CODE |
 
   @EVS-195
   Scenario Outline: EVS-195:As a user I should see a client phone ID on create subclient and edit subclient
@@ -934,7 +1215,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -943,18 +1223,16 @@ Feature: Smoke Module
     And I should verify the sub clientphoneid textbox
     And I should verify today date in the sub client phoneassignmentfrom textbox
     And I should verify today date in the sub client phoneassignmentto textbox
-    And I should click on Cancel button
     And I should click on Edit Sub Client pencil icon
     And I should verify the edit sub clientphoneid textbox
     And I should verify today date in the edit sub client phoneassignmentfrom textbox
     And I should verify today date in the edit sub client phoneassignmentto textbox
-    And I should click on Cancel button
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-194
   Scenario Outline: EVS-194:As a user I should see a client phone ID on create client and edit client
@@ -962,26 +1240,22 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should click on Add Client icon
     And I should verify the clientphoneid textbox in add client modal
     And I should verify today date in the phoneassignmentfrom textbox in add client modal
     And I should verify today date in the phoneassignmentto textbox in add client modal
-    And I should click on Cancel button
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
-    And I should click the edit client button in selected client page
     And I should verify the clientphoneid textbox in edit client modal
     And I should verify today date in the phoneassignmentfrom textbox in edit client modal
     And I should verify today date in the phoneassignmentto textbox in edit client modal
-    And I should click on Cancel button
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-145
   Scenario Outline: EVS-145:As a user I should be able to click on the project configuration menu option
@@ -989,7 +1263,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1005,8 +1278,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-148&EVS-122
   Scenario Outline: EVS-148EVS-122:As a user I should be able to edit an existing audit on the project configuration page
@@ -1014,7 +1287,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1030,7 +1302,6 @@ Feature: Smoke Module
     And I should enter today date in client audit iverifypro end date
     And I should enter today date in client audit upload docs start date
     And I should enter today date in client audit upload docs end date
-    And I should click on Cancel button
     And I should click on project configuration
     And I should click on new audit icon
     And I should enter today date in client audit start date
@@ -1049,13 +1320,12 @@ Feature: Smoke Module
     And I should select De Spanish language in all options
     And I should select English language in all options
     And I should select Spanish language in all options
-    And I should click on create button
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|auditname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.AUDITNAME|
+      | URL          | userName          | password          | clientname          | auditname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.AUDITNAME |
 
   @EVS-455
   Scenario Outline: EVS-455:As a user I should see changes to the create audit screen in client configuration (create templates)
@@ -1063,7 +1333,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1105,8 +1374,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|deadlineone|deadlineInitial|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.DEADLINEONE|DP:LOGIN.DEADLINEINITIAL|
+      | URL          | userName          | password          | clientname          | deadlineone          | deadlineInitial          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.DEADLINEONE | DP:LOGIN.DEADLINEINITIAL |
 
   @EVS-457
   Scenario Outline: EVS-457:As a user I should see changes to the create audit screen in client configuration
@@ -1114,7 +1383,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1134,8 +1402,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|deadlineone|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.DEADLINEONE|
+      | URL          | userName          | password          | clientname          | deadlineone          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.DEADLINEONE |
 
   @EVS-205
   Scenario Outline: EVS-205:As a user I should be able to view and edit missing languages
@@ -1143,7 +1411,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1152,26 +1419,23 @@ Feature: Smoke Module
     And I should click on manage incomplete codes
     And I should click on add incomplete codes
     And I should verify exclamation mark in English and spanish
-    And I should click on Cancel button
     And I should click on System codes
     And I should verify ineligible codes label
     And I should click on manage ineligible codes
     And I should click on add ineligible codes
     And I should verify exclamation mark in English and spanish
-    And I should click on Cancel button
     And I should click on System codes
     And I should verify Documents label
     And I should click on manage documents
     And I should click on add documents
     And I should verify exclamation mark in English and spanish
-    And I should click on Cancel button
     And I should click on System codes
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-199
   Scenario Outline: EVS-199:As a user I should be able to add or edit incomplete codes via a modal at the client level
@@ -1179,7 +1443,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1198,7 +1461,6 @@ Feature: Smoke Module
     And I should click on Spanish Language
     And I should enter <spanishVerbiage> code in verbiage textarea
     And I should enter <spanishVerbiage> code in action item verbiage textarea
-    And I should click on Cancel button
     And I should click on add incomplete codes
     And I should click on language dropdown
     And I should click on English Language
@@ -1221,8 +1483,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|englishVerbiage|spanishVerbiage|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.ENGVERBIAGE|DP:LOGIN.SPAVERBIAGE|
+      | URL          | userName          | password          | clientname          | englishVerbiage      | spanishVerbiage      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.ENGVERBIAGE | DP:LOGIN.SPAVERBIAGE |
 
   @EVS-162
   Scenario Outline: EVS-162:As a user I should be able to manage incomplete codes using a new page
@@ -1230,7 +1492,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1245,8 +1506,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-160
   Scenario Outline: EVS-160:As a user I should be able to export incomplete codes using the export button
@@ -1254,7 +1515,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1265,8 +1525,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-202
   Scenario Outline: EVS-202:As a user I should be able to add or edit ineligible codes via a modal at the client level
@@ -1274,7 +1534,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1290,7 +1549,6 @@ Feature: Smoke Module
     And I should enter <spanishVerbiage> code in verbiage textarea
     And I should select all dependents in ineligible modal
     And I should enter <versionname> in the version textbox
-    And I should click on Cancel button
     And I should click on add ineligible codes
     And I should click on language dropdown
     And I should click on English Language
@@ -1318,8 +1576,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|versionname|englishVerbiage|spanishVerbiage|editenglishVerbiage|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.VERSIONNAME|DP:LOGIN.SPAVERBIAGE|DP:LOGIN.SPAVERBIAGE|DP:LOGIN.ENGVERBIAGE|
+      | URL          | userName          | password          | clientname          | versionname          | englishVerbiage      | spanishVerbiage      | editenglishVerbiage  |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.VERSIONNAME | DP:LOGIN.SPAVERBIAGE | DP:LOGIN.SPAVERBIAGE | DP:LOGIN.ENGVERBIAGE |
 
   @EVS-172
   Scenario Outline: EVS-172:As a user I should be able to manage ineligible codes using a new page
@@ -1327,7 +1585,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1340,8 +1597,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-159
   Scenario Outline: EVS-159:As a user I should be able to export ineligible codes using the export button
@@ -1349,8 +1606,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
-    And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
     And I should click on System codes
@@ -1360,8 +1615,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-196
   Scenario Outline: EVS-196:As a user I should be able to add or edit document requirements via a modal at the client level
@@ -1369,7 +1624,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1386,7 +1640,6 @@ Feature: Smoke Module
     And I should select all dependents in ineligible modal
     And I should click on choose document type dropdown in documents modal
     And I should select document type dropdown in documents modal
-    And I should click on Cancel button
     And I should click on language dropdown
     And I should click on English Language
     And I should enter <englishVerbiage> code in verbiage textarea
@@ -1411,8 +1664,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|englishVerbiage|spanishVerbiage|editenglishVerbiage|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.SPAVERBIAGE|DP:LOGIN.SPAVERBIAGE|DP:LOGIN.ENGVERBIAGE|
+      | URL          | userName          | password          | clientname          | englishVerbiage      | spanishVerbiage      | editenglishVerbiage  |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.SPAVERBIAGE | DP:LOGIN.SPAVERBIAGE | DP:LOGIN.ENGVERBIAGE |
 
   @EVS-181
   Scenario Outline: EVS-181:As a user I should be able to manage new documents via a new page on client configuration
@@ -1420,7 +1673,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1432,8 +1684,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-149
   Scenario Outline: EVS-149:As a system I should add a client defaults panel on the project configuration screen
@@ -1441,7 +1693,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1458,8 +1709,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 ########################
   @EVS-153
   Scenario Outline: EVS-153:As a user I should be able to expand the client configuration page to see system codes
@@ -1467,7 +1718,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1493,8 +1743,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-161
   Scenario Outline: EVS-161:As a user I should be able to export doc requirements codes using the export button
@@ -1502,7 +1752,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1513,8 +1762,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-173
   Scenario Outline: EVS-173:As a user I should be able to manage doc requirements using a new page
@@ -1522,7 +1771,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1535,8 +1783,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-1383
   Scenario Outline: EVS-1383:As a user, I should select the alternate documents
@@ -1544,7 +1792,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1570,15 +1817,14 @@ Feature: Smoke Module
     And I should click on Map documents button
     And I should verify edit alternate documents modal
     And I should select added document <editenglishVerbiage> as alternate document
-    And I should click on Save button
     And I should enter <editenglishVerbiage> code in verbiage textarea
     And I should click on Update button in displayed modal
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|englishVerbiage|spanishVerbiage|editenglishVerbiage|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.ENGVERBIAGE|DP:LOGIN.SPAVERBIAGE|DP:LOGIN.ENGVERBIAGE|
+      | URL          | userName          | password          | clientname          | englishVerbiage      | spanishVerbiage      | editenglishVerbiage  |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.ENGVERBIAGE | DP:LOGIN.SPAVERBIAGE | DP:LOGIN.ENGVERBIAGE |
 
   @EVS-1384
   Scenario Outline: EVS-1384:As a user, I should see mapped alternate documents
@@ -1586,7 +1832,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1603,8 +1848,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|
+      | URL          | userName          | password          | clientname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME |
 
   @EVS-
   Scenario Outline: EVS-:As a user I should be able to edit an existing audit on the project configuration p
@@ -1612,7 +1857,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1674,19 +1918,12 @@ Feature: Smoke Module
     And I should select document type dropdown in documents modal
     And I should click on Add button in modal
     And I should enter account url <accountURL> with <accountnumber>
-    And I should verify the account number with <accountnumber>
-    And I should click on Ineligible codes button
-    And I should verify the added ineligible code <englishVerbiage> in the list
-    And I should close the displayed modal
-    And I should click on Add document button
-    And I should verify the added document <englishVerbiage> in the list
-    And I should click on Cancel button in the displayed modal
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|versionname|englishVerbiage|spanishVerbiage|accountURL|accountnumber|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.OLDCLIENTNAME|DP:LOGIN.VERSIONNAME|DP:LOGIN.INTEGRATIONCHECK|DP:LOGIN.SPAVERBIAGE|DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName          | password          | clientname             | versionname          | englishVerbiage           | spanishVerbiage      | accountURL          | accountnumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.OLDCLIENTNAME | DP:LOGIN.VERSIONNAME | DP:LOGIN.INTEGRATIONCHECK | DP:LOGIN.SPAVERBIAGE | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-617&EVS-680
   Scenario Outline: EVS-617&EVS-680:As a user, I should upload the letter versions
@@ -1694,7 +1931,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -1714,10 +1950,8 @@ Feature: Smoke Module
     And I should select all the documents from the listed selection box
     And I should click on Create Group In Span
     And I should enter the <groupName> in the group name text box
-    And I should click on Save button
     And I should verify disabled submit button in the modal
     And I should upload English template in the upload templates dialog
-    And I should click on Submit button
     And I should verify warning message
     And I should click on OK In Button
     And I should upload Spanish template in the upload templates dialog
@@ -1725,7 +1959,6 @@ Feature: Smoke Module
     And I should verify disabled submit button in the modal
     And I should upload English template in the upload templates dialog
     And I should upload Spanish template in the upload templates dialog
-    And I should click on Submit button
     And I should verify successfully created message
     And I should click on OK In Button
     And I should click on Forms In Span
@@ -1735,8 +1968,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|templateVersionName|groupName|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.TEMPLATEVERSIONNAME|DP:LOGIN.CODE|
+      | URL          | userName          | password          | clientname          | templateVersionName          | groupName     |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.TEMPLATEVERSIONNAME | DP:LOGIN.CODE |
 
   @EVS-643
   Scenario Outline: EVS-643:As a user, I should be able to upload templates per client audit
@@ -1744,7 +1977,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click on <clientname> In Span
@@ -1774,7 +2006,6 @@ Feature: Smoke Module
     And I should enter the <deadlineInitial> in the deadline one textbox
     And I should select the type from type dropdown
     And I should select the initial letter type from dropdown list
-    And I should click on create button
     And I should click on file upload icon from the created client audit
     And I should click on select letter type drop down
     And I should click on Initial In Span
@@ -1788,7 +2019,6 @@ Feature: Smoke Module
     And I should click on Initial In Span
     And I should click on select template version drop down
     And I should click on <templateVersionName> In Span
-    And I should click on Save button
     And I should click on OK In Button
     And I should click on file upload icon from the created client audit
     And I should click on trash button
@@ -1798,14 +2028,13 @@ Feature: Smoke Module
     And I should click on Initial In Span
     And I should click on select template version drop down
     And I should click on <templateVersionName> In Span
-    And I should click on Save button
     And I should click on OK In Button
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|auditname|deadlineone|deadlineInitial|templateVersionName|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.AUDITNAME|DP:LOGIN.DEADLINEONE|DP:LOGIN.DEADLINEINITIAL|DP:LOGIN.TEMPLATEVERSIONNAME|
+      | URL          | userName          | password          | clientname          | auditname          | deadlineone          | deadlineInitial          | templateVersionName          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.AUDITNAME | DP:LOGIN.DEADLINEONE | DP:LOGIN.DEADLINEINITIAL | DP:LOGIN.TEMPLATEVERSIONNAME |
 
   @EVS-569
   Scenario Outline: EVS-569:As a user, I should see scheduled letters on top right corner of the letter monitoring page
@@ -1826,8 +2055,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |auditname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.AUDITNAME|
+      | URL          | userName          | password          | auditname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.AUDITNAME |
 
   @EVS-1432
   Scenario Outline: EVS-1432:As a user, I should see the letter count on preview
@@ -1844,8 +2073,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-1584
   Scenario Outline: EVS-1584:As a user, I should see changes to scheduled letter job changes
@@ -1870,8 +2099,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-572
   Scenario Outline: EVS-572:As a system, I need to run letters automatically
@@ -1904,8 +2133,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-568
   Scenario Outline: EVS-568:As a user, I should see stats on top left corner of letter monitoring page
@@ -1931,8 +2160,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-642
   Scenario Outline: EVS-642:As a user, I should see option Proof PDF button in control settings modal
@@ -1954,8 +2183,8 @@ Feature: Smoke Module
 #    And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-567
   Scenario Outline: EVS-567:As a user, I should see job queue tab on bottom half of letter monitor page
@@ -1980,8 +2209,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-573
   Scenario Outline: EVS-573:As a user, I should see control settings option for each job in the queue
@@ -2004,8 +2233,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-574
   Scenario Outline: EVS-574:As a user, I should see option build/merge PDF button in control settings modal
@@ -2035,8 +2264,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-575
   Scenario Outline: EVS-575:As a user, I should see option Print PDF button in control settings modal
@@ -2062,8 +2291,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-576
   Scenario Outline: EVS-576:As a user, I should see option to Rollback PDF in control settings modal
@@ -2088,8 +2317,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-646
   Scenario Outline: EVS-646:As a user, I should see employee letter count grouped by page count and audit status on queue and history tabs
@@ -2112,8 +2341,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-641
   Scenario Outline: EVS-641:As a user, I should be able to add custom letter
@@ -2142,8 +2371,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |oldclientname|auditname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.OLDCLIENTNAME  |DP:LOGIN.AUDITNAME|
+      | URL          | userName          | password          | oldclientname          | auditname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.OLDCLIENTNAME | DP:LOGIN.AUDITNAME |
 
   @EVS-678
   Scenario Outline: EVS-678:As a user, I should select which dependents should show on letters
@@ -2167,8 +2396,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-686
   Scenario Outline: EVS-686:As a user, I should be able to export Queue and History tabs on Communication monitoring page
@@ -2188,8 +2417,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-1024
   Scenario Outline: EVS-1024:As a user, I should be able to split the letter job
@@ -2210,8 +2439,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |
+      | URL          | userName          | password          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD |
 
   @EVS-570
   Scenario Outline: EVS-570:As a user, I should see history tab on bottom half of the letter monitoring page
@@ -2235,8 +2464,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |oldclientname|auditname|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.OLDCLIENTNAME  |DP:LOGIN.AUDITNAME|
+      | URL          | userName          | password          | oldclientname          | auditname          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.OLDCLIENTNAME | DP:LOGIN.AUDITNAME |
 
   @EVS-1005
   Scenario Outline: EVS-1005:As a system, I should be able to upload Affidavits
@@ -2244,7 +2473,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click the added client from left sided client list
@@ -2269,8 +2497,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|affidavitVersionName|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.AFFIDAVITVERSIONNAME|
+      | URL          | userName          | password          | clientname          | affidavitVersionName          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.AFFIDAVITVERSIONNAME |
 
   @EVS-2116
   Scenario Outline: EVS-2116:As a user, I should be able to add milestone templates - refactor
@@ -2278,7 +2506,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click on <clientname> In Span
@@ -2321,8 +2548,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|milestomeName|deadlineInitial|EventDaysOut|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.MILESTONENAME|DP:LOGIN.DEADLINEINITIAL|DP:LOGIN.EVENTDAYSOUT|
+      | URL          | userName          | password          | clientname          | milestomeName          | deadlineInitial          | EventDaysOut          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.MILESTONENAME | DP:LOGIN.DEADLINEINITIAL | DP:LOGIN.EVENTDAYSOUT |
 
   @EVS-2187
   Scenario Outline: EVS-2187:As a user, I should be able to edit milestone template
@@ -2330,7 +2557,6 @@ Feature: Smoke Module
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should click on system and data configuration
     And I should click on client configuration
     And I should search the added <clientname> from left sided client list
     And I should click on <clientname> In Span
@@ -2342,8 +2568,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |clientname|milestomeName|deadlineInitial|EventDaysOut|
-      |DP:LOGIN.URL|DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.CLIENTNAME|DP:LOGIN.MILESTONENAME|DP:LOGIN.DEADLINEINITIAL|DP:LOGIN.EVENTDAYSOUT|
+      | URL          | userName          | password          | clientname          | milestomeName          | deadlineInitial          | EventDaysOut          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.CLIENTNAME | DP:LOGIN.MILESTONENAME | DP:LOGIN.DEADLINEINITIAL | DP:LOGIN.EVENTDAYSOUT |
 
 
   @EVS-1887
@@ -2352,10 +2578,6 @@ Feature: Smoke Module
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
     And I should enter account url <accountURL> with <accountNumber>
-    And I should verify the opened account with enetered <accountNumber>
-    And I should click on Help Ticket In Button
-    And I should verify Create Help Ticket text In Span
-    And I should click on select ticket type dropdown
 #    And I should click on Select In Options
     And I should verify Manager Review text In Options
 #    And I should verify Relationship Change text In Options
@@ -2384,8 +2606,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |accountNumber|accountURL|
-      |DP:LOGIN.URL|DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTNO|DP:LOGIN.ACCOUNTURL|
+      | URL          | userName         | password          | accountNumber      | accountURL          |
+      | DP:LOGIN.URL | DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO | DP:LOGIN.ACCOUNTURL |
 
   @EVS-2242
   Scenario Outline: EVS-2242:As a user, I should be able to create help ticket - home screen
@@ -2409,8 +2631,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |accountNumber|accountURL|
-      |DP:LOGIN.URL|DP:LOGIN.AUDITORMANAGER | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTNO|DP:LOGIN.ACCOUNTURL|
+      | URL          | userName                | password          | accountNumber      | accountURL          |
+      | DP:LOGIN.URL | DP:LOGIN.AUDITORMANAGER | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO | DP:LOGIN.ACCOUNTURL |
 
   @EVS-2243
   Scenario Outline: EVS-2243:As a user, I should see assigned help tickets on home page
@@ -2418,7 +2640,6 @@ Feature: Smoke Module
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
     And I should enter the <accountNumber> in first filterBy textbox
-    And I should click on help ticket number from the grid to open created help ticket
     And I should verify View Help Ticket text In Span
     And I should verify <accountNumber> text In Span
     And I should verify Manager Review In Label
@@ -2428,8 +2649,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |accountNumber|createdUser|
-      |DP:LOGIN.URL|DP:LOGIN.AUDITORMANAGER | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTNO|DP:LOGIN.AUDITOR|
+      | URL          | userName                | password          | accountNumber      | createdUser      |
+      | DP:LOGIN.URL | DP:LOGIN.AUDITORMANAGER | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO | DP:LOGIN.AUDITOR |
 
 
   @EVS-2244
@@ -2438,13 +2659,10 @@ Feature: Smoke Module
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
     And I should enter the <accountNumber> in first filterBy textbox
-    And I should click on help ticket number from the grid to open created help ticket
     And I should verify View Help Ticket text In Span
     And I should enter <userName> comments in textarea
     And I should click on Update In Button
     And I should click on Cancel In Button
-    And I should click on help ticket number from the grid to open created help ticket
-    And I should click on reassigned to dropdown
     And I should not verify <usernameNotVerify> element in the display
     And I should click on <reassignedUser> In Options
     And I should enter <userName> comments in textarea
@@ -2454,7 +2672,6 @@ Feature: Smoke Module
     When I should Login to core application with <reassignedUserName> and <password>
     And I should click on Login button from Login screen
     And I should enter the <accountNumber> in first filterBy textbox
-    And I should click on help ticket number from the grid to open created help ticket
     And I should enter <reassignedUserName> comments in textarea
     And I should click on Resolve In Button
     And I should click on profile icon in core
@@ -2464,7 +2681,6 @@ Feature: Smoke Module
     And I should click on Login button from Login screen
     And I should enter account url <accountURL> with <accountNumber>
     And I should click on Help Ticket In Button
-    And I should open completed ticket in the modal
     And I should enter <reassignedUserName> comments in textarea
     And I should click on Update In Button
     And I should click on Cancel In Button
@@ -2472,15 +2688,14 @@ Feature: Smoke Module
     And I should click on Home In Span
     And I should click on Home In Span
     And I should enter the <accountNumber> in first filterBy textbox
-    And I should click on help ticket number from the grid to open created help ticket
     And I should enter <reassignedUserName> comments in textarea
     And I should click on Resolve In Button
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          |password          |accountNumber|usernameNotVerify|reassignedUser|reassignedUserName|accountURL|auditor|
-      |DP:LOGIN.URL|DP:LOGIN.AUDITORMANAGER |DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTNO|DP:LOGIN.REASSIGNEDUSERNAMENOTVERIFY|DP:LOGIN.REASSIGNEDUSER|DP:LOGIN.REASSIGNEDUSERNAME|DP:LOGIN.ACCOUNTURL|DP:LOGIN.AUDITOR |
+      | URL          | userName                | password          | accountNumber      | usernameNotVerify                    | reassignedUser          | reassignedUserName          | accountURL          | auditor          |
+      | DP:LOGIN.URL | DP:LOGIN.AUDITORMANAGER | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO | DP:LOGIN.REASSIGNEDUSERNAMENOTVERIFY | DP:LOGIN.REASSIGNEDUSER | DP:LOGIN.REASSIGNEDUSERNAME | DP:LOGIN.ACCOUNTURL | DP:LOGIN.AUDITOR |
 
 
   @EVS-1888
@@ -2492,7 +2707,6 @@ Feature: Smoke Module
 #    And I should accept disclaimer Notice if displayed
     And I should click on Upload Documents In Span
     And I should select desired document by Browse icon
-    And I should upload the document
     And I should click on OK In Button
     And I should logoff from home screen
     Given I should enter login url <URL>
@@ -2525,8 +2739,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      | ivacURL          | lastName          | consovaId          | sSN          |URL|userName          | password          |accountNumber|accountURL|
-      | DP:LOGIN.IVACURL | DP:LOGIN.LASTNAME | DP:LOGIN.CONSOVAID | DP:LOGIN.SSN |DP:LOGIN.URL|DP:LOGIN.PACKAGEUSERNAME | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTNO|DP:LOGIN.ACCOUNTURL|
+      | ivacURL          | lastName          | consovaId          | sSN          | URL          | userName                 | password          | accountNumber      | accountURL          |
+      | DP:LOGIN.IVACURL | DP:LOGIN.LASTNAME | DP:LOGIN.CONSOVAID | DP:LOGIN.SSN | DP:LOGIN.URL | DP:LOGIN.PACKAGEUSERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO | DP:LOGIN.ACCOUNTURL |
 
   @EVS-627
   Scenario Outline: EVS-627:As a user, I should create and manage admin ticket (Case research functionality)
@@ -2534,7 +2748,6 @@ Feature: Smoke Module
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
     And I should enter account url <accountURL> with <accountnumber>
-    And I should verify the opened account with enetered <accountnumber>
     And I should click on Admin Ticket In Button
     And I should click on Create New Ticket In Button
     And I should verify Create Admin Ticket text In Span
@@ -2548,10 +2761,6 @@ Feature: Smoke Module
     And I should verify Update demographic information text In Span
     And I should click on Employee audit Inquiry In Span
     And I should click on Select Audit In Label
-    And I should select audit type from dropdown
-    And I should enter <userName> in the comments box
-    And I should click on Select Dependent In Span
-    And I should select all from list displayed from dropdown
 #    And I should click on Cancel In Button
     And I should click on Submit In Button
     And I should click on OK In Button
@@ -2559,8 +2768,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |accountURL|accountnumber|
-      |DP:LOGIN.URL|DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName         | password          | accountURL          | accountnumber      |
+      | DP:LOGIN.URL | DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-626
   Scenario Outline: EVS-626:As a user, I should see admin ticket icon from Account view
@@ -2568,7 +2777,6 @@ Feature: Smoke Module
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
     And I should enter account url <accountURL> with <accountnumber>
-    And I should verify the opened account with enetered <accountnumber>
     And I should click on Admin Ticket In Button
     And I should click on View Open Ticket In Button
     And I should verify Assigned to Consova text In Span
@@ -2578,8 +2786,8 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |accountURL|accountnumber|
-      |DP:LOGIN.URL|DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName         | password          | accountURL          | accountnumber      |
+      | DP:LOGIN.URL | DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-613
   Scenario Outline: EVS-613:As a user, I should see admin ticket queue
@@ -2602,14 +2810,14 @@ Feature: Smoke Module
     And I should verify Last Comment in table header
     And I should verify Last Comment Date in table header
     And I should verify Created Date in table header
-    And I should enter <accountNumber> in second filterBy textbox
+    And I should enter <accountNumber> in third filterBy textbox
     And I should verify <accountNumber> text In Span
     And I should click on profile icon in core
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |accountNumber|
-      |DP:LOGIN.URL|DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTNO|
+      | URL          | userName         | password          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO |
 
   @EVS-677
   Scenario Outline: EVS-677:As a user, I should be able to create admin ticket on behalf of the client
@@ -2617,12 +2825,6 @@ Feature: Smoke Module
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
     And I should enter account url <accountURL> with <accountnumber>
-    And I should verify the opened account with enetered <accountnumber>
-    And I should click on Admin Ticket In Button
-    And I should verify active ticket confirmation
-    And I should verify Create New Ticket In Button
-    And I should verify View Open Tickets In Button
-    And I should verify the account number with <accountnumber>
     And I should verify Cancel In Button
     And I should click on Admin Ticket In Button
     And I should click on View Open Tickets In Button
@@ -2637,10 +2839,6 @@ Feature: Smoke Module
     And I should verify Update demographic information text In Span
     And I should click on Employee audit Inquiry In Span
     And I should click on Select Audit In Label
-    And I should select audit type from dropdown
-    And I should enter <userName> in the comments box
-    And I should click on Select Dependent In Span
-    And I should select all from list displayed from dropdown
     And I should click on Cancel In Button
 #    And I should click on Submit In Button
 #    And I should click on OK In Button
@@ -2648,5 +2846,5 @@ Feature: Smoke Module
     And I should logoff from core login
 
     Examples:
-      |URL|userName          | password          |accountURL|accountnumber|
-      |DP:LOGIN.URL|DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD  |DP:LOGIN.ACCOUNTURL|DP:LOGIN.ACCOUNTNO|
+      | URL          | userName         | password          | accountURL          | accountnumber      |
+      | DP:LOGIN.URL | DP:LOGIN.AUDITOR | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |

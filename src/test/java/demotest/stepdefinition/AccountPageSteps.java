@@ -94,9 +94,14 @@ public class AccountPageSteps {
         assertTrue(actionContainer.accountPageActions.AcceptTheAlert());
     }
 
+    @And("^I should click on lock icon on the account level$")
+    public void iShouldClickOnLockIconOnTheAccountLevel() {
+        assertTrue(actionContainer.accountPageActions.clickUnlockIcon());
+    }
+
     @And("^I should click on lock icon on the dependent level$")
     public void iShouldClickOnLockIconOnTheDependentLevel() {
-        assertTrue(actionContainer.accountPageActions.clickUnlockIcon());
+        assertTrue(actionContainer.accountPageActions.clickUnlockIconDependentLvl());
     }
 
     @And("^I should verify locked icon on the dependent level$")
@@ -139,8 +144,8 @@ public class AccountPageSteps {
         assertTrue(actionContainer.accountPageActions.clickRefreshButtonInDialogBox());
     }
 
-    @And("^I should click on Cancel button in dialog box$")
-    public void iShouldClickOnCancelButtonInDialogBox() {
+    @And("^I should click on Cancel button in dialog$")
+    public void iShouldClickOnCancelButtonInDialog() {
         assertTrue(actionContainer.accountPageActions.clickCancelButtonInDialogBox());
     }
 
@@ -199,6 +204,11 @@ public class AccountPageSteps {
         assertTrue(actionContainer.accountPageActions.clickAddIconSecond());
     }
 
+    @And("^I should click on add icon$")
+    public void iShouldClickOnAddIcon() {
+        assertTrue(actionContainer.accountPageActions.clickAddIconSpan());
+    }
+
     @And("^I should click on required audit name$")
     public void iShouldClickOnRequiredAuditName() {
         assertTrue(actionContainer.accountPageActions.clickAuditList());
@@ -222,5 +232,140 @@ public class AccountPageSteps {
     @And("^I should confirm the documents marked as not applicable$")
     public void iShouldConfirmTheDocumentsMarkedAsNotApplicable() {
 //        assertTrue(actionContainer.accountPageActions.ConfirmNotApplicable());
+    }
+
+    @And("^I should verify the criteria in employee and dependent$")
+    public void iShouldVerifyTheCriteriaInEmployeeAndDependent() {
+        assertTrue(actionContainer.accountPageActions.verifyDependentEmployeeCriteria());
+    }
+
+    @And("^I should verify escalation icon next to Tasks header$")
+    public void iShouldVerifyEscalationIconNextToTasksHeader() {
+        assertTrue(actionContainer.accountPageActions.verifyEscalationIcon());
+    }
+
+    @And("^I should click on first task$")
+    public void iShouldClickOnFirstTask() {
+        assertTrue(actionContainer.accountPageActions.CompleteFirstTask());
+    }
+
+    @And("^I should complete second task$")
+    public void iShouldCompleteSecondTask() {
+        assertTrue(actionContainer.accountPageActions.CompleteSecondTask());
+    }
+
+    @And("^I should complete all tasks$")
+    public void iShouldCompleteAllTasks() {
+//        assertTrue(actionContainer.accountPageActions.verifyEscalationIcon());
+    }
+
+    @And("^I should click on other relation excluding current relation type$")
+    public void iShouldClickOnOtherRelationExcludingCurrentRelationType() {
+        assertTrue(actionContainer.accountPageActions.SelectReasonFromList());
+    }
+
+    @And("^I should verify outcome icons$")
+    public void iShouldVerifyOutcomeIcons() {
+        assertTrue(actionContainer.accountPageActions.VerifyOutcomeIcons());
+    }
+
+    @And("^I should click on call completed icon$")
+    public void iShouldClickOnCallCompletedIcon() {
+        assertTrue(actionContainer.accountPageActions.clickCompletedPhoneCallIcon());
+    }
+
+    @And("^I should release locked icon on the account level$")
+    public void iShouldReleaseLockedIconOnTheAccountLevel() {
+        assertTrue(actionContainer.accountPageActions.clickLockIcon());
+    }
+
+    @And("^I should verify refresh icon$")
+    public void iShouldVerifyRefreshIcon() {
+        assertTrue(actionContainer.accountPageActions.verifyRefreshIcon());
+    }
+
+    @And("^I should verify pencil icon$")
+    public void iShouldVerifyPencilIcon() {
+        assertTrue(actionContainer.accountPageActions.verifyPencilIcon());
+    }
+
+    @And("^I should verify trash icon$")
+    public void iShouldVerifyTrashIcon() {
+        assertTrue(actionContainer.accountPageActions.verifyTrashIcon());
+    }
+
+    @And("^I should verify today date$")
+    public void iShouldVerifyTodayDate() {
+        
+    }
+
+    @And("^I should verify today date extended to next year$")
+    public void iShouldVerifyTodayDateExtendedToNextYear() {
+
+    }
+
+    @And("^I should click on select reason dropdown$")
+    public void iShouldClickOnSelectReasonDropdown() {
+        assertTrue(actionContainer.accountPageActions.clickSelcetReasonDropdown());
+    }
+
+    @And("^I should select the task type$")
+    public void iShouldSelectTheTaskType() {
+        assertTrue(actionContainer.accountPageActions.SelectTaskType());
+    }
+
+    @And("^I should check the newly added document$")
+    public void iShouldCheckTheNewlyAddedDocument() {
+        assertTrue(actionContainer.accountPageActions.SelectLastCheckbox());
+    }
+
+    @And("^I should select last added document$")
+    public void iShouldSelectLastAddedDocument() {
+        assertTrue(actionContainer.accountPageActions.clickAddLastDocIcon());
+    }
+
+    @And("^I should verify history header in account screen$")
+    public void iShouldVerifyHistoryHeaderInAccountScreen() {
+        assertTrue(actionContainer.accountPageActions.verifyHistoryHeader());
+    }
+
+    @And("^I should verify filterBy textbox in panel$")
+    public void iShouldVerifyFilterByTextboxInPanel() {
+        assertTrue(actionContainer.accountPageActions.verifyFilterBy());
+    }
+
+    @And("^I should verify the pagination located at the bottom$")
+    public void iShouldVerifyThePaginationLocatedAtTheBottom() {
+        assertTrue(actionContainer.accountPageActions.verifyPagination());
+    }
+
+    @And("^I should click on view activity from the grid$")
+    public void iShouldClickOnViewActivityFromTheGrid() {
+        assertTrue(actionContainer.accountPageActions.clickViewActivity());
+    }
+
+    @And("^I should click on view details from the grid$")
+    public void iShouldClickOnViewDetailsFromTheGrid() {
+        assertTrue(actionContainer.accountPageActions.clickViewDetails());
+    }
+
+    @And("^I should click on download icon$")
+    public void iShouldClickOnDownloadIcon() {
+        assertTrue(actionContainer.accountPageActions.clickDownloadIcon());
+    }
+
+    @And("^I should click on printer icon$")
+    public void iShouldClickOnPrinterIcon() {
+        assertTrue(actionContainer.accountPageActions.clickPrinterIcon());
+    }
+
+    @And("^I should click on clear filter icon$")
+    public void iShouldClickOnClearFilterIcon() {
+        assertTrue(actionContainer.accountPageActions.clickClearFilterIcon());
+    }
+
+    @And("^I should enter (.*) in third filter input textbox$")
+    public void iShouldEnterTheSearchItemInThirdFilterInputTextbox(String filterItem) {
+        assertTrue(actionContainer.accountPageActions.ThirdFilterTextbox(Testdata.getValue(filterItem)));
     }
 }

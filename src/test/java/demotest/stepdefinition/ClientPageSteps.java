@@ -607,7 +607,12 @@ public class ClientPageSteps {
 
     @And("^I should click on Add button in modal$")
     public void iShouldClickOnAddButtonInModal() {
-        assertTrue(actionContainer.clientPageActions.clickaddButtonInModal());
+        assertTrue(actionContainer.clientPageActions.clickAddButtonInModal());
+    }
+
+    @And("^I should click on Add button$")
+    public void iShouldClickOnAddButton() {
+        assertTrue(actionContainer.clientPageActions.clickAddButton());
     }
 
     @And("^I should verify edit incomplete code modal$")
@@ -872,7 +877,7 @@ public class ClientPageSteps {
 
     @And("^I should enable Is Employee Milestone$")
     public void iShouldEnableIsEmployeeMilestone() {
-        
+        assertTrue(actionContainer.clientPageActions.clickInitialLetter());
     }
 
     @And("^I should click on edit audit pencil icon$")
@@ -883,5 +888,20 @@ public class ClientPageSteps {
     @And("^I should select date within thirty days$")
     public void iShouldSelectDateWithinThirtyDays() {
         assertTrue(actionContainer.clientPageActions.selectDeadlineDate());
+    }
+
+    @And("^I should click on Project Configuration for walmart client$")
+    public void iShouldClickOnProjectConfigurationForWalmartClient() {
+        assertTrue(actionContainer.clientPageActions.clickWalmartProjectConfiguration());
+    }
+
+    @And("^I should select the last day in this month$")
+    public void iShouldSelectTheLastDayInThisMonth() {
+        assertTrue(actionContainer.clientPageActions.selectLastDateInMonth());
+    }
+
+    @And("^I should click on sort icon in the dialog box$")
+    public void iShouldClickOnSortIconInTheDialogBox() {
+        assertTrue(actionContainer.clientPageActions.clickLastSortIcon());
     }
 }

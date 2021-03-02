@@ -33,14 +33,32 @@ public class AccountPageUI {
     @FindBy(how = How.NAME, using = "address2")
     protected WebElement AddressTxtBox;
 
-    @FindBy(how = How.XPATH, using = "tab ng-star-inserted active")
+    @FindBy(how = How.XPATH, using = "//li[contains(@class,'active')]")
     protected WebElement ActiveDependentTab;
 
     @FindBy(how = How.XPATH, using = "//li[@class='tab ng-star-inserted']")
     protected List<WebElement> InactiveDependentTab;
 
+    @FindBy(how = How.XPATH, using = "//strong[contains(@class,'inline-block')]")
+    protected List<WebElement> DependentEmployeeCriteria;
+
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-trash')]")
     protected WebElement DeleteIcon;
+
+    @FindBy(how = How.XPATH, using = "//img[contains(@src,'Will_not_contact')]")
+    protected WebElement WillNotContactIcon;
+
+    @FindBy(how = How.XPATH, using = "//span[@ptooltip='Bad number']")
+    protected WebElement BadNumberIcon;
+
+    @FindBy(how = How.XPATH, using = "//i[@ptooltip='Left message']")
+    protected WebElement LeftMessageIcon;
+
+    @FindBy(how = How.XPATH, using = "//i[@ptooltip='Completed phone call']")
+    protected WebElement CompletedPhoneCallIcon;
+
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-check')]")
+    protected List<WebElement> TaskCheckIcon;
 
     @FindBy(how = How.XPATH, using = "//li[@role='option']")
     protected List<WebElement> RemoveReason;
@@ -48,8 +66,20 @@ public class AccountPageUI {
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-unlock')]")
     protected WebElement UnlockIcon;
 
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-unlock')]")
+    protected List<WebElement> UnlockIconDependent;
+
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-lock')]")
     protected WebElement LockIcon;
+
+    @FindBy(how = How.XPATH, using = "//img[contains(@src,'doc_download')]")
+    protected WebElement DownloadIcon;
+
+    @FindBy(how = How.XPATH, using = "//img[contains(@src,'doc_print')]")
+    protected WebElement PrintIcon;
+
+    @FindBy(how = How.XPATH, using = "//img[contains(@src,'filter_clear')]")
+    protected WebElement ClearFilterIcon;
 
     @FindBy(how = How.XPATH, using = "//button[contains(@class,'notesLink')]")
     protected WebElement EmployeeAlert;
@@ -109,14 +139,38 @@ public class AccountPageUI {
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'exclamation-triangle')]")
     protected WebElement EscalationIcon;
 
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-refresh')]")
+    protected WebElement RefreshIcon;
+
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-pencil')]")
+    protected WebElement PencilIcon;
+
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-trash')]")
+    protected WebElement TrashIcon;
+
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-check')]")
+    protected List<WebElement> CheckIcon;
+
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-check')]")
+    protected List<WebElement> DependentTypes;
+
+    @FindBy(how = How.XPATH, using = "//input[@type='checkbox']")
+    protected List<WebElement> TaskTypesCheckbox;
+
     @FindBy(how = How.XPATH, using = "//select[@name='flowType']")
     protected WebElement EscalationType;
+
+    @FindBy(how = How.XPATH, using = "//select[@placeholder='Select Reason']")
+    protected WebElement SelcetReason;
 
     @FindBy(how = How.XPATH, using = "//select[contains(@class,'untouched')]")
     protected WebElement SelectType;
 
     @FindBy(how = How.XPATH, using = "//button[contains(text(),'Add')]")
     protected List<WebElement> AddIconList;
+
+    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Add')]")
+    protected List<WebElement> AddIconSpan;
 
     @FindBy(how = How.XPATH, using = "//a[contains(text(),' Eligibility ')]")
     protected List<WebElement> EligibilityList;
@@ -135,6 +189,24 @@ public class AccountPageUI {
 
     @FindBy(how = How.XPATH, using = "//label[@for='add-event-1']")
     protected WebElement AddEvent;
+
+    @FindBy(how = How.XPATH, using = "//h6[text()='History']")
+    protected WebElement HistoryHeader;
+
+    @FindBy(how = How.XPATH, using = "//input[contains(@placeholder,'Filter by')]")
+    protected List<WebElement> FilterByTxtbox;
+
+    @FindBy(how = How.XPATH, using = "//span[contains(text(),'View Activity')]")
+    protected List<WebElement> ViewActivity;
+
+    @FindBy(how = How.XPATH, using = "//span[contains(text(),'View Details')]")
+    protected List<WebElement> ViewDetails;
+
+    @FindBy(how = How.XPATH, using = "//input[contains(@class,'filter-input-element')]")
+    protected List<WebElement> FilterTextbox;
+
+    @FindBy(how = How.XPATH, using = "//div[contains(@class,'ui-paginator-bottom')]")
+    protected WebElement Pagination;
 
 
 }

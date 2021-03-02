@@ -50,6 +50,8 @@ public class HomePageUI {
     protected String boldFontVerify = new StringBuilder("//strong[contains(text(),'").append("<<REPLACECONTENT>>").append("')]").toString();
     protected String TableHeader = new StringBuilder("//th[contains(text(),'").append("<<REPLACECONTENT>>").append("')]").toString();
     protected String TableData = new StringBuilder("//td[contains(text(),'").append("<<REPLACECONTENT>>").append("')]").toString();
+    protected String DisabledButton = new StringBuilder("//button[@disabled=''][text()='").append("<<REPLACECONTENT>>").append("']").toString();
+    protected String Header = new StringBuilder("//h2[@disabled=''][text()='").append("<<REPLACECONTENT>>").append("']").toString();
 
     @FindBy(how = How.XPATH, using = "//div[contains(@class,'text-danger')]")
     protected WebElement WarningMessage;

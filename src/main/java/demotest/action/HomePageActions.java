@@ -128,6 +128,26 @@ public class HomePageActions extends HomePageUI {
         return isVerified;
     }
 
+    public boolean verifyDisabledButton(String data){
+        boolean isVerified=false;
+        Sync.Delay(3000);
+        if(driver!=null){
+            Element.verifyElements(driver,DisabledButton,data);
+            isVerified=true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyHeader(String data){
+        boolean isVerified=false;
+        Sync.Delay(3000);
+        if(driver!=null){
+            Element.verifyElements(driver,Header,data);
+            isVerified=true;
+        }
+        return isVerified;
+    }
+
     public boolean clickTableData(String data){
         boolean isVerified=false;
         Sync.Delay(3000);

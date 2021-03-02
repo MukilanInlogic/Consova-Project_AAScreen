@@ -117,6 +117,25 @@ public class AccountPageActions extends AccountPageUI {
         return isVerified;
     }
 
+    public boolean clickTaskCheckIcon() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (TaskCheckIcon.size()!=0){
+            Element.click(driver,InactiveDependentTab.get(0));
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyDependentEmployeeCriteria() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (DependentEmployeeCriteria.size()==20){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
     public boolean verifyDeleteIcon() {
         boolean isVerified = false;
         Sync.Delay(3000);
@@ -166,10 +185,60 @@ public class AccountPageActions extends AccountPageUI {
         return isClicked;
     }
 
+    public boolean clickUnlockIconDependentLvl() {
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if (UnlockIconDependent.size()!=0){
+            Element.click(driver,UnlockIconDependent.get(1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
     public boolean verifyLockIcon() {
         boolean isVerified = false;
         Sync.Delay(3000);
         if (LockIcon.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean clickLockIcon() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (LockIcon.isDisplayed()){
+            Element.click(driver,LockIcon);
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean clickDownloadIcon() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (DownloadIcon.isDisplayed()){
+            Element.click(driver,DownloadIcon);
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean clickPrinterIcon() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (PrintIcon.isDisplayed()){
+            Element.click(driver,PrintIcon);
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean clickClearFilterIcon() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (ClearFilterIcon.isDisplayed()){
+            Element.click(driver,ClearFilterIcon);
             isVerified = true;
         }
         return isVerified;
@@ -340,11 +409,77 @@ public class AccountPageActions extends AccountPageUI {
         return isVerified;
     }
 
+    public boolean verifyEscalationIcon() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (EscalationIcon.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyRefreshIcon() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (RefreshIcon.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyPencilIcon() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (PencilIcon.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyTrashIcon() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (TrashIcon.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean CompleteFirstTask() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (CheckIcon.size()!=0){
+            Element.click(driver,CheckIcon.get(0));
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean CompleteSecondTask() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (CheckIcon.size()!=0){
+            Element.click(driver,CheckIcon.get(1));
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
     public boolean clickEscalationType() {
         boolean isClicked = false;
         Sync.Delay(5000);
         if (EscalationType.isDisplayed()){
             Element.click(driver,EscalationType);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickSelcetReasonDropdown() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (SelcetReason.isDisplayed()){
+            Element.click(driver,SelcetReason);
             isClicked = true;
         }
         return isClicked;
@@ -365,6 +500,36 @@ public class AccountPageActions extends AccountPageUI {
         Sync.Delay(5000);
         if (AddIconList.size()!=0){
             Element.click(driver,AddIconList.get(1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickAddIconSpan() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (AddIconSpan.size()!=0){
+            Element.click(driver,AddIconSpan.get(AddIconSpan.size()-1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean SelectTaskType() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (TaskTypesCheckbox.size()!=0){
+            Element.click(driver,TaskTypesCheckbox.get(0));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean SelectLastCheckbox() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (TaskTypesCheckbox.size()!=0){
+            Element.click(driver,TaskTypesCheckbox.get(TaskTypesCheckbox.size()-1));
             isClicked = true;
         }
         return isClicked;
@@ -400,6 +565,31 @@ public class AccountPageActions extends AccountPageUI {
         return isClicked;
     }
 
+    public boolean clickCompletedPhoneCallIcon() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (CompletedPhoneCallIcon.isDisplayed()){
+            Element.click(driver,CompletedPhoneCallIcon);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean VerifyOutcomeIcons() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if (WillNotContactIcon.isDisplayed()){
+            if (BadNumberIcon.isDisplayed()){
+                if (LeftMessageIcon.isDisplayed()){
+                    if (CompletedPhoneCallIcon.isDisplayed()){
+                        isVerified = true;
+                    }
+                }
+            }
+        }
+        return isVerified;
+    }
+
     public boolean clickAddDocIcon() {
         boolean isClicked = false;
         Sync.Delay(5000);
@@ -410,11 +600,21 @@ public class AccountPageActions extends AccountPageUI {
         return isClicked;
     }
 
+    public boolean clickAddLastDocIcon() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (PlusIcon.size()!=0){
+            Element.click(driver,PlusIcon.get(PlusIcon.size()-1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
     public boolean SelectAddedEvents() {
         boolean isClicked = false;
         Sync.Delay(5000);
         if (AddedEvents.size()!=0){
-            Element.click(driver,AddedEvents.get(1));
+            Element.click(driver,AddedEvents.get(0));
             isClicked = true;
         }
         return isClicked;
@@ -427,6 +627,64 @@ public class AccountPageActions extends AccountPageUI {
             isClicked = true;
         }
         return isClicked;
+    }
+
+    public boolean verifyHistoryHeader() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (HistoryHeader.isDisplayed()){
+            Element.click(driver,HistoryHeader);
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyFilterBy() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (FilterByTxtbox.size()!=0){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyPagination() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (Pagination.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean clickViewActivity() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (ViewActivity.size()!=0){
+            Element.click(driver,ViewActivity.get(0));
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean clickViewDetails() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (ViewDetails.size()!=0){
+            Element.click(driver,ViewDetails.get(0));
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean ThirdFilterTextbox(String filterItem){
+        boolean isEntered = false;
+        Sync.Delay(3000);
+        if(FilterTextbox.size()!=0){
+            Textbox.enterValue(driver,FilterTextbox.get(2),filterItem);
+            isEntered=true;
+        }
+        return isEntered;
     }
 
 }

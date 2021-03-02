@@ -1213,7 +1213,7 @@ public class ClientPageActions extends ClientPageUI {
         return isClicked;
     }
 
-    public boolean clickAddButton() {
+    public boolean clickAddButtonInModal() {
         boolean isClicked = false;
         Sync.Delay(2000);
         if (addButton.isDisplayed()){
@@ -1223,7 +1223,7 @@ public class ClientPageActions extends ClientPageUI {
         return isClicked;
     }
 
-    public boolean clickaddButtonInModal() {
+    public boolean clickAddButton() {
         boolean isClicked = false;
         Sync.Delay(2000);
         if (addButtonInModal.isDisplayed()){
@@ -1354,10 +1354,10 @@ public class ClientPageActions extends ClientPageUI {
     public boolean selectAllDependentTypesInIneligibleModal() {
         boolean isClicked = false;
         Sync.Delay(2000);
-        if (CO.isDisplayed()){
-            js.executeScript("arguments[0].click();",CO);
-            isClicked = true;
-        }
+//        if (CO.isDisplayed()){
+//            js.executeScript("arguments[0].click();",CO);
+//            isClicked = true;
+//        }
         if (SP.isDisplayed()){
             js.executeScript("arguments[0].click();",SP);
             isClicked = true;
@@ -1370,8 +1370,18 @@ public class ClientPageActions extends ClientPageUI {
             js.executeScript("arguments[0].click();",DP);
             isClicked = true;
         }
-        if (HD.isDisplayed()){
-            js.executeScript("arguments[0].click();",HD);
+//        if (HD.isDisplayed()){
+//            js.executeScript("arguments[0].click();",HD);
+//            isClicked = true;
+//        }
+        return isClicked;
+    }
+
+    public boolean clickLastSortIcon() {
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if (SortIcon.size()!=0){
+            Element.click(driver,SortIcon.get(SortIcon.size()-1));
             isClicked = true;
         }
         return isClicked;
@@ -1736,6 +1746,46 @@ public class ClientPageActions extends ClientPageUI {
         if (Calendar.size()!=0){
             Element.click(driver,Calendar.get(2));
             Element.click(driver,DatePick);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean selectLastDateInMonth() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (LastDateInMonth.size()!=0){
+            Element.click(driver,LastDateInMonth.get(LastDateInMonth.size()-1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean selectLastCalendarDate() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (LastCalendarDate.size()!=0){
+            Element.click(driver,LastCalendarDate.get(LastCalendarDate.size()-3));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean SwitchEmployeeMilestoneSlider() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (LastCalendarDate.size()!=0){
+            Element.click(driver,LastCalendarDate.get(LastCalendarDate.size()-3));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickWalmartProjectConfiguration() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (WalmartProjectConfiguration.isDisplayed()){
+            Element.click(driver,WalmartProjectConfiguration);
             isClicked = true;
         }
         return isClicked;
