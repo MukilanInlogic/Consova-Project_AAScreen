@@ -27,8 +27,8 @@ public class AccountPageUI {
     @FindBy(how = How.NAME, using = "Email")
     protected WebElement EmailTxtBox;
 
-    @FindBy(how = How.NAME, using = "MiddleName")
-    protected WebElement MiddleNameTxtBox;
+    @FindBy(how = How.NAME, using = "FirstName")
+    protected WebElement FirstNameTxtBox;
 
     @FindBy(how = How.NAME, using = "address2")
     protected WebElement AddressTxtBox;
@@ -47,6 +47,9 @@ public class AccountPageUI {
 
     @FindBy(how = How.XPATH, using = "//img[contains(@src,'Will_not_contact')]")
     protected WebElement WillNotContactIcon;
+
+    @FindBy(how = How.XPATH, using = "//img[contains(@src,'vip_badge')]")
+    protected WebElement VIPBadge;
 
     @FindBy(how = How.XPATH, using = "//span[@ptooltip='Bad number']")
     protected WebElement BadNumberIcon;
@@ -214,8 +217,31 @@ public class AccountPageUI {
     @FindBy(how = How.XPATH, using = "//button[@disabled=''][contains(text(),'Linkable')]")
     protected WebElement DisabledLinkableButton;
 
+    @FindBy(how = How.XPATH, using = "//button[@disabled=''][contains(text(),'Approved')]")
+    protected WebElement DisabledApprovedButton;
+
+    @FindBy(how = How.XPATH, using = "//button[@disabled=''][contains(text(),'Link')]")
+    protected WebElement DisabledLinkButton;
+
+    @FindBy(how = How.XPATH, using = "//button[@disabled=''][contains(text(),'Requested for Approval')]")
+    protected WebElement DisabledRequestedForApprovalButton;
+
     @FindBy(how = How.XPATH, using = "//button[text()='Link']")
     protected WebElement ActiveLinkButton;
 
+    @FindBy(how = How.XPATH, using = "//span[@class='cursor-pointer text-primary']")
+    protected WebElement HelpTicketId;
+
+    @FindBy(how = How.NAME, using = "IsVip")
+    protected WebElement VIPDropdown;
+
+    @FindBy(how = How.XPATH, using = "//button[@ptooltip='Milestones']")
+    protected WebElement DependentMilestones;
+
+    @FindBy(how = How.XPATH, using = "//td[text()=' NewPackage ']")
+    protected WebElement NewPackage;
+
+    @FindBy(how = How.XPATH, using = "//td[text()=' PortalInquiry ']")
+    protected WebElement PortalInquiry;
 
 }

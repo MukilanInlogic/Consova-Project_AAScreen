@@ -45,9 +45,9 @@ public class AccountPageSteps {
         assertTrue(actionContainer.accountPageActions.enterEmailId(Testdata.getValue(inBold)));
     }
 
-    @And("^I should enter your (.*) in middle name textbox$")
-    public void iShouldEnterYourMiddleNameInMiddleNameTextbox(String inBold) {
-        assertTrue(actionContainer.accountPageActions.enterMiddleName(Testdata.getValue(inBold)));
+    @And("^I should enter your (.*) in first name textbox$")
+    public void iShouldEnterYourMiddleNameInFirstNameTextbox(String inBold) {
+        assertTrue(actionContainer.accountPageActions.enterFirstName(Testdata.getValue(inBold)));
     }
 
     @And("^I should enter your (.*) in address textbox$")
@@ -179,8 +179,8 @@ public class AccountPageSteps {
         assertTrue(actionContainer.accountPageActions.verifySubclientInfo());
     }
 
-    @And("^I should verify tasks header$")
-    public void iShouldVerifyTasksHeader() {
+    @And("^I should verify tasks headers$")
+    public void iShouldVerifyTasksHeaders() {
         assertTrue(actionContainer.accountPageActions.verifyTasksHeader());
     }
 
@@ -227,6 +227,11 @@ public class AccountPageSteps {
     @And("^I should select event type from the modal$")
     public void iShouldSelectEventTypeFromTheModal() {
         assertTrue(actionContainer.accountPageActions.SelectAddedEvents());
+    }
+
+    @And("^I should select event type from the document modal$")
+    public void iShouldSelectEventTypeFromTheDocumentModal() {
+        assertTrue(actionContainer.accountPageActions.SelectDocumentEvents());
     }
 
     @And("^I should confirm the documents marked as not applicable$")
@@ -376,7 +381,12 @@ public class AccountPageSteps {
 
     @And("^I should verify disabled linkable button in approval column$")
     public void iShouldVerifyDisabledLinkableButtonInApprovalColumn() {
-        assertTrue(actionContainer.accountPageActions.verifyDisabledLinkable());
+        assertTrue(actionContainer.accountPageActions.verifyDisabledLinkableButton());
+    }
+
+    @And("^I should verify disabled approved linkable button in approval column$")
+    public void iShouldVerifyDisabledApprovedLinkableButtonInApprovalColumn() {
+        assertTrue(actionContainer.accountPageActions.verifyDisabledApprovedButton());
     }
 
     @And("^I should verify active link button in link to iverify column$")
@@ -387,5 +397,55 @@ public class AccountPageSteps {
     @And("^I should click on active link button in link to iverify column$")
     public void iShouldClickOnActiveLinkButtonInLinkToIverifyColumn() {
         assertTrue(actionContainer.accountPageActions.clickActiveLinkButton());
+    }
+
+    @And("^I should verify disabled link button in link to iverify column$")
+    public void iShouldVerifyDisabledLinkButtonInLinkToIverifyColumn() {
+        assertTrue(actionContainer.accountPageActions.verifyDisabledLinkButton());
+    }
+
+    @And("^I should verify disabled requested fro approval button in link to iverify column$")
+    public void iShouldVerifyDisabledRequestedFroApprovalButtonInLinkToIverifyColumn() {
+        assertTrue(actionContainer.accountPageActions.verifyDisabledRequestedForApprovalButton());
+    }
+
+    @And("^I should click on ticket number to open the ticket$")
+    public void iShouldClickOnTicketNumberToOpenTheTicket() {
+        assertTrue(actionContainer.accountPageActions.clickHelpTicketId());
+    }
+
+    @And("^I should click on VIP confirmation dropdown$")
+    public void iShouldClickOnVIPConfirmationDropdown() {
+        assertTrue(actionContainer.accountPageActions.clickVIPDropdown());
+    }
+
+    @And("^I should verify the VIP badge after lastname$")
+    public void iShouldVerifyTheVIPBadgeAfterLastname() {
+        assertTrue(actionContainer.accountPageActions.verifyVIPBadge());
+    }
+
+    @And("^I should not verify the VIP badge after lastname$")
+    public void iShouldNotVerifyTheVIPBadgeAfterLastname() {
+        assertTrue(actionContainer.accountPageActions.verifyNoVIPBadge());
+    }
+
+    @And("^I should click on dependent milestone in dependent tab$")
+    public void iShouldClickOnDependentMilestoneInDependentTab() {
+        assertTrue(actionContainer.accountPageActions.clickDependentMilestone());
+    }
+
+    @And("^I should not verify NewPackage in table data$")
+    public void iShouldNotVerifyNewPackageInTableData() {
+        assertTrue(actionContainer.accountPageActions.NotVerifyNewPackage());
+    }
+
+    @And("^I should not verify PortalInquiry text in Table Data$")
+    public void iShouldNotVerifyPortalInquiryTextInTableData() {
+        assertTrue(actionContainer.accountPageActions.NotVerifyNewPortalInquiry());
+    }
+
+    @And("^I should click on Save Button in portal enquiry$")
+    public void iShouldClickOnSaveButtonInPortalEnquiry() {
+        assertTrue(actionContainer.accountPageActions.clickSaveButtonInDialogBox());
     }
 }

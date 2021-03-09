@@ -54,4 +54,9 @@ public class IvacPageSteps {
     public void iShouldClickOnLatestViewAffidavitLink() {
         assertTrue(actionContainer.ivacPageActions.clickViewAffidavit());
     }
+
+    @And("^I should click on employee profile name$")
+    public void iShouldClickOnEmployeeProfileName() {
+        assertTrue(actionContainer.ivacPageActions.clickProfileIcon());
+    }
 }

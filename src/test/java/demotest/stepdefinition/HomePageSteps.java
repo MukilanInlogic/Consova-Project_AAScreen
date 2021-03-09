@@ -43,12 +43,12 @@ public class HomePageSteps {
 
     @And("^I should navigate to newly opened window$")
     public void iShouldNavigateToNewlyOpenedWindow() {
-        assertTrue(actionContainer.homePageActions.navigateToNewTab());
+        assertTrue(actionContainer.homePageActions.navigateToNewTabOrWindow());
     }
 
-    @And("^I should close the newly opened tab$")
-    public void iShouldCloseTheNewlyOpenedTab() {
-        assertTrue(actionContainer.homePageActions.closeCurrentTab());
+    @And("^I should close the newly opened window$")
+    public void iShouldCloseTheNewlyOpenedWindow() {
+        assertTrue(actionContainer.homePageActions.closeCurrentTabOrWindow());
     }
 
     @And("^I should close the displayed modal$")
@@ -136,8 +136,8 @@ public class HomePageSteps {
         assertTrue(actionContainer.homePageActions.clickTableData(Testdata.getValue(Data)));
     }
 
-    @And("^I should verify (.*) header$")
-    public void iShoudVerifyHeader(String header) {
+    @And("^I should verify (.*) second level header$")
+    public void iShoudVerifySecondLevelHeader(String header) {
         assertTrue(actionContainer.homePageActions.verifyHeader(Testdata.getValue(header)));
     }
 

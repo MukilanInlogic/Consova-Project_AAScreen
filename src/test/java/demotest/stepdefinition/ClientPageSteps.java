@@ -226,7 +226,7 @@ public class ClientPageSteps {
 
     @And("^I should verify Edit Sub Client pencil icon$")
     public void iShouldVerifyEditSubClientPencilIcon() {
-        assertTrue(actionContainer.clientPageActions.verifyEditSubClientButton());
+        assertTrue(actionContainer.clientPageActions.verifyEditIcon());
     }
 
     @And("^I should click on Edit Sub Client pencil icon$")
@@ -627,7 +627,7 @@ public class ClientPageSteps {
 
     @And("^I should verify edit buttons in the row list$")
     public void iShouldVerifyEditButtonsInTheRowList() {
-        assertTrue(actionContainer.clientPageActions.verifyEditButton());
+        assertTrue(actionContainer.clientPageActions.verifyEditIcon());
     }
 
     @And("^I should verify filter search in incomplete modal$")
@@ -875,6 +875,11 @@ public class ClientPageSteps {
         assertTrue(actionContainer.clientPageActions.clickEditButton());
     }
 
+    @And("^I should click last edit icon in the grid$")
+    public void iShouldClickLastEditIconInTheGrid() {
+        assertTrue(actionContainer.clientPageActions.clickLastEditButton());
+    }
+
     @And("^I should enable Is Employee Milestone$")
     public void iShouldEnableIsEmployeeMilestone() {
         assertTrue(actionContainer.clientPageActions.clickInitialLetter());
@@ -939,4 +944,35 @@ public class ClientPageSteps {
     public void iShouldClickOnSelectAffidavitConfigurationtype() {
         assertTrue(actionContainer.clientPageActions.clickSelectAffidavitConfigurationType());
     }
+
+    @And("^I should click on System codes for walmart$")
+    public void iShouldClickOnSystemCodesForWalmart() {
+        assertTrue(actionContainer.clientPageActions.clickWalmartSystemCodes());
+    }
+
+    @And("^I should click on link icon$")
+    public void iShouldClickOnLinkIcon() {
+        assertTrue(actionContainer.clientPageActions.clickLinkIcon());
+    }
+
+    @And("^I should click on add deadline in edit audit modal$")
+    public void iShouldClickOnAddDeadlineInEditAuditModal() {
+        assertTrue(actionContainer.clientPageActions.clickAddAudit());
+    }
+
+    @And("^I should enter deadline (.*) in the name textbox$")
+    public void iShouldEnterDeadlineDeadlineNameInTheNameTextbox(String deadlineName) {
+        assertTrue(actionContainer.clientPageActions.EnterDeadlineName(Testdata.getValue(deadlineName)));
+    }
+
+    @And("^I should check on employee milestone for deadline added$")
+    public void iShouldCheckOnEmployeeMilestoneForDeadlineAdded() {
+        assertTrue(actionContainer.clientPageActions.CheckEmployeeMilestone());
+    }
+
+    @And("^I should enable system code from round slider icon$")
+    public void iShouldEnableSystemCodeFromRoundSliderIcon() {
+        assertTrue(actionContainer.clientPageActions.clickLastSliderRoundCheckboxes());
+    }
+
 }

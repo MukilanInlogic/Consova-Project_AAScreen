@@ -107,5 +107,16 @@ public class IvacPageActions extends IvacPageUI {
         return isClicked;
     }
 
+    public boolean clickProfileIcon() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (ProfileIcon.isDisplayed()){
+            js.executeScript("arguments[0].click();",ProfileIcon);
+//            Element.click(driver,ProfileIcon);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
 
 }

@@ -2,8 +2,11 @@ package demotest.action;
 
 import commonpage.toolbox.*;
 import demotest.Repository.ClientPageUI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ClientPageActions extends ClientPageUI {
     public ClientPageActions(WebDriver driver) {
@@ -279,6 +282,16 @@ public class ClientPageActions extends ClientPageUI {
         return isClicked;
     }
 
+    public boolean clickLastSliderRoundCheckboxes() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (sliderRound.size()!=0) {
+            Element.click(driver,sliderRound.get(sliderRound.size()-1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
     public boolean clickSliderRoundHideInactive() {
         boolean isClicked = false;
         Sync.Delay(5000);
@@ -459,7 +472,7 @@ public class ClientPageActions extends ClientPageUI {
         return isEntered;
     }
 
-    public boolean verifyEditSubClientButton() {
+    public boolean verifyEditIcon() {
         boolean isVerified = false;
         Sync.Delay(5000);
         if (editSubClient.isDisplayed()){
@@ -1033,8 +1046,8 @@ public class ClientPageActions extends ClientPageUI {
     }
 
     public boolean systemCodes() {
-        boolean isClicked = false;
-        Sync.Delay(2000);
+        boolean isClicked = true;
+        Sync.Delay(5000);
         if (systemCodes.isDisplayed()){
             Element.click(driver,systemCodes);
             isClicked = true;
@@ -1254,15 +1267,6 @@ public class ClientPageActions extends ClientPageUI {
                     }
                 }
             }
-        }
-        return isVerified;
-    }
-
-    public boolean verifyEditButton() {
-        boolean isVerified = false;
-        Sync.Delay(5000);
-        if (editSubClient.isDisplayed()){
-            isVerified = true;
         }
         return isVerified;
     }
@@ -1488,15 +1492,6 @@ public class ClientPageActions extends ClientPageUI {
             if (printLanguagesLbl.isDisplayed()) {
                 isVerified = true;
             }
-        }
-        return isVerified;
-    }
-
-    public boolean verifyEditIcon() {
-        boolean isVerified = false;
-        Sync.Delay(2000);
-        if (editSubClient.isDisplayed()){
-            isVerified=true;
         }
         return isVerified;
     }
@@ -1730,6 +1725,16 @@ public class ClientPageActions extends ClientPageUI {
         return isClicked;
     }
 
+    public boolean clickLastEditButton() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (EditIcon.size()!=0){
+            Element.click(driver,EditIcon.get(EditIcon.size()-1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
     public boolean clickEditAuditIcon() {
         boolean isClicked = false;
         Sync.Delay(5000);
@@ -1860,4 +1865,56 @@ public class ClientPageActions extends ClientPageUI {
         }
         return isEntered;
     }
+
+    public boolean clickWalmartSystemCodes() {
+        boolean isClicked = true;
+        Sync.Delay(5000);
+        if (systemCodesList.size()!=0){
+            Element.click(driver,systemCodesList.get(systemCodesList.size()-1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickLinkIcon() {
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if (LinkIcon.isDisplayed()) {
+            Element.click(driver,LinkIcon);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickAddAudit() {
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if (AddDeadline.isDisplayed()) {
+            Element.click(driver,AddDeadline);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean EnterDeadlineName(String deadlineName) {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        js.executeScript("arguments[0].click();",DeadlineName);
+        if (DeadlineName.isDisplayed()) {
+            Textbox.enterValue(driver,DeadlineName,deadlineName);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean CheckEmployeeMilestone() {
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if (Checkboxes.size()!=0) {
+            Element.click(driver,Checkboxes.get(Checkboxes.size()-7));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
 }

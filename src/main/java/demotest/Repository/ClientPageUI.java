@@ -304,6 +304,9 @@ public class ClientPageUI {
     @FindBy(how = How.XPATH, using = "//span[text()='System Codes']")
     protected WebElement systemCodes;
 
+    @FindBy(how = How.XPATH, using = "//span[text()='System Codes']")
+    protected List<WebElement> systemCodesList;
+
     @FindBy(how = How.XPATH, using = "//span[text()='Incomplete Codes ']")
     protected WebElement ManageIncompleteCodesLbl;
 
@@ -494,6 +497,9 @@ public class ClientPageUI {
     @FindBy(how = How.XPATH, using = "//i[@class='fa fa-upload']")
     protected List<WebElement> FileUpload;
 
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa fa-link')]")
+    protected WebElement LinkIcon;
+
     @FindBy(how = How.XPATH, using = "//label[text()='Select Template']")
     protected WebElement SelectTemplateDropdown;
 
@@ -553,5 +559,14 @@ public class ClientPageUI {
 
     @FindBy(how = How.NAME, using = "AffidavitsVersionName")
     protected WebElement AffidavitsVersionName;
+
+    @FindBy(how = How.ID, using = "add-deadline")
+    protected WebElement AddDeadline;
+
+    @FindBy(how = How.XPATH, using = "//input[contains(@class,'ng-touched')][@type='text']")
+    protected WebElement DeadlineName;
+
+    @FindBy(how = How.XPATH, using = "//input[contains(@class,'consova-checkbox')]")
+    protected List<WebElement> Checkboxes;
 
 }

@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "test/resources/Feature/Core_AA.feature",
         glue = {"demotest.stepdefinition", "demotest.util"},
         format = {"json:cucumber-html-reports/cucumber.json",
-                "html:cucumber-html-reports/MySample"},tags = {"@MT-123456"},monochrome = true
+                "html:cucumber-html-reports/MySample"},tags = {"@EVS-2100"},monochrome = true
 )
 
 public class SmokeModuleCukesTest {

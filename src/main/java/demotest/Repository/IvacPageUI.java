@@ -51,6 +51,9 @@ public class IvacPageUI {
     @FindBy(how = How.XPATH, using = "//span[contains(@class,'menu_icon contact_icon')]")
     protected WebElement ContactIcon;
 
+    @FindBy(how = How.XPATH, using = "//div[@class='user_image']")
+    protected WebElement ProfileIcon;
+
     @FindBy(how = How.XPATH, using = "//span[contains(text(),'View Affidavit')]")
     protected List<WebElement> ViewAffidavit;
 

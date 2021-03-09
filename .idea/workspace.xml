@@ -7,26 +7,28 @@
       <change beforePath="$PROJECT_DIR$/resources/testdata/testdata.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/testdata/testdata.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/AccountPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/AccountPageUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/ClientPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/ClientPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/HomePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/HomePageUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/IvacPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/IvacPageUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/AccountPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/AccountPageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/ClientPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/ClientPageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/HomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/HomePageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/IvacPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/IvacPageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/cukes/SmokeModuleCukesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/cukes/SmokeModuleCukesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/AccountPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/AccountPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/ClientPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/ClientPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/HomePageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IvacPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IvacPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/Repository/AccountPageUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/Repository/AccountPageUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/Repository/ClientPageUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/Repository/ClientPageUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demotest/Repository/HomePageUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/Repository/HomePageUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demotest/Repository/IvacPageUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/Repository/IvacPageUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/AccountPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/AccountPageActions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/ClientPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/ClientPageActions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/HomePageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/HomePageActions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/IvacPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/IvacPageActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/cukes/SmokeModuleCukesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/cukes/SmokeModuleCukesTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/AccountPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/AccountPageSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/ClientPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/ClientPageSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/HomePageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/HomePageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/IvacPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/IvacPageSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="framework" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Consova-Project_IVAC" />
+    <property name="last_opened_file_path" value="D:/Consova_Dev_Branch" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -89,16 +91,16 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: EVS-63:As a user I should be able to link affidavits to a dependent from the account screen">
-    <configuration name="Scenario: EVS-1132:As a user, I should see the history tab on the account screen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: EVS-2248:As a user, I should be to configure ineligible reasons for sub clients">
+    <configuration name="Scenario: EVS-1534:As a user, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-1132\:As a user\, I should see the history tab on the account screen$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-1132\:As a user\, I should see the history tab on the account screen$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-1132:As a user, I should see the history tab on the account screen" />
+      <option name="NAME_FILTER" value="^EVS\-1534\:As a user\, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-1534\:As a user\, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-1534:As a user, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -109,15 +111,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-2099:As a user, I should be able to see affidavits with always available option - iVerify" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-2248:As a user, I should be to configure ineligible reasons for sub clients" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-2099\:As a user\, I should be able to see affidavits with always available option \- iVerify$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-2099\:As a user\, I should be able to see affidavits with always available option \- iVerify$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-2099:As a user, I should be able to see affidavits with always available option - iVerify" />
+      <option name="NAME_FILTER" value="^EVS\-2248\:As a user\, I should be to configure ineligible reasons for sub clients$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-2248\:As a user\, I should be to configure ineligible reasons for sub clients$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-2248:As a user, I should be to configure ineligible reasons for sub clients" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -128,15 +130,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-430:As a system I should derive document status from alternate documents status on account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-2433:As a user, I should be able to set ineligible code type on ineligible modal" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-430\:As a system I should derive document status from alternate documents status on account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-430\:As a system I should derive document status from alternate documents status on account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-430:As a system I should derive document status from alternate documents status on account" />
+      <option name="NAME_FILTER" value="^EVS\-2433\:As a user\, I should be able to set ineligible code type on ineligible modal$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-2433\:As a user\, I should be able to set ineligible code type on ineligible modal$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-2433:As a user, I should be able to set ineligible code type on ineligible modal" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -147,15 +149,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-63:As a user I should be able to link affidavits to a dependent from the account screen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-54:As a user I should see client information on the top of the page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-63\:As a user I should be able to link affidavits to a dependent from the account screen$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-63\:As a user I should be able to link affidavits to a dependent from the account screen$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-63:As a user I should be able to link affidavits to a dependent from the account screen" />
+      <option name="NAME_FILTER" value="^EVS\-54\:As a user I should see client information on the top of the page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-54\:As a user I should see client information on the top of the page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-54:As a user I should see client information on the top of the page" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -166,15 +168,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-66:As a user I should see all history information for the account in the History menu" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-67:As a user I should see overall audit statuses related to ineligible and incomplete reasons" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-66\:As a user I should see all history information for the account in the History menu$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-66\:As a user I should see all history information for the account in the History menu$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-66:As a user I should see all history information for the account in the History menu" />
+      <option name="NAME_FILTER" value="^EVS\-67\:As a user I should see overall audit statuses related to ineligible and incomplete reasons$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-67\:As a user I should see overall audit statuses related to ineligible and incomplete reasons$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-67:As a user I should see overall audit statuses related to ineligible and incomplete reasons" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -197,21 +199,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Scenario: EVS-430:As a system I should derive document status from alternate documents status on account" />
       <item itemvalue="JUnit.SmokeModuleCukesTest" />
       <item itemvalue="Maven.AAScreen" />
-      <item itemvalue="Cucumber java.Scenario: EVS-1132:As a user, I should see the history tab on the account screen" />
-      <item itemvalue="Cucumber java.Scenario: EVS-66:As a user I should see all history information for the account in the History menu" />
-      <item itemvalue="Cucumber java.Scenario: EVS-63:As a user I should be able to link affidavits to a dependent from the account screen" />
-      <item itemvalue="Cucumber java.Scenario: EVS-2099:As a user, I should be able to see affidavits with always available option - iVerify" />
+      <item itemvalue="Cucumber java.Scenario: EVS-1534:As a user, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder" />
+      <item itemvalue="Cucumber java.Scenario: EVS-54:As a user I should see client information on the top of the page" />
+      <item itemvalue="Cucumber java.Scenario: EVS-67:As a user I should see overall audit statuses related to ineligible and incomplete reasons" />
+      <item itemvalue="Cucumber java.Scenario: EVS-2433:As a user, I should be able to set ineligible code type on ineligible modal" />
+      <item itemvalue="Cucumber java.Scenario: EVS-2248:As a user, I should be to configure ineligible reasons for sub clients" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: EVS-63:As a user I should be able to link affidavits to a dependent from the account screen" />
-        <item itemvalue="Cucumber java.Scenario: EVS-2099:As a user, I should be able to see affidavits with always available option - iVerify" />
-        <item itemvalue="Cucumber java.Scenario: EVS-66:As a user I should see all history information for the account in the History menu" />
-        <item itemvalue="Cucumber java.Scenario: EVS-1132:As a user, I should see the history tab on the account screen" />
-        <item itemvalue="Cucumber java.Scenario: EVS-430:As a system I should derive document status from alternate documents status on account" />
+        <item itemvalue="Cucumber java.Scenario: EVS-2248:As a user, I should be to configure ineligible reasons for sub clients" />
+        <item itemvalue="Cucumber java.Scenario: EVS-2433:As a user, I should be able to set ineligible code type on ineligible modal" />
+        <item itemvalue="Cucumber java.Scenario: EVS-67:As a user I should see overall audit statuses related to ineligible and incomplete reasons" />
+        <item itemvalue="Cucumber java.Scenario: EVS-54:As a user I should see client information on the top of the page" />
+        <item itemvalue="Cucumber java.Scenario: EVS-1534:As a user, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder" />
       </list>
     </recent_temporary>
   </component>
@@ -359,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614659095912</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Commit now">
+      <created>1614690448472</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614690448472</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -393,6 +402,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit now" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="200" key="#Scopes" timestamp="1614948702785">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="200" key="#Scopes/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614948702785" />
     <state x="414" y="177" width="1092" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613724311555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -406,39 +419,40 @@
     </state>
     <state x="536" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614604211013" />
     <state x="2456" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614690443371" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1613717102445">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1615205598743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1613182730886" />
-    <state x="740" y="277" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613717102445" />
-    <state width="1875" height="206" key="GridCell.Tab.0.bottom" timestamp="1614689760662">
+    <state x="740" y="277" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615205598743" />
+    <state width="1875" height="237" key="GridCell.Tab.0.bottom" timestamp="1615205724806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
-    <state width="1875" height="206" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614689760662" />
-    <state width="1875" height="206" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614686180554" />
-    <state width="1875" height="206" key="GridCell.Tab.0.center" timestamp="1614689760662">
+    <state width="1875" height="237" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615205724806" />
+    <state width="1875" height="237" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615175861812" />
+    <state width="1875" height="237" key="GridCell.Tab.0.center" timestamp="1615205724805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
-    <state width="1875" height="206" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614689760662" />
-    <state width="1875" height="206" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614686180554" />
-    <state width="1875" height="206" key="GridCell.Tab.0.left" timestamp="1614689760661">
+    <state width="1875" height="237" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615205724805" />
+    <state width="1875" height="237" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615175861812" />
+    <state width="1875" height="237" key="GridCell.Tab.0.left" timestamp="1615205724805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
-    <state width="1875" height="206" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614689760661" />
-    <state width="1875" height="206" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614686180554" />
-    <state width="1875" height="206" key="GridCell.Tab.0.right" timestamp="1614689760662">
+    <state width="1875" height="237" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615205724805" />
+    <state width="1875" height="237" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615175861812" />
+    <state width="1875" height="237" key="GridCell.Tab.0.right" timestamp="1615205724805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
-    <state width="1875" height="206" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614689760662" />
-    <state width="1875" height="206" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614686180554" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1613727618030">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1875" height="237" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615205724805" />
+    <state width="1875" height="237" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615175861812" />
+    <state x="2472" y="255" key="Vcs.Push.Dialog.v2" timestamp="1614690469972">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="255" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613727618030" />
+    <state x="2472" y="255" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614690469972" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1613715544892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -453,11 +467,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2532" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614152431186" />
-    <state x="616" y="235" width="672" height="677" key="run.anything.popup" timestamp="1614588336732">
+    <state x="616" y="235" width="672" height="677" key="run.anything.popup" timestamp="1614862524869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612940958399" />
-    <state x="616" y="235" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614588336732" />
+    <state x="616" y="235" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614862524869" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606986101491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

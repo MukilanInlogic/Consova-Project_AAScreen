@@ -78,11 +78,11 @@ public class AccountPageActions extends AccountPageUI {
         return isEntered;
     }
 
-    public boolean enterMiddleName(String Email) {
+    public boolean enterFirstName(String Email) {
         boolean isEntered = false;
-//        Sync.Delay(1000);
-        if (MiddleNameTxtBox.isDisplayed()){
-            Textbox.enterValue(driver,MiddleNameTxtBox,Email);
+        Sync.Delay(1000);
+        if (FirstNameTxtBox.isDisplayed()){
+            Textbox.enterValue(driver,FirstNameTxtBox,Email);
             isEntered = true;
         }
         return isEntered;
@@ -288,6 +288,16 @@ public class AccountPageActions extends AccountPageUI {
         Sync.Delay(3000);
         if (ButtonInDialogBox.length()!=0){
             Element.click(driver,ButtonInDialogBox,inButton);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickSaveButtonInDialogBox() {
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if (SaveButtonInDialogBox.isDisplayed()){
+            Element.click(driver,SaveButtonInDialogBox);
             isClicked = true;
         }
         return isClicked;
@@ -630,6 +640,16 @@ public class AccountPageActions extends AccountPageUI {
         return isClicked;
     }
 
+    public boolean SelectDocumentEvents() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (AddedEvents.size()!=0){
+            Element.click(driver,AddedEvents.get(AddedEvents.size()-1));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
     public boolean ConfirmNotApplicable() {
         boolean isClicked = false;
         Sync.Delay(5000);
@@ -697,10 +717,37 @@ public class AccountPageActions extends AccountPageUI {
         return isEntered;
     }
 
-    public boolean verifyDisabledLinkable() {
+    public boolean verifyDisabledLinkableButton() {
         boolean isVerified = false;
         Sync.Delay(3000);
         if (DisabledLinkableButton.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyDisabledApprovedButton() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (DisabledApprovedButton.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyDisabledLinkButton() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (DisabledLinkButton.isDisplayed()){
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyDisabledRequestedForApprovalButton() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (DisabledRequestedForApprovalButton.isDisplayed()){
             isVerified = true;
         }
         return isVerified;
@@ -722,6 +769,71 @@ public class AccountPageActions extends AccountPageUI {
             Element.click(driver,ActiveLinkButton);
             isClicked = true;
         }
+        return isClicked;
+    }
+
+    public boolean clickHelpTicketId() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (HelpTicketId.isDisplayed()){
+//            js.executeScript("argument[0].click();",HelpTicketId);
+            Element.click(driver,HelpTicketId);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickVIPDropdown() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (VIPDropdown.isDisplayed()){
+            Element.click(driver,VIPDropdown);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean verifyVIPBadge() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if (VIPBadge.isDisplayed()){
+            Element.verifyElement(VIPBadge);
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyNoVIPBadge() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        Element.notVerifyElement(VIPBadge);
+        isVerified = true;
+        return isVerified;
+    }
+
+    public boolean clickDependentMilestone() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if (DependentMilestones.isDisplayed()){
+            Element.click(driver,DependentMilestones);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean NotVerifyNewPackage() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+            Element.notVerifyElement(driver,NewPackage);
+            isClicked = true;
+        return isClicked;
+    }
+
+    public boolean NotVerifyNewPortalInquiry() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+            Element.notVerifyElement(driver,PortalInquiry);
+            isClicked = true;
         return isClicked;
     }
 

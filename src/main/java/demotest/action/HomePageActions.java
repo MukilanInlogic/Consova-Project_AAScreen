@@ -101,7 +101,7 @@ public class HomePageActions extends HomePageUI {
 
     public boolean closeTheModal() {
         boolean isClicked = false;
-        Sync.Delay(2000);
+        Sync.Delay(3000);
         if (closeButtonInModal.isDisplayed()){
             Element.click(driver,closeButtonInModal);
             isClicked = true;
@@ -230,7 +230,7 @@ public class HomePageActions extends HomePageUI {
 
     public boolean verifyInSpan(String InSpan) {
         boolean isVerified = false;
-        Sync.Delay(1000);
+        Sync.Delay(3000);
         if (driver!=null){
             Element.verifyElements(driver,elementInSpan,InSpan);
             isVerified = true;
@@ -279,7 +279,7 @@ public class HomePageActions extends HomePageUI {
 
     public boolean FirstFilterBy(String filterItem){
         boolean isEntered = false;
-        Sync.Delay(3000);
+        Sync.Delay(7000);
         if(FilterByTxtbox.size()!=0){
             Textbox.enterValue(driver,FilterByTxtbox.get(0),filterItem);
             isEntered=true;
@@ -367,7 +367,7 @@ public class HomePageActions extends HomePageUI {
         return isClicked;
     }
 
-    public boolean navigateToNewTab() {
+    public boolean navigateToNewTabOrWindow() {
         boolean isDisplayed = false;
         Sync.Delay(3000);
         if (driver!=null) {
@@ -378,7 +378,7 @@ public class HomePageActions extends HomePageUI {
         return isDisplayed;
     }
 
-    public boolean closeCurrentTab() {
+    public boolean closeCurrentTabOrWindow() {
         boolean isClosed = false;
         Sync.ImplicityDelay(driver,3000);
         if (driver!=null){
