@@ -23,8 +23,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      | firstName               | lastName          | ssn          |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.FIRSTNAMECHECK | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
+      | URL          | userName          | password          | accountURL          | accountNumber      | firstName          | lastName          | ssn          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.FIRSTNAME | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
   @EVS-35
   Scenario Outline: EVS-35:As a user I should see dependent information (tabs) on the account screen
@@ -118,8 +118,37 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      | emailId          | firstName          | address          | firstNameDep          |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.EMAILID | DP:LOGIN.FIRSTNAME | DP:LOGIN.ADDRESS | DP:LOGIN.FIRSTNAMEDEP |
+      | URL          | userName          | password          | accountURL          | accountNumber      | emailId          | firstName          | address          | firstNameDep                |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.EMAILID | DP:LOGIN.FIRSTNAME | DP:LOGIN.ADDRESS | DP:LOGIN.FIRSTNAMEDEPENDENT |
+
+  @EVS-1534
+  Scenario Outline: EVS-1534:As a user, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on lock icon on the account level
+    And I should click on employee alert button
+    And I should verify Employee Alerts text In Span
+    And I should select one alert
+    And I should click on Save button in dialog box
+    And I should click on employee alert button
+    And I should verify the enabled alert
+    And I should click on Cancel In Button
+    And I should click on dependent alert button
+    And I should verify Dependent Audit Alerts text In Span
+    And I should select one alert
+    And I should click on Save button in dialog box
+    And I should click on dependent alert button
+    And I should verify the enabled alert
+    And I should click on Cancel In Button
+    And I should release locked icon on the account level
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-65
   Scenario Outline: EVS-65:As a user I should be able to work account tasks on the account screen
@@ -179,8 +208,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      | ivacURL          | lastName          | sSN          |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
+      | URL          | userName          | password          | accountURL          | accountNumber      | ivacURL             | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
   @EVS-1132
   Scenario Outline: EVS-1132:As a user, I should see the history tab on the account screen
@@ -309,8 +338,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountNumber                  | SSN                      | lastName                      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.NONRESPONDERSSN | DP:LOGIN.NONRESPONDERLASTNAME |
+      | URL          | userName          | password          | accountNumber      | SSN          | lastName          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO | DP:LOGIN.SSN | DP:LOGIN.LASTNAME |
 
   @EVS-1433
   Scenario Outline: EVS-1433:As a user, I should be able to change dependent relationship
@@ -375,8 +404,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber                  | deadlineName                   |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.NONRESPONDERACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber      | deadlineName       |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.ACCOUNTNO |
 
   @EVS-1575
   Scenario Outline: EVS-1575:As a user, I should see employee mile stones on the account screen
@@ -398,8 +427,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber                  |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-80
   Scenario Outline: EVS-80:As a user I should see locks at the account level
@@ -421,8 +450,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber                  |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-57
   Scenario Outline: EVS-57:As a user I should see locks at the dependent level
@@ -445,8 +474,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber                  |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-40
   Scenario Outline: EVS-40:As a user I should be able to add an authorized caller to the account
@@ -468,7 +497,7 @@ Feature: Smoke Module
     And I should verify Relationship In Label
     And I should enter <callerName> in caller name textbox
     And I should click on Select Relationship In Options
-    And I should click on Domestic Partner In Options
+    And I should click on Other In Options
     And I should click on Save button in dialog box
     And I should close the displayed modal
     And I should click on View All In Span
@@ -486,6 +515,8 @@ Feature: Smoke Module
     And I should click on refresh icon in dialog box
     And I should verify today date extended to next year
     And I should close the displayed modal
+    And I should click on profile icon in core
+    And I should logoff from core login
     Given I should enter login url <ivacURL>
     When I should Login to application with <lastName> , <accountNumber> and <sSN>
     And I should click on Login button from Login screen
@@ -493,11 +524,54 @@ Feature: Smoke Module
     And I should click on Profile In Button
     And I should verify Add Caller text In Span
     And I should verify <callerName> text In Span
-    And I should verify Domestic Partner text In Span
+    And I should verify Other text In Span
     And I should logoff from home screen
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber                  | callerName          | ivacURL          | lastName          | sSN          |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.CALLERNAME | DP:LOGIN.IVACURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
+      | URL          | userName          | password          | accountURL          | accountNumber      | callerName          | ivacURL             | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.CALLERNAME | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
+
+  @EVS-2476
+  Scenario Outline: EVS-2476:As a user I should see the following change to the Authorized Caller selection options in iVerify and Core Account Screen
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on View All In Span
+    And I should verify Add Caller In Button
+    And I should click on Add Caller In Button
+    And I should click on Select Relationship In Options
+    And I should verify Spouse text In Options
+    And I should verify Domestic Partner text In Options
+    And I should verify Ex-Spouse text In Options
+    And I should verify Child or Grandchild text In Options
+    And I should verify HR or Benefits Representative text In Options
+    And I should verify Translator text In Options
+    And I should verify Other text In Options
+    And I should click on Cancel In Button
+    And I should close the displayed modal
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <ivacURL>
+    When I should Login to application with <lastName> , <accountNumber> and <sSN>
+    And I should click on Login button from Login screen
+    And I should click on employee profile name
+    And I should click on Profile In Button
+    And I should click on Add Caller In Span
+    And I should click on Select Relationship In Label
+    And I should verify Spouse text In Span
+    And I should verify Domestic Partner text In Span
+    And I should verify Ex-Spouse text In Span
+    And I should verify Child or Grandchild text In Span
+    And I should verify HR or Benefits Representative text In Span
+    And I should verify Translator text In Span
+    And I should verify Other text In Span
+    And I should enter <callerName> in caller name textbox
+    And I should click on Cancel In Button
+    And I should logoff from home screen
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber      | callerName          | ivacURL             | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.CALLERNAME | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
   @EVS-54
   Scenario Outline: EVS-54:As a user I should see client information on the top of the page
@@ -510,54 +584,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber                  |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO |
-
-  @EVS-134
-  Scenario Outline: EVS-134:As a user, I should capture dependent types for SP
-    Given I should enter login url <URL>
-    When I should Login to core application with <userName> and <password>
-    And I should click on Login button from Login screen
-    And I should enter account url <accountURL> with <accountNumber>
-    And I should verify <accountNumber> text In Bold
-    And I should verify the active dependent tab with dependent name
-    And I should verify (SP) text In Span
-    And I should click on CL In Span
-    And I should click on LM In Span
-    And I should click on profile icon in core
-    And I should logoff from core login
-    Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber            |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPOUSEACCOUNTNO |
-
-  @EVS-1534
-  Scenario Outline: EVS-1534:As a user, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder
-    Given I should enter login url <URL>
-    When I should Login to core application with <userName> and <password>
-    And I should click on Login button from Login screen
-    And I should enter account url <accountURL> with <accountNumber>
-    And I should verify <accountNumber> text In Bold
-    And I should click on lock icon on the account level
-    And I should click on employee alert button
-    And I should verify Employee Alerts text In Span
-    And I should select one alert
-    And I should click on Save button in dialog box
-    And I should click on employee alert button
-    And I should verify the enabled alert
-    And I should click on Cancel In Button
-    And I should click on dependent alert button
-    And I should verify Dependent Audit Alerts text In Span
-    And I should select one alert
-    And I should click on Save button in dialog box
-    And I should click on dependent alert button
-    And I should verify the enabled alert
-    And I should click on Cancel In Button
-    And I should release locked icon on the account level
-    And I should click on profile icon in core
-    And I should logoff from core login
-    Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber            |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPOUSEACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-2099
   Scenario Outline: EVS-2099:As a user, I should be able to see affidavits with always available option - iVerify
@@ -607,8 +635,8 @@ Feature: Smoke Module
     And I should close the displayed modal
     And I should logoff from home screen
     Examples:
-      | URL          | userName          | password          | clientname          | affidavitsName1         | accountNumber                  | ivacURL          | lastName                      | sSN                      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.TESTCLIENT | DP:LOGIN.AFFIDAVITNAME1 | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.NONRESPONDERLASTNAME | DP:LOGIN.NONRESPONDERSSN |
+      | URL          | userName          | password          | affidavitsName1         | accountNumber      | ivacURL             | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.AFFIDAVITNAME1 | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
   @EVS-2080&EVS-63
   Scenario Outline: EVS-2080&EVS-63:As a user, I should be able to link affidavit to the employee account - core
@@ -667,8 +695,8 @@ Feature: Smoke Module
     And I should close the displayed modal
     And I should logoff from home screen
     Examples:
-      | URL          | userName          | password          | clientname          | affidavitsName2         | accountURL          | accountNumber                  | ivacURL          | lastName                      | sSN                      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.TESTCLIENT | DP:LOGIN.AFFIDAVITNAME2 | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.NONRESPONDERLASTNAME | DP:LOGIN.NONRESPONDERSSN |
+      | URL          | userName          | password          | affidavitsName2         | accountURL          | accountNumber      | ivacURL             | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.AFFIDAVITNAME2 | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
   @EVS-2100
   Scenario Outline: EVS-2100:As a user, I should be able to see affidavits that require approval from the audit and account screen (forms modal)
@@ -728,7 +756,7 @@ Feature: Smoke Module
     And I should enter <accountNumber> in first filterBy textbox
     And I should verify <accountNumber> text In Span
     And I should verify Manager Review text in Table Data
-    And I should verify Kalai Test text in Table Data
+    And I should verify <affidavitsName3> text in Table Data
     And I should click on ticket number to open the ticket
     And I should verify View Help Ticket text In Span
     And I should verify <accountNumber> text In Span
@@ -769,8 +797,8 @@ Feature: Smoke Module
     And I should close the displayed modal
     And I should logoff from home screen
     Examples:
-      | URL          | userName          | password          | clientname          | affidavitsName3         | accountURL          | accountNumber                  | ivacURL          | lastName                      | sSN                      | manager          | auditor          |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.TESTCLIENT | DP:LOGIN.AFFIDAVITNAME3 | DP:LOGIN.ACCOUNTURL | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.NONRESPONDERLASTNAME | DP:LOGIN.NONRESPONDERSSN | DP:LOGIN.MANAGER | DP:LOGIN.AUDITOR |
+      | URL          | userName          | password          | affidavitsName3         | accountURL          | accountNumber      | ivacURL             | lastName          | sSN          | manager          | auditor          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.AFFIDAVITNAME3 | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN | DP:LOGIN.MANAGER | DP:LOGIN.AUDITOR |
 
   @EVS-2396
   Scenario Outline: EVS-2396:As a user, I should be able to map an affidavit to a document requirement
@@ -836,8 +864,8 @@ Feature: Smoke Module
     And I should close the displayed modal
     And I should logoff from home screen
     Examples:
-      | URL          | userName          | password          | clientname          | englishVerbiage               | affidavitsName4         | accountNumber                  | ivacURL          | lastName                      | sSN                      | accountURL          | spanishVerbiage      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.TESTCLIENT | DP:LOGIN.ENGVERBIAGEAFFIDAVIT | DP:LOGIN.AFFIDAVITNAME4 | DP:LOGIN.NONRESPONDERACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.NONRESPONDERLASTNAME | DP:LOGIN.NONRESPONDERSSN | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPAVERBIAGE |
+      | URL          | userName          | password          | englishVerbiage               | affidavitsName4         | accountNumber      | ivacURL             | lastName          | sSN          | accountURL          | spanishVerbiage      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ENGVERBIAGEAFFIDAVIT | DP:LOGIN.AFFIDAVITNAME4 | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPAVERBIAGE |
 
     #Need to reframe
   @EVS-82
@@ -1055,8 +1083,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      | ivacURL          | lastName          | sSN          |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVACURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
+      | URL          | userName          | password          | accountURL          | accountNumber      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
 
   @EVS-231
   Scenario Outline: EVS-231:As a user, I should complete QR tasks as Incorrect
@@ -1076,6 +1104,19 @@ Feature: Smoke Module
 
   @EVS-51
   Scenario Outline: EVS-51:As a user I should be able to remove employees and dependents from a project
+    Given I should enter login url <irisURL>
+    When I should Login to core application with <irisuserName> and <password>
+    And I should click on Login button from Login screen
+    And I should verify search textbox at the right top of window
+    And I should enter <accountNumber> in the search bar
+    And I should click on <accountNumber> In Div
+    And I should navigate to newly opened window
+    And I should click on Upload Documents In Button
+    And I should select desired document by Browse icon
+    And I should click on Upload button in dialog box
+    And I should click on OK In Button
+    And I should close the newly opened window
+    And I should logoff from home screen
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
@@ -1084,10 +1125,27 @@ Feature: Smoke Module
     And I should verify delete audit button in the dependent section
     And I should click delete audit button in the dependent section
     And I should verify Remove From Audit text In Span
+    And I should click on Cancel In Button
+    And I should verify Remove From Audit text In Span
     And I should click on Select Reason In Label
+    And I should verify Consova discretion text In Span
+    And I should verify Dependent benefit(s) cancelled text In Span
+    And I should verify Dependent reported as deceased text In Span
+    And I should verify Employee benefit(s) cancelled text In Span
+    And I should verify Employee reported as deceased text In Span
+    And I should verify Employee terminated employment text In Span
+    And I should verify Home in disrepair or requiring maintenance or renovation text In Span
+    And I should verify Non-Payment of policy or too many missed payments text In Span
+    And I should verify Criminal Record, false declarations text In Span
+    And I should verify Change in a situation text In Span
+    And I should verify Enlarged spleen text In Span
     And I should click on Consova discretion In Span
     And I should click on Remove From Audit In Button
-    And I should accept the alert to remove from audit
+    And I should click on No In Button
+    And I should click on Remove From Audit In Button
+    And I should verify Confirmation text In Span
+    And I should verify Are you sure you want to remove this person from audit? text In Span
+    And I should click on Yes In Button
     And I should verify Consova discretion text In Div
     And I should verify Removed from Audit text In Span
     And I should click on Edit Result In Button
@@ -1096,37 +1154,63 @@ Feature: Smoke Module
     And I should click on Select Reason In Label
     And I should click on Consova discretion In Span
     And I should click on Remove From Audit In Button
-    And I should accept the alert to remove from audit
+    And I should click on Yes In Button
+    And I should verify the removed reason in red bold font with reason
     And I should verify Consova discretion text In Div
     And I should verify Removed from Audit text In Span
+    And I should verify removed from audit in inclined position
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber           | irisURL           | irisuserName           |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.REMOVEEMPLOYEE | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME |
 
   @EVS-1971
   Scenario Outline: EVS-1971:As a user, I should see audit screen details for dependents with removed from audit
     Given I should enter login url <URL>
     When I should Login to core application with <userName> and <password>
     And I should click on Login button from Login screen
-    And I should enter account url <accountURL> with <accountNumber>
-    And I should verify <accountNumber> text In Bold
-    And I should verify the active dependent tab with dependent name
-    And I should verify delete audit button in the dependent section
-    And I should click delete audit button in the dependent section
-    And I should verify Remove From Audit text In Span
-    And I should click on Select Reason In Label
-    And I should select the reason for remove audit
-    And I should click on Remove From Audit In Button
-    And I should accept the alert to remove from audit
-    And I should verify Add In Button
-    And I should verify Removed from Audit text In Span
+    And I should click on My Inventory
+    And I should click on auditor dropdown in inventory modal
+    And I should click on <auditorName> In Span
+    And I should enter <accountNumber> in first filterBy textbox
+    And I should click on load audit icon
+    And I should verify no active dependents label
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
+      | URL          | userName          | password          | accountNumber           | auditorName      |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.REMOVEEMPLOYEE | DP:LOGIN.AUDITOR |
+
+  @EVS-1968
+  Scenario Outline: EVS-1968:As a user, I should be able to see removed from audit dependents - iVerify Pro
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should verify the removed reason in red bold font with reason
+    And I should verify Consova discretion text In Div
+    And I should verify Removed from Audit text In Span
+    And I should verify removed from audit in inclined position
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <irisURL>
+    When I should Login to core application with <irisuserName> and <password>
+    And I should click on Login button from Login screen
+    And I should verify search textbox at the right top of window
+    And I should enter <accountNumber> in the search bar
+    And I should click on <accountNumber> In Div
+    And I should navigate to newly opened window
+    And I should verify the removed reason in red bold font with reason
+    And I should verify Consova discretion text In Div
+    And I should verify Removed from Audit text In Span
+    And I should verify removed from audit in inclined position
+    And I should close the newly opened window
+    And I should logoff from home screen
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber           | irisURL           | irisuserName           |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.REMOVEEMPLOYEE | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME |
 
   @EVS-2727
   Scenario Outline: EVS-2727:As a user, I should see watermark on account screen based on the audit status
@@ -1136,15 +1220,15 @@ Feature: Smoke Module
     And I should enter account url <accountURL> with <accountNumber>
     And I should verify <accountNumber> text In Bold
     And I should verify Removed from Audit text In Span
-    And I should click on My Inventory
-    And I should enter <accountNumber> in first filterBy textbox
-    And I should click on load audit icon
-    And I should verify Removed from Audit text In Span
+    And I should enter account url <accountURL> with <accountNumberAuditOver>
+    And I should verify <accountNumberAuditOver> text In Bold
+    And I should verify Audit Over text In Span
+    And I should verify audit over in inclined position
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber           | accountNumberAuditOver     |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.REMOVEEMPLOYEE | DP:LOGIN.AUDITOVEREMPLOYEE |
 
   @EVS-38
   Scenario Outline: EVS-38:As a user I should be able to add employees and dependents to a project
@@ -1165,8 +1249,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber           |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.REMOVEEMPLOYEE |
 
   @EVS-76
   Scenario Outline: EVS-76:As a user I should be able to add new documents on the auditing screen
@@ -1183,8 +1267,8 @@ Feature: Smoke Module
     And I should click on profile icon in core
     And I should logoff from core login
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber           |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.REMOVEEMPLOYEE |
 
   @EVS-425
   Scenario Outline: EVS-425:As a system I should mark all documents as N/A if the auditor marks the dependent as ineligible
@@ -1386,3 +1470,201 @@ Feature: Smoke Module
     Examples:
       | URL          | userName          | password          | clientname          | englishVerbiage             | subClient          |
       | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.TESTCLIENT | DP:LOGIN.ENGVERBIAGESYSCODE | DP:LOGIN.SUBCLIENT |
+
+  @EVS-2133
+  Scenario Outline: EVS-2133:As a user, I should be able to term an employee
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify the term employee icon
+    And I should click the term employee icon
+    And I should verify Confirmation text In Span
+    And I should verify Are you sure you want to term this employee record? text In Span
+    And I should click on No In Button
+    And I should click the term employee icon
+    And I should click on Yes In Button
+    And I should not verify the term employee icon
+    And I should verify Employee Termed text In Span
+    And I shoud verify disabled Add button
+    And I shoud verify disabled Edit Result button
+    And I shoud verify disabled Change Relation button
+    And I shoud verify disabled Complete All button
+    And I shoud verify disabled Add Document button
+    And I shoud verify disabled Complete Date button
+    And I shoud verify disabled Ineligible Codes button
+    And I shoud verify disabled Help Ticket button
+    And I should click on View All In Button
+    And I should close the displayed modal
+    And I should click on dependent milestone in dependent tab
+    And I should close the displayed modal
+    And I should click on employee alert button
+    And I should close the displayed modal
+#    And I should click on dependent alert button
+#    And I should close the displayed modal
+    And I should click on Admin Ticket In Button
+    And I should verify Create Admin Ticket text In Span
+    And I should click on Cancel In Button
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber           |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.TERMEDEMPLOYEE |
+
+  @EVS-134
+  Scenario Outline: EVS-134:As a user, I should capture dependent types for SP
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should verify the active dependent tab with dependent name
+    And I should verify (SP) text In Span
+    And I should click on CL In Span
+    And I should click on LM In Span
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber            |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPOUSEACCOUNTNO |
+
+  @EVS-2443
+  Scenario Outline: EVS-2443:As a user, I should be able to capture complete date manually on the account and audit screen
+    Given I should enter login url <irisURL>
+    When I should Login to core application with <irisuserName> and <password>
+    And I should click on Login button from Login screen
+    And I should verify search textbox at the right top of window
+    And I should enter <accountNumber> in the search bar
+    And I should click on <accountNumber> In Div
+    And I should navigate to newly opened window
+    And I should click on Upload Documents In Button
+    And I should select desired document by Browse icon
+    And I should click on Upload button in dialog box
+    And I should click on OK In Button
+    And I should close the newly opened window
+    And I should logoff from home screen
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on Complete All In Button
+    And I should click on Proceed In Button
+    And I should click on CL In Span
+    And I should complete all documents listed
+    And I should click on Save In Button
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <URL>
+    When I should Login to core application with <userNameRandom> and <password>
+    And I should click on Login button from Login screen
+    And I should click on My Inventory
+    And I should enter <accountNumber> in first filterBy textbox
+    And I should click on <accountNumber> In Span
+    And I should navigate to newly opened window
+    And I should verify <accountNumber> text In Bold
+    And I should click on complete random task
+    And I should click on Proceed In Button
+    And I should click on Save In Button
+    And I should verify error message for completed date
+    And I should click on Close In Button
+    And I should click on Complete Date In Button
+    And I should verify Complete Date text In Span
+    And I should verify enabled benefit type in the modal
+    And I should click on Cancel button in dialog
+    And I should click on Complete Date In Button
+    And I should verify Complete Date text In Span
+    And I should verify enabled benefit type in the modal
+    And I should enter <date> date in completed date modal
+    And I should click on Save Button in portal enquiry
+    And I should click on Save In Button
+    And I should close the newly opened window
+    And I should click on load audit icon
+    And I should verify <accountNumber> text In Bold
+    And I should verify the completed benefit type
+    And I should verify the completed date in required date format
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName                 | password          | accountURL          | accountNumber            | irisURL           | irisuserName           | date          | userNameRandom          |
+      | DP:LOGIN.URL | DP:LOGIN.PACKAGEUSERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPOUSEACCOUNTNO | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME | DP:LOGIN.DATE | DP:LOGIN.RANDOMUSERNAME |
+
+  @EVS-1820
+  Scenario Outline: EVS-1820:As a user, I should see the captured Complete Date - iVerifyPro
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should verify Complete Date In Button
+    And I should verify the completed benefit type
+    And I should verify the completed date in required date format
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <irisURL>
+    When I should Login to core application with <irisuserName> and <password>
+    And I should click on Login button from Login screen
+    And I should verify search textbox at the right top of window
+    And I should enter <accountNumber> in the search bar
+    And I should click on <accountNumber> In Div
+    And I should navigate to newly opened window
+    And I should verify  Complete  text In Div
+    And I should close the newly opened window
+    And I should logoff from home screen
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber            | irisURL           | irisuserName           |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPOUSEACCOUNTNO | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME |
+
+  @EVS-2150
+  Scenario Outline: EVS-2150:As a user, I should be able to purge a dependent
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should click the purge dependent icon
+    And I should verify Confirmation text In Span
+    And I should verify Are you sure you want to purge this dependent record? text In Span
+    And I should click on No In Button
+    And I should click the purge dependent icon
+    And I should verify Confirmation text In Span
+    And I should verify Are you sure you want to purge this dependent record? text In Span
+    And I should click on Yes In Button
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.PURGEEMPLOYEE |
+
+  @EVS-2792
+  Scenario Outline: EVS-2792:As a user, I should be able to purge an Employee
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should click the purge employee icon
+    And I should verify Confirmation text In Span
+    And I should verify Are you sure you want to purge this employee record? text In Span
+    And I should click on No In Button
+    And I should click the purge employee icon
+    And I should verify Confirmation text In Span
+    And I should verify Are you sure you want to purge this employee record? text In Span
+    And I should click on Yes In Button
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <irisURL>
+    When I should Login to core application with <irisuserName> and <password>
+    And I should click on Login button from Login screen
+    And I should verify search textbox at the right top of window
+    And I should enter <accountNumber> in the search bar
+    And I should logoff from home screen
+    Given I should enter login url <ivacURL>
+    When I should Login to application with <lastName> , <accountNumber> and <sSN>
+    And I should click on Login button from Login screen
+    And I should verify Authentication text In Span
+    And I should verify error icon in the displayed modal
+    And I should verify We are not able to verify the requested account, or you are not in an active verification with Consova. text In Div
+    And I should verify Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance. text In Div
+    And I should click on Return to Sign In In Button
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber          | irisURL           | irisuserName           | ivacURL             | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.PURGEEMPLOYEE | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |

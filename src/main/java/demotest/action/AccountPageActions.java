@@ -121,7 +121,7 @@ public class AccountPageActions extends AccountPageUI {
         boolean isVerified = false;
         Sync.Delay(3000);
         if (TaskCheckIcon.size()!=0){
-            Element.click(driver,InactiveDependentTab.get(0));
+            Element.click(driver,TaskCheckIcon.get(0));
             isVerified = true;
         }
         return isVerified;
@@ -822,19 +822,143 @@ public class AccountPageActions extends AccountPageUI {
     }
 
     public boolean NotVerifyNewPackage() {
-        boolean isClicked = false;
+        boolean isVerified = false;
         Sync.Delay(5000);
             Element.notVerifyElement(driver,NewPackage);
-            isClicked = true;
-        return isClicked;
+        isVerified = true;
+        return isVerified;
     }
 
     public boolean NotVerifyNewPortalInquiry() {
-        boolean isClicked = false;
+        boolean isVerified = false;
         Sync.Delay(5000);
             Element.notVerifyElement(driver,PortalInquiry);
+        isVerified = true;
+        return isVerified;
+    }
+
+    public boolean clickTermEmployeeIcon() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if(TermEmployeeIcon.isDisplayed()) {
+            Element.click(driver,TermEmployeeIcon);
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean VerifyTermEmployeeIcon() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if(TermEmployeeIcon.isDisplayed()) {
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean NotVerifyTermEmployeeIcon() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+            Element.notVerifyElement(driver,TermEmployeeIcon);
+        isVerified = true;
+        return isVerified;
+    }
+
+    public boolean clickAuditorDropdown() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if(AuditorDropdown.size()!=0) {
+            Element.click(driver,AuditorDropdown.get(0));
             isClicked = true;
+        }
         return isClicked;
     }
 
+    public boolean verifyNoAciveAuditLabel() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if(NoAciveAuditLabel.isDisplayed()) {
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyCompletedBenefitInitial() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if(CompletedBenefitInitial.isDisplayed()) {
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyEnabledBenefitType() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if(EnabledBenefitType.isDisplayed()) {
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean EnterCalendarInCompleteDateModal(String date) {
+        boolean isEntered = false;
+        Sync.Delay(5000);
+        if(CalendarInCompleteDateModal.isDisplayed()) {
+            Textbox.enterValue(driver,CalendarInCompleteDateModal,date);
+            isEntered = true;
+        }
+        return isEntered;
+    }
+
+    public boolean CompleteDocuments() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        int i=0;
+        do{
+            DocumentStatus.get(i).click();
+            DoneIcon.click();
+            i++;
+        }while(i<DocumentStatus.size());
+        isVerified = true;
+        return isVerified;
+    }
+
+    public boolean verifyErrorMessage() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if(ErrorMessage.isDisplayed()) {
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean clickPurgeDependent() {
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if (PurgeDependent.isDisplayed()){
+            Element.click(driver,PurgeDependent);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickPurgeEmployee() {
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if (PurgeEmployee.isDisplayed()){
+            Element.click(driver,PurgeEmployee);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean verifyErrorIcon() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if(ErrorIcon.isDisplayed()) {
+            isVerified = true;
+        }
+        return isVerified;
+    }
 }

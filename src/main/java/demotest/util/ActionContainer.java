@@ -18,6 +18,7 @@ public class ActionContainer {
     public AccountPageActions accountPageActions;
     public LettersPageActions lettersPageActions;
     public IvacPageActions ivacPageActions;
+    public IrisPageActions irisPageActions;
 
     static public int i = 0;
     public static LinkedHashMap<String, String> printTestDataMap = new LinkedHashMap<String, String>();
@@ -41,6 +42,7 @@ public class ActionContainer {
         accountPageActions = new AccountPageActions(sharedDriver);
         clientPageActions = new ClientPageActions(sharedDriver);
         homePageActions = new HomePageActions(sharedDriver);
+        irisPageActions = new IrisPageActions(sharedDriver);
         ivacPageActions = new IvacPageActions(sharedDriver);
         lettersPageActions = new LettersPageActions(sharedDriver);
     }

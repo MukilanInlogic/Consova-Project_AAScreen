@@ -448,4 +448,79 @@ public class AccountPageSteps {
     public void iShouldClickOnSaveButtonInPortalEnquiry() {
         assertTrue(actionContainer.accountPageActions.clickSaveButtonInDialogBox());
     }
+
+    @And("^I should verify the term employee icon$")
+    public void iShouldVerifyTheTermEmployeeIcon() {
+        assertTrue(actionContainer.accountPageActions.VerifyTermEmployeeIcon());
+    }
+
+    @And("^I should not verify the term employee icon$")
+    public void iShouldNotVerifyTheTermEmployeeIcon() {
+        assertTrue(actionContainer.accountPageActions.NotVerifyTermEmployeeIcon());
+    }
+
+    @And("^I should click the term employee icon$")
+    public void iShouldClickTheTermEmployeeIcon() {
+        assertTrue(actionContainer.accountPageActions.clickTermEmployeeIcon());
+    }
+
+    @And("^I should click on auditor dropdown in inventory modal$")
+    public void iShouldClickOnAuditorDropdownInInventoryModal() {
+        assertTrue(actionContainer.accountPageActions.clickAuditorDropdown());
+    }
+
+    @And("^I should verify no active dependents label$")
+    public void iShouldVerifyNoActiveDependentsLabel() {
+        assertTrue(actionContainer.accountPageActions.verifyNoAciveAuditLabel());
+    }
+
+    @And("^I should verify the completed benefit type$")
+    public void iShouldVerifyTheCompletedBenefitType() {
+        assertTrue(actionContainer.accountPageActions.verifyCompletedBenefitInitial());
+    }
+
+    @And("^I should verify the completed date in required date format$")
+    public void iShouldVerifyTheCompletedDateInRequiredDateFormat() {
+        assertTrue(actionContainer.accountPageActions.verifyCompletedBenefitInitial());
+    }
+
+    @And("^I should verify enabled benefit type in the modal$")
+    public void iShouldVerifyEnabledBenefitTypeInTheModal() {
+        assertTrue(actionContainer.accountPageActions.verifyEnabledBenefitType());
+    }
+
+    @And("^I should enter (.*) date in completed date modal$")
+    public void iShouldEnterDateInCompletedDateModal(String date) {
+        assertTrue(actionContainer.accountPageActions.EnterCalendarInCompleteDateModal(Testdata.getValue(date)));
+    }
+
+    @And("^I should complete all documents listed$")
+    public void iShouldCompleteAllDocumentsListed() {
+        assertTrue(actionContainer.accountPageActions.CompleteDocuments());
+    }
+
+    @And("^I should click on complete random task$")
+    public void iShouldClickOnCompleteRandomTask() {
+        assertTrue(actionContainer.accountPageActions.clickTaskCheckIcon());
+    }
+
+    @And("^I should verify error message for completed date$")
+    public void iShouldVerifyErrorMessageForCompletedDate() {
+        assertTrue(actionContainer.accountPageActions.verifyErrorMessage());
+    }
+
+    @And("^I should click the purge dependent icon$")
+    public void iShouldClickThePurgeDependentIcon() {
+        assertTrue(actionContainer.accountPageActions.clickPurgeDependent());
+    }
+
+    @And("^I should click the purge employee icon$")
+    public void iShouldClickThePurgeEmployeeIcon() {
+        assertTrue(actionContainer.accountPageActions.clickPurgeEmployee());
+    }
+
+    @And("^I should verify error icon in the displayed modal$")
+    public void iShouldVerifyErrorIconInTheDisplayedModal() {
+        assertTrue(actionContainer.accountPageActions.verifyErrorIcon());
+    }
 }

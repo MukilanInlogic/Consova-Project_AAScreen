@@ -244,4 +244,41 @@ public class AccountPageUI {
     @FindBy(how = How.XPATH, using = "//td[text()=' PortalInquiry ']")
     protected WebElement PortalInquiry;
 
+    @FindBy(how = How.XPATH, using = "//button[@ptooltip='Term Employee']")
+    protected WebElement TermEmployeeIcon;
+
+    @FindBy(how = How.XPATH, using = "//h6[text()='No active audits for selected dependent']")
+    protected WebElement NoAciveAuditLabel;
+
+    @FindBy(how = How.XPATH, using = "//label[@class='benefit-type initial enable']")
+    protected WebElement CompletedBenefitInitial;
+
+    @FindBy(how = How.XPATH, using = "//label[contains(@class,'benefit-type enable')]")
+    protected WebElement EnabledBenefitType;
+
+    @FindBy(how = How.XPATH, using = "//span[contains(@class,'ui-calendar')]//input[@required='true']")
+    protected WebElement CalendarInCompleteDateModal;
+
+    @FindBy(how = How.XPATH, using = "//label[contains(@class,'ui-dropdown-label ui-inputtext')]")
+    protected List<WebElement> AuditorDropdown;
+
+//    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Not Received')]")
+    @FindBy(how = How.XPATH, using = "//span[@class='position-relative cursor-pointer']")
+    protected List<WebElement> DocumentStatus;
+
+    @FindBy(how = How.XPATH, using = "//li[@class='list-group-item cursor-pointer text-success']")
+    protected WebElement DoneIcon;
+
+    @FindBy(how = How.XPATH, using = "//p[@class='text-danger'][contains(text(),'Please select Complete Date')]")
+    protected WebElement ErrorMessage;
+
+    @FindBy(how = How.XPATH, using = "//img[contains(@src,'ic_error')]")
+    protected WebElement ErrorIcon;
+
+    @FindBy(how = How.XPATH, using = "//button[@ptooltip='Purge Dependent']")
+    protected WebElement PurgeDependent;
+
+    @FindBy(how = How.XPATH, using = "//button[@ptooltip='Purge Employee']")
+    protected WebElement PurgeEmployee;
+
 }
