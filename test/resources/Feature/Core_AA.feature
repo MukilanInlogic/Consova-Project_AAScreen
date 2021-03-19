@@ -1907,9 +1907,9 @@ Feature: Smoke Module
     And I should click on Return to Client In Button
     And I should click on Assigned to Client In Span
     And I should enter <accountNumber> in fourth filterBy textbox
-    And I should verify <accountNumber> text In Span
-#    And I should click on Auditor dropdown to select an audit
-    And I should click on profile icon in core
+#    And I should verify <accountNumber> text In Span
+    And I should click on Auditor dropdown to select an audit
+#    And I should click on profile icon in core
     And I should logoff from core login
     Given I should enter login url <irisURL>
     When I should Login to core application with <irisuserName> and <password>
@@ -1969,3 +1969,45 @@ Feature: Smoke Module
     Examples:
       | URL          | userName          | password          | passwordOutlook          | accountURL          | accountNumber      | irisURL           | irisuserName           | ticketOwnerInitial          | ticketOwner          | ticketReason          | auditor          | OutlookURL          |
       | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.OUTLOOKPASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME | DP:LOGIN.TICKETOWNERINITIAL | DP:LOGIN.TICKETOWNER | DP:LOGIN.TICKETREASON | DP:LOGIN.AUDITOR | DP:LOGIN.OUTLOOKURL |
+
+  @EVS-546
+  Scenario Outline: EVS-546:As a user, I should see Activity log menu option in the user account icon
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on profile icon in core
+    And I should click on activity log fom the dropdown
+    And I should navigate to newly opened window
+    And I should verify activity logs header in newly opened window
+    And I should enter <accountNumber> in first filterBy textbox
+    And I should verify <accountNumber> text In Span
+    And I should verify Open Account Screen text in Table Data
+    And I should verify the pagination located at the bottom
+    And I should verify Activity Type  text in Table Header
+    And I should verify Activity Occurred Datetime  text in Table Header
+    And I should verify Employee Pin Accessed  text in Table Header
+    And I should verify Employee Name  text in Table Header
+    And I should verify Client Name  text in Table Header
+    And I should click on Clear Filters In Span
+    And I should verify filterBy textbox
+    And I should enter <date> date in the date filter box
+    And I should verify <date> text in Table Data
+    And I should click on Clear Filters In Span
+    And I should click on Activity Type  text in Table Header
+    And I should click on Employee Pin Accessed  text in Table Header
+    And I should click on Employee Name  text in Table Header
+    And I should click on Client Name  text in Table Header
+    And I should click on download icon
+    And I should click on Activity Occurred Datetime  text in Table Header
+    And I should verify the list of activity performed by the logged user for last seven days
+    And I should enter <userName> in first filterBy textbox
+    And I should verify There is no data available text In Span
+    And I should click on Clear Filters In Span
+    And I should close the newly opened window
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber            | ivacURL             | lastName          | sSN          | date          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPOUSEACCOUNTNO | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN | DP:LOGIN.DATE |
