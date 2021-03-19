@@ -3,26 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eeba7f17-48d7-4872-b9ef-199e2e500a81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/drivers/chromedriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/resources/drivers/chromedriver.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/testdata/testdata.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/testdata/testdata.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/AccountPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/AccountPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/HomePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/HomePageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/IrisPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/IrisPageUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/AccountPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/AccountPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/HomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/HomePageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/IrisPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/IrisPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/AccountPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/AccountPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/HomePageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IrisPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IrisPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IvacPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IvacPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demotest/Repository/AccountPageUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/Repository/AccountPageUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demotest/Repository/HomePageUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/Repository/HomePageUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/AccountPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/AccountPageActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/HomePageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/HomePageActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/AccountPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/AccountPageSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/HomePageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/HomePageSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/IvacPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/IvacPageSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +41,7 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="framework" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Consova-Project_IVAC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -414,9 +394,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="200" key="#Scopes/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614948702785" />
-    <state x="414" y="177" width="1092" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613724311555">
+    <state x="414" y="177" width="1092" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616146323871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616146323871" />
     <state x="414" y="177" width="1092" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613724311555" />
     <state x="761" y="388" width="397" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606886148602">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -427,10 +408,10 @@
     </state>
     <state x="536" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614604211013" />
     <state x="2456" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615467419910" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1615966806274">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1616146611099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615966806274" />
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616146611099" />
     <state x="740" y="277" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615205598743" />
     <state width="1875" height="223" key="GridCell.Tab.0.bottom" timestamp="1616044063699">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -501,5 +482,9 @@
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606986101491" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615539763999" />
+    <state x="697" y="394" key="svn4idea.checkout.options" timestamp="1616146623692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="697" y="394" key="svn4idea.checkout.options/0.0.1920.1040@0.0.1920.1040" timestamp="1616146623692" />
   </component>
 </project>
