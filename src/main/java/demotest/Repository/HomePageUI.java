@@ -42,6 +42,7 @@ public class HomePageUI {
     protected WebElement closeButtonInModal;
 
     protected String elementInSpan = new StringBuilder("//span[contains(text(),'").append("<<REPLACECONTENT>>").append("')]").toString();
+    protected String elementInSpanDialog = new StringBuilder("//div[@role='dialog']//span[contains(text(),'").append("<<REPLACECONTENT>>").append("')]").toString();
     protected String elementInButton = new StringBuilder("//button[contains(text(),'").append("<<REPLACECONTENT>>").append("')]").toString();
     protected String elementInList = new StringBuilder("//li[contains(text(),'").append("<<REPLACECONTENT>>").append("')]").toString();
     protected String elementInDiv = new StringBuilder("//div[contains(text(),'").append("<<REPLACECONTENT>>").append("')]").toString();
@@ -70,6 +71,9 @@ public class HomePageUI {
 
     @FindBy(how = How.XPATH, using = "//span[text()='My Inventory']")
     protected WebElement MyInventory;
+
+    @FindBy(how = How.XPATH, using = "//span[text()='Home']")
+    protected WebElement HomeTab;
 
     @FindBy(how = How.XPATH, using = "//textarea")
     protected WebElement Textarea;

@@ -37,4 +37,49 @@ public class IrisPageSteps {
     public void iShouldVerifyAuditOverInInclinedPosition() {
         assertTrue(actionContainer.irisPageActions.verifyInclinedAuditOver());
     }
+
+    @And("^I should click on admin ticket icon$")
+    public void iShouldClickOnAdminTicketIcon() {
+        assertTrue(actionContainer.irisPageActions.clickAdminTicketIcon());
+    }
+
+    @And("^I should click on Next button$")
+    public void iShouldClickOnNextButton() {
+        assertTrue(actionContainer.irisPageActions.nextButtonInOutlook());
+        System.out.println("iShouldClickOnNextButton");
+    }
+
+    @And("^I should enter username as (.*)$")
+    public void iShouldEnterUsernameAsEmail(String email) {
+        assertTrue(actionContainer.irisPageActions.office365username(Testdata.getValue(email)));
+        System.out.println("iShouldEnterUsenameAsEmail");
+    }
+
+    @And("^I should give password as (.*)$")
+    public void iShouldGivePasswordAsPassword(String password) {
+        assertTrue(actionContainer.irisPageActions.office365password(Testdata.getValue(password)));
+        System.out.println("iShouldEnterUsenameAsPassword");
+    }
+
+    @And("^I should click on outlook icon from menubar$")
+    public void iShouldClickOnOutlookIconFromMenubar() {
+        assertTrue(actionContainer.irisPageActions.outlookIcon());
+        System.out.println("iShouldClickOnOutlookIconFromMenubar");
+    }
+
+    @And("^I should login to outlook by clicking login button$")
+    public void iShouldLoginToOutlookByClickingLoginButton() {
+        assertTrue(actionContainer.irisPageActions.loginButtonInOutlook());
+        System.out.println("iShouldLoginToOutlookByClickingLoginButton");
+    }
+
+    @And("^I should click on email received for admin ticket$")
+    public void iShouldClickOnEmailReceivedForAdminTicket() {
+        assertTrue(actionContainer.irisPageActions.clickAdminTicketEmail());
+    }
+
+    @And("^I should click on click here to open admin ticket$")
+    public void iShouldClickOnClickHereToOpenAdminTicket() {
+        assertTrue(actionContainer.irisPageActions.clickClickHereLink());
+    }
 }

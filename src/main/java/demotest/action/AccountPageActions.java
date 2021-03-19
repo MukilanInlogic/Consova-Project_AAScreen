@@ -11,6 +11,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import javax.xml.soap.Text;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class AccountPageActions extends AccountPageUI {
     public AccountPageActions(WebDriver driver) {
@@ -93,6 +95,16 @@ public class AccountPageActions extends AccountPageUI {
 //        Sync.Delay(1000);
         if (AddressTxtBox.isDisplayed()){
             Textbox.enterValue(driver,AddressTxtBox,Email);
+            isEntered = true;
+        }
+        return isEntered;
+    }
+
+    public boolean enterAddressOne(String Email) {
+        boolean isEntered = false;
+//        Sync.Delay(1000);
+        if (AddressTxtBoxOne.isDisplayed()){
+            Textbox.enterValue(driver,AddressTxtBoxOne,Email);
             isEntered = true;
         }
         return isEntered;
@@ -256,8 +268,8 @@ public class AccountPageActions extends AccountPageUI {
     public boolean clickEmployeeAlert() {
         boolean isClicked = false;
         Sync.Delay(3000);
-        if (EmployeeAlert.isDisplayed()){
-            Element.click(driver,EmployeeAlert);
+        if (EmployeeAndDependentAlert.size()!=0){
+            Element.click(driver,EmployeeAndDependentAlert.get(0));
             isClicked = true;
         }
         return isClicked;
@@ -266,8 +278,8 @@ public class AccountPageActions extends AccountPageUI {
     public boolean clickDependentAlert() {
         boolean isClicked = false;
         Sync.Delay(3000);
-        if (DependentAlert.isDisplayed()){
-            Element.click(driver,DependentAlert);
+        if (EmployeeAndDependentAlert.size()!=0){
+            Element.click(driver,EmployeeAndDependentAlert.get(1));
             isClicked = true;
         }
         return isClicked;
@@ -460,6 +472,16 @@ public class AccountPageActions extends AccountPageUI {
         Sync.Delay(3000);
         if (ArrowLeft.isDisplayed()){
             Element.click(driver,ArrowLeft);
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean clickArrowRight() {
+        boolean isVerified = false;
+        Sync.Delay(3000);
+        if (ArrowRight.isDisplayed()){
+            Element.click(driver,ArrowRight);
             isVerified = true;
         }
         return isVerified;
@@ -795,7 +817,7 @@ public class AccountPageActions extends AccountPageUI {
 
     public boolean verifyVIPBadge() {
         boolean isVerified = false;
-        Sync.Delay(5000);
+        Sync.Delay(7000);
         if (VIPBadge.isDisplayed()){
             Element.verifyElement(VIPBadge);
             isVerified = true;
@@ -961,4 +983,109 @@ public class AccountPageActions extends AccountPageUI {
         }
         return isVerified;
     }
+
+    public boolean clickActivityLog() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if(ActivityLog.isDisplayed()) {
+            Element.click(driver,ActivityLog);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean verifyActivityLogHeader() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if(ActivityLogHeader.isDisplayed()) {
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean verifyDisabledSaveButtonInModal() {
+        boolean isVerified = false;
+        Sync.Delay(5000);
+        if(DisabledSaveButtonInModal.isDisplayed()) {
+            isVerified = true;
+        }
+        return isVerified;
+    }
+
+    public boolean EnterDateFilter(String date) {
+        boolean isEntered = false;
+        Sync.Delay(5000);
+        if(DateFilter.isDisplayed()) {
+            Textbox.enterValue(driver,DateFilter,date);
+            isEntered = true;
+        }
+        return isEntered;
+    }
+
+    public boolean clickLaunchAllAuditIcon() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if(LaunchAllAuditIcon.isDisplayed()) {
+            Element.click(driver,LaunchAllAuditIcon);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean verifyDaySevenFromToday() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+            Date objDate = new Date();
+            String strDateFormat = "MM/dd/yyyy";
+            SimpleDateFormat objSDF = new SimpleDateFormat(strDateFormat);
+            String str=objSDF.format(objDate);
+        System.out.println(TableData.get(1).getText());
+        System.out.println(objSDF.format(objDate));
+        if(TableData.get(1).getText().contains(str)) {
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean SelectAuditTypeInDropdown() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if(DropdownList.size()!=0) {
+            Element.click(driver,DropdownList.get(0));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean SelectAllCheckboxInDropdown() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if(CheckboxList.size()!=0) {
+            Element.click(driver,CheckboxList.get(0));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickAdminTicketNo() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if(AdminTicketNo.size()!=0) {
+            Element.click(driver,AdminTicketNo.get(0));
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+    public boolean clickAuditorsDropdown() {
+        boolean isClicked = false;
+        Sync.Delay(5000);
+        if(AuditorsDropdown.isDisplayed()) {
+            Element.click(driver,AuditorsDropdown);
+            isClicked = true;
+        }
+        return isClicked;
+    }
+
+
 }

@@ -80,7 +80,11 @@ Feature: Smoke Module
     And I should click on VIP confirmation dropdown
     And I should click on Yes In Options
     And I should click on Cancel In Bold
+    And I should close the displayed modal
+    And I should click on edit button to edit employee Demographics
     And I should enter your <firstName> in first name textbox
+    And I should enter your <firstName> in email textbox
+    And I should verify disabled bold button in modal
     And I should enter your <emailId> in email textbox
     And I should click on VIP confirmation dropdown
     And I should click on Yes In Options
@@ -92,7 +96,7 @@ Feature: Smoke Module
     And I should verify the VIP badge after lastname
     And I should click on edit button to edit employee contact info
     And I should verify Employee Contact Info text In Span
-    And I should verify disabled bold button
+    And I should verify disabled bold button in modal
     And I should verify Address Line 1 In Label
     And I should verify Home Phone In Label
     And I should verify Mobile Phone In Label
@@ -102,6 +106,8 @@ Feature: Smoke Module
     And I should click on Select Reason In Options
     And I should click on Client Request In Options
     And I should click on Cancel In Bold
+    And I should close the displayed modal
+    And I should click on edit button to edit employee contact info
     And I should enter your <address> in address textbox
     And I should click on Select Reason In Options
     And I should click on Client Request In Options
@@ -109,17 +115,62 @@ Feature: Smoke Module
     And I should click on Yes In Button
     And I should click on edit button to edit dependent Demographics
     And I should verify Dependent Demographics text In Span
-    And I should verify disabled bold button
+    And I should verify disabled bold button in modal
     And I should enter your <firstNameDep> in first name textbox
     And I should click on Cancel In Bold
+    And I should close the displayed modal
+    And I should click on edit button to edit dependent Demographics
     And I should enter your <firstNameDep> in first name textbox
     And I should click on Save In Bold
     And I should click on Yes In Button
     And I should click on profile icon in core
     And I should logoff from core login
+    Given I should enter login url <irisURL>
+    When I should Login to core application with <irisuserName> and <password>
+    And I should click on Login button from Login screen
+    And I should verify search textbox at the right top of window
+    And I should enter <accountNumber> in the search bar
+    And I should click on <accountNumber> In Div
+    And I should navigate to newly opened window
+    And I should verify <accountNumber> text In Bold
+    And I should verify <firstNameDep> text In Span
+    And I should verify <emailId> text In Span
+    And I should verify <address> text In Div
+    And I should close the newly opened window
+    And I should logoff from home screen
+    Given I should enter login url <ivacURL>
+    When I should Login to application with <lastName> , <accountNumber> and <sSN>
+    And I should click on Login button from Login screen
+    And I should click on Accept In Button
+    And I should verify dependent first name updated
+    And I should click on employee profile name
+    And I should click on Profile In Button
+    And I should verify <emailId> text In Span
+    And I should verify <address> text In Div
+    And I should logoff from home screen
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      | emailId          | firstName          | address          | firstNameDep                |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.EMAILID | DP:LOGIN.FIRSTNAME | DP:LOGIN.ADDRESS | DP:LOGIN.FIRSTNAMEDEPENDENT |
+      | URL          | userName          | password          | accountURL          | accountNumber      | emailId          | firstName          | address          | firstNameDep                | irisURL           | irisuserName           | ivacURL             | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.EMAILID | DP:LOGIN.FIRSTNAME | DP:LOGIN.ADDRESS | DP:LOGIN.FIRSTNAMEDEPENDENT | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
+
+  @EVS-1836
+  Scenario Outline: EVS-1836:As a user, I should be able to update address with reason - account screen
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on edit button to edit employee contact info
+    And I should enter your <address> in address one textbox
+    And I should verify disabled Save button in the modal
+    And I should click on Select Reason In Options
+    And I should click on Client Request In Options
+    And I should click on Save In Bold
+    And I should click on Yes In Button
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber      | address          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |  DP:LOGIN.ADDRESS |
 
   @EVS-1534
   Scenario Outline: EVS-1534:As a user, I should be able to log Employee or Dependent alerts even when account is locked or employee is non responder
@@ -155,7 +206,6 @@ Feature: Smoke Module
     Given I should enter login url <ivacURL>
     When I should Login to application with <lastName> , <accountNumber> and <sSN>
     And I should click on Login button from Login screen
-    And I should click on Accept In Button
     And I should click on Upload Documents In Span
     And I should select desired document by Browse icon
     And I should click on Upload button in dialog box
@@ -211,6 +261,46 @@ Feature: Smoke Module
       | URL          | userName          | password          | accountURL          | accountNumber      | ivacURL             | lastName          | sSN          |
       | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
+  @EVS-223
+  Scenario Outline: EVS-223:As a user, I should be able to see employee details on the audit screen
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should click on My Inventory
+    And I should enter <accountNumber> in first filterBy textbox
+    And I should click on load audit icon
+    And I should verify <accountNumber> text In Bold
+    And I should verify <lastName> text In Span
+    And I should verify <firstName> text In Span
+    And I should verify <sSN> In Label
+#    And I should verify sub client info on the account screen
+    And I should verify All Packages In Label
+    And I should verify Outstanding Tasks In Label
+    And I should verify Employee Milestones In Label
+    And I should verify Complete All In Button
+    And I should verify View All In Button
+    And I should verify Help Ticket In Button
+    And I should verify disabled Save button
+    And I should verify disabled Cancel button
+    And I should verify Action In Button
+    And I should verify Forms In Button
+    And I should verify 1 of 1 Accounts text In Bold
+    And I should click on My Inventory
+    And I should click on launch all audit icon
+    And I should click on forward arrow button
+    And I should verify 2 of text In Bold
+    And I should click on forward arrow button
+    And I should verify 3 of text In Bold
+    And I should click on back arrow button
+    And I should verify 2 of text In Bold
+    And I should click on back arrow button
+    And I should verify 1 of text In Bold
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountNumber      |lastName          | sSN          |firstName|
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTNO |DP:LOGIN.LASTNAME | DP:LOGIN.SSN |DP:LOGIN.FIRSTNAME|
+
   @EVS-1132
   Scenario Outline: EVS-1132:As a user, I should see the history tab on the account screen
     Given I should enter login url <URL>
@@ -245,20 +335,19 @@ Feature: Smoke Module
     And I should click on Document Submission In Button
     And I should verify Uploaded Document text In Span
     And I should click on View Document In Span
-    And I should verify Uploaded Document text In Span
     And I should navigate to newly opened window
     And I should close the newly opened window
     And I should click on Document Submission In Button
     And I should click on Assistance Center Activity In Button
+    And I should verify Action Note text In Span
     And I should click on view details from the grid
     And I should verify Action Note second level header
+    And I should verify Outbound Call text In Span
     And I should click on download icon
     And I should click on printer icon
     And I should navigate to newly opened window
     And I should close the newly opened window
     And I should close the displayed modal
-    And I should verify Action Note text In Span
-    And I should verify Outbound Call text In Span
     And I should click on Assistance Center Activity In Button
     And I should click on Communication Activity In Button
     And I should verify There is no data available text In Span
@@ -372,9 +461,25 @@ Feature: Smoke Module
     And I should click on Save In Bold
     And I should click on profile icon in core
     And I should logoff from core login
+    Given I should enter login url <irisURL>
+    When I should Login to core application with <irisuserName> and <password>
+    And I should click on Login button from Login screen
+    And I should verify search textbox at the right top of window
+    And I should enter <accountNumber> in the search bar
+    And I should click on <accountNumber> In Div
+    And I should navigate to newly opened window
+    And I should verify <accountNumber> text In Bold
+    And I should verify changed dependent relation type
+    And I should close the newly opened window
+    And I should logoff from home screen
+    Given I should enter login url <ivacURL>
+    When I should Login to application with <lastName> , <accountNumber> and <sSN>
+    And I should click on Login button from Login screen
+    And I should verify changed dependent relation type
+    And I should logoff from home screen
     Examples:
-      | URL          | userName          | password          | accountURL          | accountNumber      |
-      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO |
+      | URL          | userName          | password          | accountURL          | accountNumber      | emailId          | firstName          | address          | firstNameDep                | irisURL           | irisuserName           | ivacURL             | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:LOGIN.EMAILID | DP:LOGIN.FIRSTNAME | DP:LOGIN.ADDRESS | DP:LOGIN.FIRSTNAMEDEPENDENT | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
 
   @EVS-48
   Scenario Outline: EVS-48:As a user I should see timelines on the account screen at the employee and dependent levels
@@ -443,8 +548,8 @@ Feature: Smoke Module
     And I should verify Save In Button
     And I should verify Add new Authorized Caller text In Span
     And I should close the displayed modal
-    And I shoud verify disabled Ineligible Codes button
-    And I shoud verify disabled Complete Date button
+    And I should verify disabled Ineligible Codes button
+    And I should verify disabled Complete Date button
     And I should verify locked icon on the dependent level
     And I should release locked icon on the account level
     And I should click on profile icon in core
@@ -467,8 +572,8 @@ Feature: Smoke Module
     And I should verify Save In Button
     And I should verify Add new Authorized Caller text In Span
     And I should close the displayed modal
-    And I shoud verify disabled Ineligible Codes button
-    And I shoud verify disabled Complete Date button
+    And I should verify disabled Ineligible Codes button
+    And I should verify disabled Complete Date button
     And I should verify locked icon on the dependent level
     And I should release locked icon on the account level
     And I should click on profile icon in core
@@ -1486,14 +1591,14 @@ Feature: Smoke Module
     And I should click on Yes In Button
     And I should not verify the term employee icon
     And I should verify Employee Termed text In Span
-    And I shoud verify disabled Add button
-    And I shoud verify disabled Edit Result button
-    And I shoud verify disabled Change Relation button
-    And I shoud verify disabled Complete All button
-    And I shoud verify disabled Add Document button
-    And I shoud verify disabled Complete Date button
-    And I shoud verify disabled Ineligible Codes button
-    And I shoud verify disabled Help Ticket button
+    And I should verify disabled Add button
+    And I should verify disabled Edit Result button
+    And I should verify disabled Change Relation button
+    And I should verify disabled Complete All button
+    And I should verify disabled Add Document button
+    And I should verify disabled Complete Date button
+    And I should verify disabled Ineligible Codes button
+    And I should verify disabled Help Ticket button
     And I should click on View All In Button
     And I should close the displayed modal
     And I should click on dependent milestone in dependent tab
@@ -1668,3 +1773,199 @@ Feature: Smoke Module
     Examples:
       | URL          | userName          | password          | accountURL          | accountNumber          | irisURL           | irisuserName           | ivacURL             | lastName          | sSN          |
       | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.PURGEEMPLOYEE | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
+
+  @EVS-1856
+  Scenario Outline: EVS-1856:As a user, I shouldn't see save button enabled for following actions
+    Given I should enter login url <ivacURL>
+    When I should Login to application with <lastName> , <accountNumber> and <sSN>
+    And I should click on Login button from Login screen
+    And I should click on Contact Us icon
+    And I should enter Need assistance on my certificate in textarea
+    And I should click on Submit In Button
+    And I should verify Portal Inquiry received text In Div
+    And I should click on OK In Button
+    And I should logoff from home screen
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on Claim In Button
+    And I should verify Confirmation text In Span
+    And I should verify Are you sure you want to claim the task(s)? text In Span
+    And I should click on Proceed In Button
+    And I should click on first task
+    And I should verify Complete Portal Inquiry text In Span
+    And I should click on call completed icon
+    And I should click on Save Button in portal enquiry
+    And I should verify disabled Save button
+    And I should verify disabled Cancel button
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber            | ivacURL             | lastName          | sSN          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPOUSEACCOUNTNO | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN |
+
+  @EVS-546
+  Scenario Outline: EVS-546:As a user, I should see Activity log menu option in the user account icon
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should verify <accountNumber> text In Bold
+    And I should click on profile icon in core
+    And I should click on activity log fom the dropdown
+    And I should navigate to newly opened window
+    And I should verify activity logs header in newly opened window
+    And I should enter <accountNumber> in first filterBy textbox
+    And I should verify <accountNumber> text In Span
+    And I should verify Open Account Screen text in Table Data
+    And I should verify the pagination located at the bottom
+    And I should verify Activity Type  text in Table Header
+    And I should verify Activity Occurred Datetime  text in Table Header
+    And I should verify Employee Pin Accessed  text in Table Header
+    And I should verify Employee Name  text in Table Header
+    And I should verify Client Name  text in Table Header
+    And I should click on Clear Filters In Span
+    And I should verify filterBy textbox
+    And I should enter <date> date in the date filter box
+    And I should verify <date> text in Table Data
+    And I should click on Clear Filters In Span
+    And I should click on Activity Type  text in Table Header
+    And I should click on Employee Pin Accessed  text in Table Header
+    And I should click on Employee Name  text in Table Header
+    And I should click on Client Name  text in Table Header
+    And I should click on download icon
+    And I should click on Activity Occurred Datetime  text in Table Header
+    And I should verify the list of activity performed by the logged user for last seven days
+    And I should enter <userName> in first filterBy textbox
+    And I should verify There is no data available text In Span
+    And I should click on Clear Filters In Span
+    And I should close the newly opened window
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Examples:
+      | URL          | userName          | password          | accountURL          | accountNumber            | ivacURL             | lastName          | sSN          | date          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.SPOUSEACCOUNTNO | DP:LOGIN.IVERIFYURL | DP:LOGIN.LASTNAME | DP:LOGIN.SSN | DP:LOGIN.DATE |
+
+  @EVS-279245
+  Scenario Outline: EVS-279245:As a user, admin ticket
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should enter account url <accountURL> with <accountNumber>
+    And I should click on Admin Ticket In Button
+    And I should verify Create Admin Ticket text In Span
+    And I should verify <accountNumber> text In Bold
+    And I should click on Select Ticket Owner In Label
+    And I should click on <ticketOwnerInitial> In Span dialog box
+    And I should click on Select Ticket Reason In Label
+    And I should click on <ticketReason> In Span
+    And I should click on Select Audit In Label
+    And I should select audit from the dropdown
+    And I should click on Select Dependent In Span
+    And I should select all from dependent dropdown
+    And I should enter Ticket created in textarea
+    And I should click on Submit In Button
+    And I should click on OK In Button
+    And I should click on Home tab from menubar
+    And I should click on Assigned to Client In Span
+    And I should enter <accountNumber> in fourth filterBy textbox
+    And I should verify There is no data available text In Span
+    And I should click on Resolved In Span
+    And I should enter <accountNumber> in fifth filterBy textbox
+    And I should click on Assigned to Consova In Span
+    And I should enter <accountNumber> in third filterBy textbox
+    And I should verify <accountNumber> text In Span
+    And I should verify <auditor> text In Span
+    And I should open the admin ticket by clicking admin ticket number
+    And I should verify View Admin Ticket second level header
+    And I should verify <accountNumber> In Span dialog box
+    And I should verify <ticketOwnerInitial> In Span dialog box
+    And I should enter Comments added in textarea
+    And I should click on Save In Button
+    And I should enter Re-assigned to client in textarea
+    And I should click on Return to Client In Button
+    And I should enter <accountNumber> in third filterBy textbox
+    And I should click on Assigned to Client In Span
+    And I should enter <accountNumber> in fourth filterBy textbox
+    And I should verify <accountNumber> text In Span
+    And I should open the admin ticket by clicking admin ticket number
+    And I should verify <accountNumber> In Span dialog box
+    And I should click on Claim In Button
+    And I should verify Confirmation text In Span
+    And I should verify Are you sure you want to claim the ticket? text In Span
+    And I should click on Yes In Button
+    And I should click on Assigned to Consova In Span
+    And I should enter <accountNumber> in third filterBy textbox
+    And I should verify <accountNumber> text In Span
+    And I should open the admin ticket by clicking admin ticket number
+    And I should verify Claimed ticket text In Div
+    And I should click on <ticketOwnerInitial> In Label
+    And I should click on <ticketOwner> In Span
+    And I should enter Re-assigned to client in textarea
+    And I should click on Return to Client In Button
+    And I should click on Assigned to Client In Span
+    And I should enter <accountNumber> in fourth filterBy textbox
+    And I should verify <accountNumber> text In Span
+#    And I should click on Auditor dropdown to select an audit
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <irisURL>
+    When I should Login to core application with <irisuserName> and <password>
+    And I should click on Login button from Login screen
+    And I should click on admin ticket icon
+    And I should click on Assigned to Walmart In Span
+    And I should verify Admin Ticket text In Span
+    And I should enter <accountNumber> in first filterBy textbox
+    And I should open the admin ticket by clicking admin ticket number
+    And I should verify <accountNumber> In Span dialog box
+    And I should enter Comments added in textarea
+    And I should click on Save In Button
+    And I should enter Re-assigned to Consova in textarea
+    And I should click on Assign To Consova In Button
+    And I should click on Assigned to Consova In Span
+    And I should enter <accountNumber> in second filterBy textbox
+    And I should open the admin ticket by clicking admin ticket number
+    And I should enter Comments added in textarea
+    And I should click on Save In Button
+    And I should close the displayed modal
+    And I should logoff from home screen
+    Given I should enter login url <URL>
+    When I should Login to core application with <userName> and <password>
+    And I should click on Login button from Login screen
+    And I should click on Assigned to Consova In Span
+    And I should enter <accountNumber> in third filterBy textbox
+    And I should verify <accountNumber> text In Span
+    And I should open the admin ticket by clicking admin ticket number
+    And I should verify View Admin Ticket second level header
+    And I should verify <accountNumber> In Span dialog box
+    And I should verify <ticketOwner> In Span dialog box
+    And I should enter Ticket resolved in textarea
+    And I should click on Resolve Ticket In Button
+    And I should click on Resolved In Span
+    And I should enter <accountNumber> in fifth filterBy textbox
+    And I should verify <accountNumber> text In Span
+    And I should click on profile icon in core
+    And I should logoff from core login
+    Given I should enter login url <OutlookURL>
+    And I should enter username as <irisuserName>
+    And I should click on Next button
+    And I should give password as <passwordOutlook>
+    And I should login to outlook by clicking login button
+    And I should click on outlook icon from menubar
+    And I should navigate to newly opened window
+    And I should click on email received for admin ticket
+    And I should click on click here to open admin ticket
+    And I should navigate to newly opened window
+    And I should wait for the page loading
+    When I should Login to core application with <irisuserName> and <password>
+    And I should click on Login button from Login screen
+    And I should verify <accountNumber> In Span dialog box
+    And I should close the displayed modal
+    And I should logoff from home screen
+    And I should close the newly opened window
+    And I should close the newly opened window
+    Examples:
+      | URL          | userName          | password          | passwordOutlook          | accountURL          | accountNumber      | irisURL           | irisuserName           | ticketOwnerInitial          | ticketOwner          | ticketReason          | auditor          | OutlookURL          |
+      | DP:LOGIN.URL | DP:LOGIN.USERNAME | DP:LOGIN.PASSWORD | DP:LOGIN.OUTLOOKPASSWORD | DP:LOGIN.ACCOUNTURL | DP:LOGIN.ACCOUNTNO | DP:IVERIFYPRO.URL | DP:IVERIFYPRO.USERNAME | DP:LOGIN.TICKETOWNERINITIAL | DP:LOGIN.TICKETOWNER | DP:LOGIN.TICKETREASON | DP:LOGIN.AUDITOR | DP:LOGIN.OUTLOOKURL |

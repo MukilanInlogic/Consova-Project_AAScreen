@@ -46,6 +46,11 @@ public class HomePageSteps {
         assertTrue(actionContainer.homePageActions.navigateToNewTabOrWindow());
     }
 
+    @And("^I should navigate to newly opened second window$")
+    public void iShouldNavigateToNewlyOpenedSecondWindow() {
+        assertTrue(actionContainer.homePageActions.navigateToSecondNewTabOrWindow());
+    }
+
     @And("^I should close the newly opened window$")
     public void iShouldCloseTheNewlyOpenedWindow() {
         assertTrue(actionContainer.homePageActions.closeCurrentTabOrWindow());
@@ -151,9 +156,29 @@ public class HomePageSteps {
         assertTrue(actionContainer.homePageActions.FirstFilterBy(Testdata.getValue(filterItem)));
     }
 
+    @And("^I should enter (.*) in second filterBy textbox$")
+    public void iShouldEnterTheSearchItemInSecondFilterByTextbox(String filterItem) {
+        assertTrue(actionContainer.homePageActions.SecondFilterBy(Testdata.getValue(filterItem)));
+    }
+
     @And("^I should enter (.*) in third filterBy textbox$")
     public void iShouldEnterTheSearchItemInThirdFilterByTextbox(String filterItem) {
         assertTrue(actionContainer.homePageActions.ThirdFilterBy(Testdata.getValue(filterItem)));
+    }
+
+    @And("^I should enter (.*) in fourth filterBy textbox$")
+    public void iShouldEnterTheSearchItemInFourthFilterByTextbox(String filterItem) {
+        assertTrue(actionContainer.homePageActions.FourthFilterBy(Testdata.getValue(filterItem)));
+    }
+
+    @And("^I should enter (.*) in fifth filterBy textbox$")
+    public void iShouldEnterTheSearchItemInFifthFilterByTextbox(String filterItem) {
+        assertTrue(actionContainer.homePageActions.FifthFilterBy(Testdata.getValue(filterItem)));
+    }
+
+    @And("^I should verify filterBy textbox$")
+    public void iShouldVerifyFilterByTextbox() {
+        assertTrue(actionContainer.homePageActions.verifyFilterByTextbox());
     }
 
     @And("^I should not verify (.*) element in the display$")
@@ -166,8 +191,8 @@ public class HomePageSteps {
         assertTrue(actionContainer.homePageActions.EnterCommentInTextarea(Testdata.getValue(Comment)));
     }
 
-    @And("^I shoud verify disabled (.*) button$")
-    public void iShoudVerifyDisabledIneligibleCodesButton(String disabled) {
+    @And("^I should verify disabled (.*) button$")
+    public void iShouldVerifyDisabledIneligibleCodesButton(String disabled) {
         assertTrue(actionContainer.homePageActions.verifyDisabledButton(Testdata.getValue(disabled)));
     }
 
@@ -176,8 +201,8 @@ public class HomePageSteps {
         assertTrue(actionContainer.homePageActions.verifyDisabledSubmitButton());
     }
 
-    @And("^I should verify disabled bold button$")
-    public void iShouldVerifyDisabledBoldButton() {
+    @And("^I should verify disabled bold button in modal$")
+    public void iShouldVerifyDisabledBoldButtonInModal() {
         assertTrue(actionContainer.homePageActions.verifyDisabledBoldButton());
     }
 
@@ -186,8 +211,8 @@ public class HomePageSteps {
         assertTrue(actionContainer.homePageActions.verifyWarningMessage());
     }
 
-    @And("^I should delay$")
-    public void iShouldDelay() {
+    @And("^I should wait for the page loading$")
+    public void iShouldWaitForThePageLoading() {
         assertTrue(actionContainer.homePageActions.DelaySometime());
     }
 
@@ -195,6 +220,7 @@ public class HomePageSteps {
     public void iShouldClickOnMyInventory() {
         assertTrue(actionContainer.homePageActions.clickMyInventory());
     }
+
 
     @And("^I should click on System and Client Configuration$")
     public void iShouldClickOnSystemAndClientConfiguration() {
@@ -214,5 +240,20 @@ public class HomePageSteps {
     @And("^I should verify scrollable table$")
     public void iShouldVerifyScrollableTable() {
         assertTrue(actionContainer.homePageActions.verifyScrollableTable());
+    }
+
+    @And("^I should click on Home tab from menubar$")
+    public void iShouldClickOnHomeTabFromMenubar() {
+        assertTrue(actionContainer.homePageActions.clickHomeTab());
+    }
+
+    @And("^I should click on (.*) In Span dialog box$")
+    public void iShouldClickOnTicketOwnerInSpanDialogBox(String inBold) {
+        assertTrue(actionContainer.homePageActions.clickInSpanDialog(Testdata.getValue(inBold)));
+    }
+
+    @And("^I should verify (.*) In Span dialog box$")
+    public void iShouldVerifyTicketOwnerInSpanDialogBox(String inBold) {
+        assertTrue(actionContainer.homePageActions.verifyInSpanDialog(Testdata.getValue(inBold)));
     }
 }

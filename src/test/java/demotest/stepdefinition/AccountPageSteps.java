@@ -379,6 +379,11 @@ public class AccountPageSteps {
         assertTrue(actionContainer.accountPageActions.clickArrowLeft());
     }
 
+    @And("^I should click on forward arrow button$")
+    public void iShouldClickOnForwardArrowButton() {
+        assertTrue(actionContainer.accountPageActions.clickArrowRight());
+    }
+
     @And("^I should verify disabled linkable button in approval column$")
     public void iShouldVerifyDisabledLinkableButtonInApprovalColumn() {
         assertTrue(actionContainer.accountPageActions.verifyDisabledLinkableButton());
@@ -522,5 +527,64 @@ public class AccountPageSteps {
     @And("^I should verify error icon in the displayed modal$")
     public void iShouldVerifyErrorIconInTheDisplayedModal() {
         assertTrue(actionContainer.accountPageActions.verifyErrorIcon());
+    }
+
+    @And("^I should click on activity log fom the dropdown$")
+    public void iShouldClickOnActivityLogFomTheDropdown() {
+        assertTrue(actionContainer.accountPageActions.clickActivityLog());
+    }
+
+    @And("^I should verify activity logs header in newly opened window$")
+    public void iShouldVerifyActivityLogsHeaderInNewlyOpenedWindow() {
+        assertTrue(actionContainer.accountPageActions.verifyActivityLogHeader());
+    }
+
+    @And("^I should enter (.*) date in the date filter box$")
+    public void iShouldEnterDateDateInTheDateFilterBox(String date) {
+        assertTrue(actionContainer.accountPageActions.EnterDateFilter(Testdata.getValue(date)));
+    }
+
+    @And("^I should verify the list of activity performed by the logged user for last seven days$")
+    public void iShouldVerifyTheListOfActivityPerformedByTheLoggedUserForLastSevenDays() {
+//        assertTrue(actionContainer.accountPageActions.verifyDaySevenFromToday());
+    }
+
+    @And("^I should click on launch all audit icon$")
+    public void iShouldClickOnLaunchAllAuditIcon() {
+        assertTrue(actionContainer.accountPageActions.clickLaunchAllAuditIcon());
+    }
+
+    @And("^I should verify disabled Save button in the modal$")
+    public void iShouldVerifyDisabledSaveButtonInTheModal() {
+        assertTrue(actionContainer.accountPageActions.verifyDisabledSaveButtonInModal());
+    }
+
+    @And("^I should enter your (.*) in address one textbox$")
+    public void iShouldEnterYourAddressInAddressOneTextbox(String inBold) {
+        assertTrue(actionContainer.accountPageActions.enterAddressOne(Testdata.getValue(inBold)));
+    }
+
+    @And("^I should verify changed dependent relation type$")
+    public void iShouldVerifyChangedDependentRelationType() {
+    }
+
+    @And("^I should select audit from the dropdown$")
+    public void iShouldSelectAuditFromTheDropdown() {
+        assertTrue(actionContainer.accountPageActions.SelectAuditTypeInDropdown());
+    }
+
+    @And("^I should select all from dependent dropdown$")
+    public void iShouldSelectAllFromDependentDropdown() {
+        assertTrue(actionContainer.accountPageActions.SelectAllCheckboxInDropdown());
+    }
+
+    @And("^I should click on Auditor dropdown to select an audit$")
+    public void iShouldClickOnAuditorDropdownToSelectAnAudit() {
+        assertTrue(actionContainer.accountPageActions.clickAuditorsDropdown());
+    }
+
+    @And("^I should open the admin ticket by clicking admin ticket number$")
+    public void iShouldOpenTheAdminTicketByClickingAdminTicketNumber() {
+        assertTrue(actionContainer.accountPageActions.clickAdminTicketNo());
     }
 }

@@ -1,4 +1,4 @@
-[1615466621.447][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND InitSession {
+[1616044071.524][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND InitSession {
    "desiredCapabilities": {
       "browserName": "chrome",
       "chromeOptions": {
@@ -9,7 +9,7 @@
       "version": ""
    }
 }
-[1615466621.453][INFO]: Populating Preferences file: {
+[1616044071.530][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -62,7 +62,7 @@
       "enabled": false
    }
 }
-[1615466621.456][INFO]: Populating Local State file: {
+[1616044071.533][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -72,9 +72,9 @@
       }
    }
 }
-[1615466621.471][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\amukilan\AppData\Local\Temp\scoped_dir4652_27832\internal" --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\amukilan\AppData\Local\Temp\scoped_dir4652_13694" data:,
-[1615466622.792][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1615466623.824][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE InitSession {
+[1616044071.832][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\amukilan\AppData\Local\Temp\scoped_dir24516_14783\internal" --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\amukilan\AppData\Local\Temp\scoped_dir24516_7603" data:,
+[1616044073.926][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1616044074.939][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE InitSession {
    "acceptInsecureCerts": false,
    "acceptSslCerts": false,
    "applicationCacheEnabled": false,
@@ -82,12 +82,12 @@
    "browserName": "chrome",
    "chrome": {
       "chromedriverVersion": "2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90)",
-      "userDataDir": "C:\\Users\\amukilan\\AppData\\Local\\Temp\\scoped_dir4652_13694"
+      "userDataDir": "C:\\Users\\amukilan\\AppData\\Local\\Temp\\scoped_dir24516_7603"
    },
    "cssSelectorsEnabled": true,
    "databaseEnabled": false,
    "goog:chromeOptions": {
-      "debuggerAddress": "localhost:58070"
+      "debuggerAddress": "localhost:60478"
    },
    "handlesAlerts": true,
    "hasTouchScreen": false,
@@ -101,1673 +101,1336 @@
    "rotatable": false,
    "~~~": "..."
 }
-[1615466623.887][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND MaximizeWindow {
+[1616044074.978][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND MaximizeWindow {
    "windowHandle": "current"
 }
-[1615466623.889][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1615466625.001][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE MaximizeWindow {
+[1616044074.980][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1616044076.094][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE MaximizeWindow {
    "height": 1056,
    "width": 1936,
    "x": -8,
    "y": -8
 }
-[1615466625.006][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND SetTimeouts {
+[1616044076.099][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND SetTimeouts {
    "ms": 150000,
    "type": "page load"
 }
-[1615466625.007][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE SetTimeouts
-[1615466625.013][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND SetTimeouts {
+[1616044076.099][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE SetTimeouts
+[1616044076.105][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND SetTimeouts {
    "ms": 45000,
    "type": "script"
 }
-[1615466625.014][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE SetTimeouts
-[1615466625.018][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND MaximizeWindow {
+[1616044076.105][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE SetTimeouts
+[1616044076.108][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND MaximizeWindow {
    "windowHandle": "current"
 }
-[1615466625.019][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE MaximizeWindow {
+[1616044076.110][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE MaximizeWindow {
    "height": 1056,
    "width": 1936,
    "x": -8,
    "y": -8
 }
-[1615466630.024][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND Navigate {
+[1616044081.115][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND Navigate {
    "url": "https://consova-core.inlogic.in/login"
 }
-[1615466630.024][INFO]: Waiting for pending navigations...
-[1615466630.035][INFO]: Done waiting for pending navigations. Status: ok
-[1615466630.259][INFO]: Waiting for pending navigations...
-[1615466639.732][INFO]: Done waiting for pending navigations. Status: ok
-[1615466639.732][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE Navigate
-[1615466640.024][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND Navigate {
-   "url": "https://consova-iverify.inlogic.in/login"
+[1616044081.115][INFO]: Waiting for pending navigations...
+[1616044081.130][INFO]: Done waiting for pending navigations. Status: ok
+[1616044081.379][INFO]: Waiting for pending navigations...
+[1616044150.747][INFO]: Done waiting for pending navigations. Status: ok
+[1616044150.747][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE Navigate
+[1616044151.152][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND Navigate {
+   "url": "https://consova-core.inlogic.in/login"
 }
-[1615466640.024][INFO]: Waiting for pending navigations...
-[1615466640.025][INFO]: Done waiting for pending navigations. Status: ok
-[1615466640.077][INFO]: Waiting for pending navigations...
-[1615466641.517][INFO]: Done waiting for pending navigations. Status: ok
-[1615466641.517][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE Navigate
-[1615466643.531][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044151.152][INFO]: Waiting for pending navigations...
+[1616044151.153][INFO]: Done waiting for pending navigations. Status: ok
+[1616044152.315][INFO]: Waiting for pending navigations...
+[1616044152.323][INFO]: Done waiting for pending navigations. Status: ok
+[1616044152.323][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE Navigate
+[1616044167.343][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "LastName"
+   "value": "username"
 }
-[1615466643.531][INFO]: Waiting for pending navigations...
-[1615466643.532][INFO]: Done waiting for pending navigations. Status: ok
-[1615466643.560][INFO]: Waiting for pending navigations...
-[1615466643.584][INFO]: Done waiting for pending navigations. Status: ok
-[1615466643.584][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
+[1616044167.343][INFO]: Waiting for pending navigations...
+[1616044167.344][INFO]: Done waiting for pending navigations. Status: ok
+[1616044167.366][INFO]: Waiting for pending navigations...
+[1616044167.367][INFO]: Done waiting for pending navigations. Status: ok
+[1616044167.367][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-1"
 }
-[1615466643.606][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-1"
+[1616044167.381][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.3884793806318936-1"
 }
-[1615466643.606][INFO]: Waiting for pending navigations...
-[1615466643.607][INFO]: Done waiting for pending navigations. Status: ok
-[1615466643.625][INFO]: Waiting for pending navigations...
-[1615466643.626][INFO]: Done waiting for pending navigations. Status: ok
-[1615466643.626][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466646.633][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044167.381][INFO]: Waiting for pending navigations...
+[1616044167.382][INFO]: Done waiting for pending navigations. Status: ok
+[1616044167.400][INFO]: Waiting for pending navigations...
+[1616044167.401][INFO]: Done waiting for pending navigations. Status: ok
+[1616044167.401][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044170.408][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "LastName"
+   "value": "username"
 }
-[1615466646.633][INFO]: Waiting for pending navigations...
-[1615466646.634][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.652][INFO]: Waiting for pending navigations...
-[1615466646.653][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.653][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
+[1616044170.408][INFO]: Waiting for pending navigations...
+[1616044170.409][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.424][INFO]: Waiting for pending navigations...
+[1616044170.424][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.425][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-1"
 }
-[1615466646.657][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-1"
+[1616044170.428][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.3884793806318936-1"
 }
-[1615466646.657][INFO]: Waiting for pending navigations...
-[1615466646.658][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.670][INFO]: Waiting for pending navigations...
-[1615466646.671][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.671][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466646.682][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044170.429][INFO]: Waiting for pending navigations...
+[1616044170.429][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.442][INFO]: Waiting for pending navigations...
+[1616044170.443][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.443][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044170.452][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "LastName"
+   "value": "username"
 }
-[1615466646.682][INFO]: Waiting for pending navigations...
-[1615466646.683][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.695][INFO]: Waiting for pending navigations...
-[1615466646.696][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.696][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
+[1616044170.453][INFO]: Waiting for pending navigations...
+[1616044170.453][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.463][INFO]: Waiting for pending navigations...
+[1616044170.464][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.464][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-1"
 }
-[1615466646.701][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-1"
+[1616044170.468][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.3884793806318936-1"
 }
-[1615466646.701][INFO]: Waiting for pending navigations...
-[1615466646.702][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.711][INFO]: Waiting for pending navigations...
-[1615466646.712][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.712][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466646.719][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044170.468][INFO]: Waiting for pending navigations...
+[1616044170.469][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.480][INFO]: Waiting for pending navigations...
+[1616044170.481][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.481][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044170.487][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "LastName"
+   "value": "username"
 }
-[1615466646.719][INFO]: Waiting for pending navigations...
-[1615466646.720][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.725][INFO]: Waiting for pending navigations...
-[1615466646.726][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.726][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
+[1616044170.487][INFO]: Waiting for pending navigations...
+[1616044170.487][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.503][INFO]: Waiting for pending navigations...
+[1616044170.504][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.504][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-1"
 }
-[1615466646.730][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND GetElementText {
-   "id": "0.2930964456549774-1"
+[1616044170.508][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND GetElementText {
+   "id": "0.3884793806318936-1"
 }
-[1615466646.730][INFO]: Waiting for pending navigations...
-[1615466646.731][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.743][INFO]: Waiting for pending navigations...
-[1615466646.744][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.744][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE GetElementText ""
-[1615466646.750][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044170.508][INFO]: Waiting for pending navigations...
+[1616044170.509][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.528][INFO]: Waiting for pending navigations...
+[1616044170.529][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.529][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE GetElementText ""
+[1616044170.535][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "LastName"
+   "value": "username"
 }
-[1615466646.751][INFO]: Waiting for pending navigations...
-[1615466646.751][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.756][INFO]: Waiting for pending navigations...
-[1615466646.757][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.757][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
+[1616044170.535][INFO]: Waiting for pending navigations...
+[1616044170.535][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.547][INFO]: Waiting for pending navigations...
+[1616044170.547][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.547][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-1"
 }
-[1615466646.763][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-1",
+[1616044170.552][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.3884793806318936-1",
    "value": [ "a" ]
 }
-[1615466646.763][INFO]: Waiting for pending navigations...
-[1615466646.763][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.799][INFO]: Waiting for pending navigations...
-[1615466646.800][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.800][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466646.803][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044170.552][INFO]: Waiting for pending navigations...
+[1616044170.553][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.687][INFO]: Waiting for pending navigations...
+[1616044170.687][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.687][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044170.692][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "LastName"
+   "value": "username"
 }
-[1615466646.803][INFO]: Waiting for pending navigations...
-[1615466646.804][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.809][INFO]: Waiting for pending navigations...
-[1615466646.810][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.810][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
+[1616044170.692][INFO]: Waiting for pending navigations...
+[1616044170.694][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.705][INFO]: Waiting for pending navigations...
+[1616044170.706][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.706][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-1"
 }
-[1615466646.814][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-1",
-   "value": [ "Thomas" ]
+[1616044170.711][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.3884793806318936-1",
+   "value": [ "ADivya" ]
 }
-[1615466646.814][INFO]: Waiting for pending navigations...
-[1615466646.815][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.873][INFO]: Waiting for pending navigations...
-[1615466646.874][INFO]: Done waiting for pending navigations. Status: ok
-[1615466646.874][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466649.879][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044170.711][INFO]: Waiting for pending navigations...
+[1616044170.712][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.799][INFO]: Waiting for pending navigations...
+[1616044170.800][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.800][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044170.805][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "ConsovaPIN"
+   "value": "username"
 }
-[1615466649.879][INFO]: Waiting for pending navigations...
-[1615466649.880][INFO]: Done waiting for pending navigations. Status: ok
-[1615466649.893][INFO]: Waiting for pending navigations...
-[1615466649.894][INFO]: Done waiting for pending navigations. Status: ok
-[1615466649.894][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044170.805][INFO]: Waiting for pending navigations...
+[1616044170.805][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.824][INFO]: Waiting for pending navigations...
+[1616044170.825][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.825][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-1"
 }
-[1615466649.898][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-2"
+[1616044170.829][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.3884793806318936-1"
 }
-[1615466649.899][INFO]: Waiting for pending navigations...
-[1615466649.899][INFO]: Done waiting for pending navigations. Status: ok
-[1615466649.914][INFO]: Waiting for pending navigations...
-[1615466649.915][INFO]: Done waiting for pending navigations. Status: ok
-[1615466649.915][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466652.920][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044170.830][INFO]: Waiting for pending navigations...
+[1616044170.830][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.840][INFO]: Waiting for pending navigations...
+[1616044170.841][INFO]: Done waiting for pending navigations. Status: ok
+[1616044170.841][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044173.847][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "ConsovaPIN"
+   "value": "password"
 }
-[1615466652.920][INFO]: Waiting for pending navigations...
-[1615466652.920][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.926][INFO]: Waiting for pending navigations...
-[1615466652.927][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.927][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044173.847][INFO]: Waiting for pending navigations...
+[1616044173.848][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.869][INFO]: Waiting for pending navigations...
+[1616044173.870][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.870][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-2"
 }
-[1615466652.930][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-2"
+[1616044173.874][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.3884793806318936-2"
 }
-[1615466652.931][INFO]: Waiting for pending navigations...
-[1615466652.931][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.937][INFO]: Waiting for pending navigations...
-[1615466652.938][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.938][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466652.943][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044173.874][INFO]: Waiting for pending navigations...
+[1616044173.875][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.896][INFO]: Waiting for pending navigations...
+[1616044173.897][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.897][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044173.902][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "ConsovaPIN"
+   "value": "password"
 }
-[1615466652.943][INFO]: Waiting for pending navigations...
-[1615466652.944][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.950][INFO]: Waiting for pending navigations...
-[1615466652.950][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.950][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044173.902][INFO]: Waiting for pending navigations...
+[1616044173.903][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.909][INFO]: Waiting for pending navigations...
+[1616044173.910][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.910][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-2"
 }
-[1615466652.955][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-2"
+[1616044173.914][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.3884793806318936-2"
 }
-[1615466652.955][INFO]: Waiting for pending navigations...
-[1615466652.956][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.962][INFO]: Waiting for pending navigations...
-[1615466652.963][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.963][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466652.967][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044173.914][INFO]: Waiting for pending navigations...
+[1616044173.914][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.920][INFO]: Waiting for pending navigations...
+[1616044173.920][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.920][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044173.925][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "ConsovaPIN"
+   "value": "password"
 }
-[1615466652.967][INFO]: Waiting for pending navigations...
-[1615466652.967][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.973][INFO]: Waiting for pending navigations...
-[1615466652.973][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.973][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044173.925][INFO]: Waiting for pending navigations...
+[1616044173.926][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.932][INFO]: Waiting for pending navigations...
+[1616044173.932][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.932][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-2"
 }
-[1615466652.977][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND GetElementText {
-   "id": "0.2930964456549774-2"
+[1616044173.936][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND GetElementText {
+   "id": "0.3884793806318936-2"
 }
-[1615466652.978][INFO]: Waiting for pending navigations...
-[1615466652.978][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.990][INFO]: Waiting for pending navigations...
-[1615466652.990][INFO]: Done waiting for pending navigations. Status: ok
-[1615466652.991][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE GetElementText ""
-[1615466652.995][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044173.936][INFO]: Waiting for pending navigations...
+[1616044173.937][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.951][INFO]: Waiting for pending navigations...
+[1616044173.951][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.951][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE GetElementText ""
+[1616044173.956][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "ConsovaPIN"
+   "value": "password"
 }
-[1615466652.995][INFO]: Waiting for pending navigations...
-[1615466652.996][INFO]: Done waiting for pending navigations. Status: ok
-[1615466653.001][INFO]: Waiting for pending navigations...
-[1615466653.001][INFO]: Done waiting for pending navigations. Status: ok
-[1615466653.001][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044173.956][INFO]: Waiting for pending navigations...
+[1616044173.957][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.961][INFO]: Waiting for pending navigations...
+[1616044173.962][INFO]: Done waiting for pending navigations. Status: ok
+[1616044173.962][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-2"
 }
-[1615466653.007][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-2",
+[1616044173.967][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.3884793806318936-2",
    "value": [ "a" ]
 }
-[1615466653.007][INFO]: Waiting for pending navigations...
-[1615466653.007][INFO]: Done waiting for pending navigations. Status: ok
-[1615466653.054][INFO]: Waiting for pending navigations...
-[1615466653.055][INFO]: Done waiting for pending navigations. Status: ok
-[1615466653.055][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466653.058][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044173.967][INFO]: Waiting for pending navigations...
+[1616044173.967][INFO]: Done waiting for pending navigations. Status: ok
+[1616044174.006][INFO]: Waiting for pending navigations...
+[1616044174.008][INFO]: Done waiting for pending navigations. Status: ok
+[1616044174.008][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044174.013][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "id",
-   "value": "ConsovaPIN"
+   "value": "password"
 }
-[1615466653.058][INFO]: Waiting for pending navigations...
-[1615466653.059][INFO]: Done waiting for pending navigations. Status: ok
-[1615466653.066][INFO]: Waiting for pending navigations...
-[1615466653.066][INFO]: Done waiting for pending navigations. Status: ok
-[1615466653.066][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044174.013][INFO]: Waiting for pending navigations...
+[1616044174.019][INFO]: Done waiting for pending navigations. Status: ok
+[1616044174.025][INFO]: Waiting for pending navigations...
+[1616044174.025][INFO]: Done waiting for pending navigations. Status: ok
+[1616044174.025][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-2"
 }
-[1615466653.071][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-2",
-   "value": [ "4000004" ]
+[1616044174.030][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.3884793806318936-2",
+   "value": [ "Consova123!" ]
 }
-[1615466653.071][INFO]: Waiting for pending navigations...
-[1615466653.071][INFO]: Done waiting for pending navigations. Status: ok
-[1615466653.132][INFO]: Waiting for pending navigations...
-[1615466653.133][INFO]: Done waiting for pending navigations. Status: ok
-[1615466653.133][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466656.138][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
-}
-[1615466656.138][INFO]: Waiting for pending navigations...
-[1615466656.139][INFO]: Done waiting for pending navigations. Status: ok
-[1615466656.149][INFO]: Waiting for pending navigations...
-[1615466656.150][INFO]: Done waiting for pending navigations. Status: ok
-[1615466656.150][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
-}
-[1615466656.153][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-3"
-}
-[1615466656.153][INFO]: Waiting for pending navigations...
-[1615466656.154][INFO]: Done waiting for pending navigations. Status: ok
-[1615466656.167][INFO]: Waiting for pending navigations...
-[1615466656.168][INFO]: Done waiting for pending navigations. Status: ok
-[1615466656.168][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466659.174][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
-}
-[1615466659.174][INFO]: Waiting for pending navigations...
-[1615466659.175][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.180][INFO]: Waiting for pending navigations...
-[1615466659.181][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.181][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
-}
-[1615466659.185][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-3"
-}
-[1615466659.185][INFO]: Waiting for pending navigations...
-[1615466659.186][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.193][INFO]: Waiting for pending navigations...
-[1615466659.194][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.194][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466659.198][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
-}
-[1615466659.198][INFO]: Waiting for pending navigations...
-[1615466659.199][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.204][INFO]: Waiting for pending navigations...
-[1615466659.205][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.205][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
-}
-[1615466659.209][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-3"
-}
-[1615466659.209][INFO]: Waiting for pending navigations...
-[1615466659.210][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.216][INFO]: Waiting for pending navigations...
-[1615466659.217][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.217][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466659.221][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
-}
-[1615466659.221][INFO]: Waiting for pending navigations...
-[1615466659.222][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.228][INFO]: Waiting for pending navigations...
-[1615466659.228][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.228][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
-}
-[1615466659.233][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND GetElementText {
-   "id": "0.2930964456549774-3"
-}
-[1615466659.233][INFO]: Waiting for pending navigations...
-[1615466659.233][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.248][INFO]: Waiting for pending navigations...
-[1615466659.249][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.249][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE GetElementText ""
-[1615466659.254][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
-}
-[1615466659.254][INFO]: Waiting for pending navigations...
-[1615466659.255][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.260][INFO]: Waiting for pending navigations...
-[1615466659.261][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.261][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
-}
-[1615466659.266][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-3",
-   "value": [ "a" ]
-}
-[1615466659.266][INFO]: Waiting for pending navigations...
-[1615466659.267][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.311][INFO]: Waiting for pending navigations...
-[1615466659.312][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.312][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466659.316][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
-}
-[1615466659.316][INFO]: Waiting for pending navigations...
-[1615466659.317][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.323][INFO]: Waiting for pending navigations...
-[1615466659.324][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.324][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
-}
-[1615466659.331][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-3",
-   "value": [ "6935" ]
-}
-[1615466659.331][INFO]: Waiting for pending navigations...
-[1615466659.332][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.376][INFO]: Waiting for pending navigations...
-[1615466659.378][INFO]: Done waiting for pending navigations. Status: ok
-[1615466659.378][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466662.386][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044174.030][INFO]: Waiting for pending navigations...
+[1616044174.031][INFO]: Done waiting for pending navigations. Status: ok
+[1616044174.112][INFO]: Waiting for pending navigations...
+[1616044174.113][INFO]: Done waiting for pending navigations. Status: ok
+[1616044174.113][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044177.122][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "xpath",
    "value": "//button[@type='submit']"
 }
-[1615466662.386][INFO]: Waiting for pending navigations...
-[1615466662.387][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.400][INFO]: Waiting for pending navigations...
-[1615466662.401][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.401][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-4"
+[1616044177.122][INFO]: Waiting for pending navigations...
+[1616044177.123][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.133][INFO]: Waiting for pending navigations...
+[1616044177.134][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.134][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-3"
 }
-[1615466662.405][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-4"
+[1616044177.139][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.3884793806318936-3"
 }
-[1615466662.405][INFO]: Waiting for pending navigations...
-[1615466662.406][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.417][INFO]: Waiting for pending navigations...
-[1615466662.418][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.418][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466662.427][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044177.139][INFO]: Waiting for pending navigations...
+[1616044177.139][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.149][INFO]: Waiting for pending navigations...
+[1616044177.150][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.150][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044177.158][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "xpath",
    "value": "//button[@type='submit']"
 }
-[1615466662.427][INFO]: Waiting for pending navigations...
-[1615466662.428][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.433][INFO]: Waiting for pending navigations...
-[1615466662.434][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.434][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-4"
+[1616044177.158][INFO]: Waiting for pending navigations...
+[1616044177.159][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.166][INFO]: Waiting for pending navigations...
+[1616044177.166][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.167][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-3"
 }
-[1615466662.437][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-4"
+[1616044177.171][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.3884793806318936-3"
 }
-[1615466662.438][INFO]: Waiting for pending navigations...
-[1615466662.438][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.445][INFO]: Waiting for pending navigations...
-[1615466662.446][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.446][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466662.450][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
+[1616044177.171][INFO]: Waiting for pending navigations...
+[1616044177.171][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.176][INFO]: Waiting for pending navigations...
+[1616044177.177][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.177][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044177.181][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
    "using": "xpath",
    "value": "//button[@type='submit']"
 }
-[1615466662.450][INFO]: Waiting for pending navigations...
-[1615466662.451][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.458][INFO]: Waiting for pending navigations...
-[1615466662.459][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.459][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-4"
-}
-[1615466662.463][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND ClickElement {
-   "id": "0.2930964456549774-4"
-}
-[1615466662.463][INFO]: Waiting for pending navigations...
-[1615466662.464][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.527][INFO]: Waiting for pending navigations...
-[1615466662.544][INFO]: Done waiting for pending navigations. Status: ok
-[1615466662.545][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE ClickElement
-[1615466665.553][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//span[contains(text(),'Authentication')]"
-}
-[1615466665.553][INFO]: Waiting for pending navigations...
-[1615466665.554][INFO]: Done waiting for pending navigations. Status: ok
-[1615466665.569][INFO]: Waiting for pending navigations...
-[1615466665.569][INFO]: Done waiting for pending navigations. Status: ok
-[1615466665.569][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-5"
-}
-[1615466665.574][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-5"
-}
-[1615466665.574][INFO]: Waiting for pending navigations...
-[1615466665.574][INFO]: Done waiting for pending navigations. Status: ok
-[1615466665.587][INFO]: Waiting for pending navigations...
-[1615466665.588][INFO]: Done waiting for pending navigations. Status: ok
-[1615466665.588][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466665.592][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-5"
-}
-[1615466665.592][INFO]: Waiting for pending navigations...
-[1615466665.593][INFO]: Done waiting for pending navigations. Status: ok
-[1615466665.599][INFO]: Waiting for pending navigations...
-[1615466665.600][INFO]: Done waiting for pending navigations. Status: ok
-[1615466665.600][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466670.606][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//img[contains(@src,'ic_error')]"
-}
-[1615466670.606][INFO]: Waiting for pending navigations...
-[1615466670.607][INFO]: Done waiting for pending navigations. Status: ok
-[1615466670.619][INFO]: Waiting for pending navigations...
-[1615466670.619][INFO]: Done waiting for pending navigations. Status: ok
-[1615466670.620][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-6"
-}
-[1615466670.624][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-6"
-}
-[1615466670.624][INFO]: Waiting for pending navigations...
-[1615466670.625][INFO]: Done waiting for pending navigations. Status: ok
-[1615466670.638][INFO]: Waiting for pending navigations...
-[1615466670.639][INFO]: Done waiting for pending navigations. Status: ok
-[1615466670.639][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466673.649][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'We are not able to verify the requested account, or you are not in an active verification with Consova.')]"
-}
-[1615466673.649][INFO]: Waiting for pending navigations...
-[1615466673.650][INFO]: Done waiting for pending navigations. Status: ok
-[1615466673.663][INFO]: Waiting for pending navigations...
-[1615466673.664][INFO]: Done waiting for pending navigations. Status: ok
-[1615466673.664][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-7"
-}
-[1615466673.668][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-7"
-}
-[1615466673.668][INFO]: Waiting for pending navigations...
-[1615466673.669][INFO]: Done waiting for pending navigations. Status: ok
-[1615466673.682][INFO]: Waiting for pending navigations...
-[1615466673.683][INFO]: Done waiting for pending navigations. Status: ok
-[1615466673.683][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466673.686][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-7"
-}
-[1615466673.687][INFO]: Waiting for pending navigations...
-[1615466673.687][INFO]: Done waiting for pending navigations. Status: ok
-[1615466673.694][INFO]: Waiting for pending navigations...
-[1615466673.694][INFO]: Done waiting for pending navigations. Status: ok
-[1615466673.694][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466676.701][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466676.701][INFO]: Waiting for pending navigations...
-[1615466676.702][INFO]: Done waiting for pending navigations. Status: ok
-[1615466676.712][INFO]: Waiting for pending navigations...
-[1615466676.713][INFO]: Done waiting for pending navigations. Status: ok
-[1615466676.713][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466678.720][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466678.721][INFO]: Waiting for pending navigations...
-[1615466678.721][INFO]: Done waiting for pending navigations. Status: ok
-[1615466678.728][INFO]: Waiting for pending navigations...
-[1615466678.729][INFO]: Done waiting for pending navigations. Status: ok
-[1615466678.729][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466680.735][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466680.735][INFO]: Waiting for pending navigations...
-[1615466680.736][INFO]: Done waiting for pending navigations. Status: ok
-[1615466680.742][INFO]: Waiting for pending navigations...
-[1615466680.742][INFO]: Done waiting for pending navigations. Status: ok
-[1615466680.742][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466682.747][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466682.747][INFO]: Waiting for pending navigations...
-[1615466682.747][INFO]: Done waiting for pending navigations. Status: ok
-[1615466682.753][INFO]: Waiting for pending navigations...
-[1615466682.753][INFO]: Done waiting for pending navigations. Status: ok
-[1615466682.754][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466684.758][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466684.758][INFO]: Waiting for pending navigations...
-[1615466684.759][INFO]: Done waiting for pending navigations. Status: ok
-[1615466684.766][INFO]: Waiting for pending navigations...
-[1615466684.767][INFO]: Done waiting for pending navigations. Status: ok
-[1615466684.767][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466686.772][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466686.772][INFO]: Waiting for pending navigations...
-[1615466686.773][INFO]: Done waiting for pending navigations. Status: ok
-[1615466686.780][INFO]: Waiting for pending navigations...
-[1615466686.780][INFO]: Done waiting for pending navigations. Status: ok
-[1615466686.780][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466688.786][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466688.786][INFO]: Waiting for pending navigations...
-[1615466688.787][INFO]: Done waiting for pending navigations. Status: ok
-[1615466688.793][INFO]: Waiting for pending navigations...
-[1615466688.793][INFO]: Done waiting for pending navigations. Status: ok
-[1615466688.793][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466690.799][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466690.799][INFO]: Waiting for pending navigations...
-[1615466690.800][INFO]: Done waiting for pending navigations. Status: ok
-[1615466690.806][INFO]: Waiting for pending navigations...
-[1615466690.807][INFO]: Done waiting for pending navigations. Status: ok
-[1615466690.807][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466692.813][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466692.813][INFO]: Waiting for pending navigations...
-[1615466692.814][INFO]: Done waiting for pending navigations. Status: ok
-[1615466692.820][INFO]: Waiting for pending navigations...
-[1615466692.821][INFO]: Done waiting for pending navigations. Status: ok
-[1615466692.821][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466694.825][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466694.825][INFO]: Waiting for pending navigations...
-[1615466694.826][INFO]: Done waiting for pending navigations. Status: ok
-[1615466694.832][INFO]: Waiting for pending navigations...
-[1615466694.833][INFO]: Done waiting for pending navigations. Status: ok
-[1615466694.833][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466696.838][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466696.838][INFO]: Waiting for pending navigations...
-[1615466696.839][INFO]: Done waiting for pending navigations. Status: ok
-[1615466696.846][INFO]: Waiting for pending navigations...
-[1615466696.846][INFO]: Done waiting for pending navigations. Status: ok
-[1615466696.846][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466698.852][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466698.852][INFO]: Waiting for pending navigations...
-[1615466698.853][INFO]: Done waiting for pending navigations. Status: ok
-[1615466698.860][INFO]: Waiting for pending navigations...
-[1615466698.860][INFO]: Done waiting for pending navigations. Status: ok
-[1615466698.860][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466700.866][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466700.866][INFO]: Waiting for pending navigations...
-[1615466700.867][INFO]: Done waiting for pending navigations. Status: ok
-[1615466700.874][INFO]: Waiting for pending navigations...
-[1615466700.875][INFO]: Done waiting for pending navigations. Status: ok
-[1615466700.875][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466702.879][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466702.880][INFO]: Waiting for pending navigations...
-[1615466702.880][INFO]: Done waiting for pending navigations. Status: ok
-[1615466702.887][INFO]: Waiting for pending navigations...
-[1615466702.887][INFO]: Done waiting for pending navigations. Status: ok
-[1615466702.888][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466704.893][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466704.893][INFO]: Waiting for pending navigations...
-[1615466704.894][INFO]: Done waiting for pending navigations. Status: ok
-[1615466704.902][INFO]: Waiting for pending navigations...
-[1615466704.902][INFO]: Done waiting for pending navigations. Status: ok
-[1615466704.902][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466706.906][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466706.907][INFO]: Waiting for pending navigations...
-[1615466706.907][INFO]: Done waiting for pending navigations. Status: ok
-[1615466706.914][INFO]: Waiting for pending navigations...
-[1615466706.915][INFO]: Done waiting for pending navigations. Status: ok
-[1615466706.915][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466708.921][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466708.921][INFO]: Waiting for pending navigations...
-[1615466708.922][INFO]: Done waiting for pending navigations. Status: ok
-[1615466708.927][INFO]: Waiting for pending navigations...
-[1615466708.928][INFO]: Done waiting for pending navigations. Status: ok
-[1615466708.928][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466710.934][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466710.934][INFO]: Waiting for pending navigations...
-[1615466710.934][INFO]: Done waiting for pending navigations. Status: ok
-[1615466710.940][INFO]: Waiting for pending navigations...
-[1615466710.941][INFO]: Done waiting for pending navigations. Status: ok
-[1615466710.941][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466712.945][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466712.945][INFO]: Waiting for pending navigations...
-[1615466712.946][INFO]: Done waiting for pending navigations. Status: ok
-[1615466712.953][INFO]: Waiting for pending navigations...
-[1615466712.954][INFO]: Done waiting for pending navigations. Status: ok
-[1615466712.954][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466714.959][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466714.959][INFO]: Waiting for pending navigations...
-[1615466714.960][INFO]: Done waiting for pending navigations. Status: ok
-[1615466714.972][INFO]: Waiting for pending navigations...
-[1615466714.972][INFO]: Done waiting for pending navigations. Status: ok
-[1615466714.972][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466716.977][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466716.977][INFO]: Waiting for pending navigations...
-[1615466716.978][INFO]: Done waiting for pending navigations. Status: ok
-[1615466716.984][INFO]: Waiting for pending navigations...
-[1615466716.985][INFO]: Done waiting for pending navigations. Status: ok
-[1615466716.985][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466718.989][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466718.989][INFO]: Waiting for pending navigations...
-[1615466718.990][INFO]: Done waiting for pending navigations. Status: ok
-[1615466718.995][INFO]: Waiting for pending navigations...
-[1615466718.996][INFO]: Done waiting for pending navigations. Status: ok
-[1615466718.996][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466721.000][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466721.000][INFO]: Waiting for pending navigations...
-[1615466721.001][INFO]: Done waiting for pending navigations. Status: ok
-[1615466721.006][INFO]: Waiting for pending navigations...
-[1615466721.006][INFO]: Done waiting for pending navigations. Status: ok
-[1615466721.006][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466723.011][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466723.011][INFO]: Waiting for pending navigations...
-[1615466723.012][INFO]: Done waiting for pending navigations. Status: ok
-[1615466723.017][INFO]: Waiting for pending navigations...
-[1615466723.017][INFO]: Done waiting for pending navigations. Status: ok
-[1615466723.017][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466725.022][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466725.022][INFO]: Waiting for pending navigations...
-[1615466725.023][INFO]: Done waiting for pending navigations. Status: ok
-[1615466725.029][INFO]: Waiting for pending navigations...
-[1615466725.029][INFO]: Done waiting for pending navigations. Status: ok
-[1615466725.029][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466727.033][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466727.033][INFO]: Waiting for pending navigations...
-[1615466727.034][INFO]: Done waiting for pending navigations. Status: ok
-[1615466727.039][INFO]: Waiting for pending navigations...
-[1615466727.039][INFO]: Done waiting for pending navigations. Status: ok
-[1615466727.039][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466729.043][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466729.043][INFO]: Waiting for pending navigations...
-[1615466729.044][INFO]: Done waiting for pending navigations. Status: ok
-[1615466729.049][INFO]: Waiting for pending navigations...
-[1615466729.050][INFO]: Done waiting for pending navigations. Status: ok
-[1615466729.050][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466731.053][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466731.053][INFO]: Waiting for pending navigations...
-[1615466731.054][INFO]: Done waiting for pending navigations. Status: ok
-[1615466731.059][INFO]: Waiting for pending navigations...
-[1615466731.060][INFO]: Done waiting for pending navigations. Status: ok
-[1615466731.060][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466733.063][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466733.063][INFO]: Waiting for pending navigations...
-[1615466733.064][INFO]: Done waiting for pending navigations. Status: ok
-[1615466733.070][INFO]: Waiting for pending navigations...
-[1615466733.071][INFO]: Done waiting for pending navigations. Status: ok
-[1615466733.071][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466735.074][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466735.074][INFO]: Waiting for pending navigations...
-[1615466735.075][INFO]: Done waiting for pending navigations. Status: ok
-[1615466735.081][INFO]: Waiting for pending navigations...
-[1615466735.081][INFO]: Done waiting for pending navigations. Status: ok
-[1615466735.081][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466737.084][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466737.085][INFO]: Waiting for pending navigations...
-[1615466737.085][INFO]: Done waiting for pending navigations. Status: ok
-[1615466737.090][INFO]: Waiting for pending navigations...
-[1615466737.091][INFO]: Done waiting for pending navigations. Status: ok
-[1615466737.091][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466739.095][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466739.095][INFO]: Waiting for pending navigations...
-[1615466739.096][INFO]: Done waiting for pending navigations. Status: ok
-[1615466739.101][INFO]: Waiting for pending navigations...
-[1615466739.101][INFO]: Done waiting for pending navigations. Status: ok
-[1615466739.101][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466741.105][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466741.105][INFO]: Waiting for pending navigations...
-[1615466741.106][INFO]: Done waiting for pending navigations. Status: ok
-[1615466741.111][INFO]: Waiting for pending navigations...
-[1615466741.111][INFO]: Done waiting for pending navigations. Status: ok
-[1615466741.111][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466743.116][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466743.116][INFO]: Waiting for pending navigations...
-[1615466743.117][INFO]: Done waiting for pending navigations. Status: ok
-[1615466743.122][INFO]: Waiting for pending navigations...
-[1615466743.122][INFO]: Done waiting for pending navigations. Status: ok
-[1615466743.122][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466745.126][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466745.126][INFO]: Waiting for pending navigations...
-[1615466745.127][INFO]: Done waiting for pending navigations. Status: ok
-[1615466745.132][INFO]: Waiting for pending navigations...
-[1615466745.133][INFO]: Done waiting for pending navigations. Status: ok
-[1615466745.133][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466747.138][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466747.138][INFO]: Waiting for pending navigations...
-[1615466747.139][INFO]: Done waiting for pending navigations. Status: ok
-[1615466747.144][INFO]: Waiting for pending navigations...
-[1615466747.145][INFO]: Done waiting for pending navigations. Status: ok
-[1615466747.145][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466749.149][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466749.149][INFO]: Waiting for pending navigations...
-[1615466749.150][INFO]: Done waiting for pending navigations. Status: ok
-[1615466749.155][INFO]: Waiting for pending navigations...
-[1615466749.155][INFO]: Done waiting for pending navigations. Status: ok
-[1615466749.155][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466751.159][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466751.159][INFO]: Waiting for pending navigations...
-[1615466751.160][INFO]: Done waiting for pending navigations. Status: ok
-[1615466751.166][INFO]: Waiting for pending navigations...
-[1615466751.166][INFO]: Done waiting for pending navigations. Status: ok
-[1615466751.166][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466753.170][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466753.170][INFO]: Waiting for pending navigations...
-[1615466753.171][INFO]: Done waiting for pending navigations. Status: ok
-[1615466753.176][INFO]: Waiting for pending navigations...
-[1615466753.177][INFO]: Done waiting for pending navigations. Status: ok
-[1615466753.177][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466755.181][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466755.181][INFO]: Waiting for pending navigations...
-[1615466755.182][INFO]: Done waiting for pending navigations. Status: ok
-[1615466755.187][INFO]: Waiting for pending navigations...
-[1615466755.188][INFO]: Done waiting for pending navigations. Status: ok
-[1615466755.188][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466757.192][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466757.192][INFO]: Waiting for pending navigations...
-[1615466757.193][INFO]: Done waiting for pending navigations. Status: ok
-[1615466757.198][INFO]: Waiting for pending navigations...
-[1615466757.198][INFO]: Done waiting for pending navigations. Status: ok
-[1615466757.198][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466759.202][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466759.202][INFO]: Waiting for pending navigations...
-[1615466759.203][INFO]: Done waiting for pending navigations. Status: ok
-[1615466759.208][INFO]: Waiting for pending navigations...
-[1615466759.209][INFO]: Done waiting for pending navigations. Status: ok
-[1615466759.209][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466761.213][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466761.213][INFO]: Waiting for pending navigations...
-[1615466761.214][INFO]: Done waiting for pending navigations. Status: ok
-[1615466761.219][INFO]: Waiting for pending navigations...
-[1615466761.220][INFO]: Done waiting for pending navigations. Status: ok
-[1615466761.220][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466763.223][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466763.223][INFO]: Waiting for pending navigations...
-[1615466763.224][INFO]: Done waiting for pending navigations. Status: ok
-[1615466763.230][INFO]: Waiting for pending navigations...
-[1615466763.230][INFO]: Done waiting for pending navigations. Status: ok
-[1615466763.230][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466765.233][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466765.234][INFO]: Waiting for pending navigations...
-[1615466765.234][INFO]: Done waiting for pending navigations. Status: ok
-[1615466765.239][INFO]: Waiting for pending navigations...
-[1615466765.240][INFO]: Done waiting for pending navigations. Status: ok
-[1615466765.240][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466767.243][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466767.244][INFO]: Waiting for pending navigations...
-[1615466767.244][INFO]: Done waiting for pending navigations. Status: ok
-[1615466767.251][INFO]: Waiting for pending navigations...
-[1615466767.251][INFO]: Done waiting for pending navigations. Status: ok
-[1615466767.251][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466769.255][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466769.255][INFO]: Waiting for pending navigations...
-[1615466769.256][INFO]: Done waiting for pending navigations. Status: ok
-[1615466769.261][INFO]: Waiting for pending navigations...
-[1615466769.261][INFO]: Done waiting for pending navigations. Status: ok
-[1615466769.261][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466771.265][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466771.265][INFO]: Waiting for pending navigations...
-[1615466771.266][INFO]: Done waiting for pending navigations. Status: ok
-[1615466771.271][INFO]: Waiting for pending navigations...
-[1615466771.271][INFO]: Done waiting for pending navigations. Status: ok
-[1615466771.271][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466773.275][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466773.275][INFO]: Waiting for pending navigations...
-[1615466773.276][INFO]: Done waiting for pending navigations. Status: ok
-[1615466773.281][INFO]: Waiting for pending navigations...
-[1615466773.281][INFO]: Done waiting for pending navigations. Status: ok
-[1615466773.281][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466775.286][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466775.286][INFO]: Waiting for pending navigations...
-[1615466775.287][INFO]: Done waiting for pending navigations. Status: ok
-[1615466775.292][INFO]: Waiting for pending navigations...
-[1615466775.292][INFO]: Done waiting for pending navigations. Status: ok
-[1615466775.292][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466777.297][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466777.297][INFO]: Waiting for pending navigations...
-[1615466777.298][INFO]: Done waiting for pending navigations. Status: ok
-[1615466777.303][INFO]: Waiting for pending navigations...
-[1615466777.304][INFO]: Done waiting for pending navigations. Status: ok
-[1615466777.304][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466779.307][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466779.307][INFO]: Waiting for pending navigations...
-[1615466779.308][INFO]: Done waiting for pending navigations. Status: ok
-[1615466779.313][INFO]: Waiting for pending navigations...
-[1615466779.314][INFO]: Done waiting for pending navigations. Status: ok
-[1615466779.314][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466781.317][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466781.317][INFO]: Waiting for pending navigations...
-[1615466781.318][INFO]: Done waiting for pending navigations. Status: ok
-[1615466781.323][INFO]: Waiting for pending navigations...
-[1615466781.324][INFO]: Done waiting for pending navigations. Status: ok
-[1615466781.324][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466783.328][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466783.328][INFO]: Waiting for pending navigations...
-[1615466783.329][INFO]: Done waiting for pending navigations. Status: ok
-[1615466783.335][INFO]: Waiting for pending navigations...
-[1615466783.336][INFO]: Done waiting for pending navigations. Status: ok
-[1615466783.336][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466785.339][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466785.339][INFO]: Waiting for pending navigations...
-[1615466785.340][INFO]: Done waiting for pending navigations. Status: ok
-[1615466785.345][INFO]: Waiting for pending navigations...
-[1615466785.346][INFO]: Done waiting for pending navigations. Status: ok
-[1615466785.346][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466787.349][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466787.349][INFO]: Waiting for pending navigations...
-[1615466787.350][INFO]: Done waiting for pending navigations. Status: ok
-[1615466787.355][INFO]: Waiting for pending navigations...
-[1615466787.356][INFO]: Done waiting for pending navigations. Status: ok
-[1615466787.356][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466789.360][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466789.360][INFO]: Waiting for pending navigations...
-[1615466789.361][INFO]: Done waiting for pending navigations. Status: ok
-[1615466789.367][INFO]: Waiting for pending navigations...
-[1615466789.367][INFO]: Done waiting for pending navigations. Status: ok
-[1615466789.367][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466791.371][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466791.372][INFO]: Waiting for pending navigations...
-[1615466791.372][INFO]: Done waiting for pending navigations. Status: ok
-[1615466791.377][INFO]: Waiting for pending navigations...
-[1615466791.378][INFO]: Done waiting for pending navigations. Status: ok
-[1615466791.378][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466793.384][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466793.384][INFO]: Waiting for pending navigations...
-[1615466793.385][INFO]: Done waiting for pending navigations. Status: ok
-[1615466793.390][INFO]: Waiting for pending navigations...
-[1615466793.390][INFO]: Done waiting for pending navigations. Status: ok
-[1615466793.390][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466795.395][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466795.395][INFO]: Waiting for pending navigations...
-[1615466795.396][INFO]: Done waiting for pending navigations. Status: ok
-[1615466795.401][INFO]: Waiting for pending navigations...
-[1615466795.401][INFO]: Done waiting for pending navigations. Status: ok
-[1615466795.401][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466797.405][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466797.405][INFO]: Waiting for pending navigations...
-[1615466797.406][INFO]: Done waiting for pending navigations. Status: ok
-[1615466797.411][INFO]: Waiting for pending navigations...
-[1615466797.411][INFO]: Done waiting for pending navigations. Status: ok
-[1615466797.411][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466799.415][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466799.415][INFO]: Waiting for pending navigations...
-[1615466799.416][INFO]: Done waiting for pending navigations. Status: ok
-[1615466799.421][INFO]: Waiting for pending navigations...
-[1615466799.421][INFO]: Done waiting for pending navigations. Status: ok
-[1615466799.421][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466801.425][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466801.425][INFO]: Waiting for pending navigations...
-[1615466801.426][INFO]: Done waiting for pending navigations. Status: ok
-[1615466801.432][INFO]: Waiting for pending navigations...
-[1615466801.432][INFO]: Done waiting for pending navigations. Status: ok
-[1615466801.432][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466803.436][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466803.436][INFO]: Waiting for pending navigations...
-[1615466803.438][INFO]: Done waiting for pending navigations. Status: ok
-[1615466803.443][INFO]: Waiting for pending navigations...
-[1615466803.443][INFO]: Done waiting for pending navigations. Status: ok
-[1615466803.443][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466805.447][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466805.447][INFO]: Waiting for pending navigations...
-[1615466805.448][INFO]: Done waiting for pending navigations. Status: ok
-[1615466805.454][INFO]: Waiting for pending navigations...
-[1615466805.454][INFO]: Done waiting for pending navigations. Status: ok
-[1615466805.454][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466807.458][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466807.458][INFO]: Waiting for pending navigations...
-[1615466807.459][INFO]: Done waiting for pending navigations. Status: ok
-[1615466807.464][INFO]: Waiting for pending navigations...
-[1615466807.465][INFO]: Done waiting for pending navigations. Status: ok
-[1615466807.465][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466809.469][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466809.469][INFO]: Waiting for pending navigations...
-[1615466809.471][INFO]: Done waiting for pending navigations. Status: ok
-[1615466809.476][INFO]: Waiting for pending navigations...
-[1615466809.476][INFO]: Done waiting for pending navigations. Status: ok
-[1615466809.476][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466811.480][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466811.480][INFO]: Waiting for pending navigations...
-[1615466811.481][INFO]: Done waiting for pending navigations. Status: ok
-[1615466811.486][INFO]: Waiting for pending navigations...
-[1615466811.487][INFO]: Done waiting for pending navigations. Status: ok
-[1615466811.487][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466813.491][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466813.491][INFO]: Waiting for pending navigations...
-[1615466813.492][INFO]: Done waiting for pending navigations. Status: ok
-[1615466813.497][INFO]: Waiting for pending navigations...
-[1615466813.497][INFO]: Done waiting for pending navigations. Status: ok
-[1615466813.497][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466815.502][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466815.502][INFO]: Waiting for pending navigations...
-[1615466815.503][INFO]: Done waiting for pending navigations. Status: ok
-[1615466815.508][INFO]: Waiting for pending navigations...
-[1615466815.508][INFO]: Done waiting for pending navigations. Status: ok
-[1615466815.508][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466817.531][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466817.531][INFO]: Waiting for pending navigations...
-[1615466817.532][INFO]: Done waiting for pending navigations. Status: ok
-[1615466817.538][INFO]: Waiting for pending navigations...
-[1615466817.538][INFO]: Done waiting for pending navigations. Status: ok
-[1615466817.538][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466819.546][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466819.546][INFO]: Waiting for pending navigations...
-[1615466819.547][INFO]: Done waiting for pending navigations. Status: ok
-[1615466819.552][INFO]: Waiting for pending navigations...
-[1615466819.552][INFO]: Done waiting for pending navigations. Status: ok
-[1615466819.552][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466821.556][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466821.556][INFO]: Waiting for pending navigations...
-[1615466821.557][INFO]: Done waiting for pending navigations. Status: ok
-[1615466821.562][INFO]: Waiting for pending navigations...
-[1615466821.562][INFO]: Done waiting for pending navigations. Status: ok
-[1615466821.562][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466823.566][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466823.566][INFO]: Waiting for pending navigations...
-[1615466823.567][INFO]: Done waiting for pending navigations. Status: ok
-[1615466823.572][INFO]: Waiting for pending navigations...
-[1615466823.572][INFO]: Done waiting for pending navigations. Status: ok
-[1615466823.572][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466825.576][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466825.576][INFO]: Waiting for pending navigations...
-[1615466825.577][INFO]: Done waiting for pending navigations. Status: ok
-[1615466825.582][INFO]: Waiting for pending navigations...
-[1615466825.582][INFO]: Done waiting for pending navigations. Status: ok
-[1615466825.582][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466827.586][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"
-}
-[1615466827.586][INFO]: Waiting for pending navigations...
-[1615466827.587][INFO]: Done waiting for pending navigations. Status: ok
-[1615466827.592][INFO]: Waiting for pending navigations...
-[1615466827.592][INFO]: Done waiting for pending navigations. Status: ok
-[1615466827.592][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Click below to Return to Sign In to try again.If you believe this is an error, please contact Consova at (866) 529 - 9107 for assistance.')]"}
-  (Session info: chrome=89.0.4389.82)
-[1615466830.607][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "xpath",
-   "value": "//button[contains(text(),'Return to Sign In')]"
-}
-[1615466830.607][INFO]: Waiting for pending navigations...
-[1615466830.608][INFO]: Done waiting for pending navigations. Status: ok
-[1615466830.616][INFO]: Waiting for pending navigations...
-[1615466830.617][INFO]: Done waiting for pending navigations. Status: ok
-[1615466830.617][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-8"
-}
-[1615466830.620][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-8"
-}
-[1615466830.620][INFO]: Waiting for pending navigations...
-[1615466830.621][INFO]: Done waiting for pending navigations. Status: ok
-[1615466830.629][INFO]: Waiting for pending navigations...
-[1615466830.630][INFO]: Done waiting for pending navigations. Status: ok
-[1615466830.630][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466830.633][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-8"
-}
-[1615466830.633][INFO]: Waiting for pending navigations...
-[1615466830.633][INFO]: Done waiting for pending navigations. Status: ok
-[1615466830.639][INFO]: Waiting for pending navigations...
-[1615466830.640][INFO]: Done waiting for pending navigations. Status: ok
-[1615466830.640][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466830.643][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND ClickElement {
-   "id": "0.2930964456549774-8"
-}
-[1615466830.643][INFO]: Waiting for pending navigations...
-[1615466830.644][INFO]: Done waiting for pending navigations. Status: ok
-[1615466830.682][INFO]: Waiting for pending navigations...
-[1615466830.682][INFO]: Done waiting for pending navigations. Status: ok
-[1615466830.682][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE ClickElement
-[1615466832.687][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "LastName"
-}
-[1615466832.687][INFO]: Waiting for pending navigations...
-[1615466832.688][INFO]: Done waiting for pending navigations. Status: ok
-[1615466832.696][INFO]: Waiting for pending navigations...
-[1615466832.697][INFO]: Done waiting for pending navigations. Status: ok
-[1615466832.697][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
-}
-[1615466832.701][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-1"
-}
-[1615466832.701][INFO]: Waiting for pending navigations...
-[1615466832.702][INFO]: Done waiting for pending navigations. Status: ok
-[1615466832.711][INFO]: Waiting for pending navigations...
-[1615466832.712][INFO]: Done waiting for pending navigations. Status: ok
-[1615466832.712][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466835.716][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "LastName"
-}
-[1615466835.717][INFO]: Waiting for pending navigations...
-[1615466835.717][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.723][INFO]: Waiting for pending navigations...
-[1615466835.724][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.724][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
-}
-[1615466835.727][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-1"
-}
-[1615466835.727][INFO]: Waiting for pending navigations...
-[1615466835.728][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.733][INFO]: Waiting for pending navigations...
-[1615466835.733][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.733][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466835.736][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "LastName"
-}
-[1615466835.736][INFO]: Waiting for pending navigations...
-[1615466835.737][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.741][INFO]: Waiting for pending navigations...
-[1615466835.742][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.742][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
-}
-[1615466835.744][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-1"
-}
-[1615466835.744][INFO]: Waiting for pending navigations...
-[1615466835.745][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.749][INFO]: Waiting for pending navigations...
-[1615466835.750][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.750][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466835.753][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "LastName"
-}
-[1615466835.753][INFO]: Waiting for pending navigations...
-[1615466835.754][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.758][INFO]: Waiting for pending navigations...
-[1615466835.759][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.759][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
-}
-[1615466835.761][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND GetElementText {
-   "id": "0.2930964456549774-1"
-}
-[1615466835.761][INFO]: Waiting for pending navigations...
-[1615466835.761][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.773][INFO]: Waiting for pending navigations...
-[1615466835.773][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.773][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE GetElementText ""
-[1615466835.776][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "LastName"
-}
-[1615466835.776][INFO]: Waiting for pending navigations...
-[1615466835.777][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.780][INFO]: Waiting for pending navigations...
-[1615466835.781][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.781][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
-}
-[1615466835.784][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-1",
+[1616044177.181][INFO]: Waiting for pending navigations...
+[1616044177.182][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.188][INFO]: Waiting for pending navigations...
+[1616044177.188][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.188][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.3884793806318936-3"
+}
+[1616044177.193][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.3884793806318936-3"
+}
+[1616044177.193][INFO]: Waiting for pending navigations...
+[1616044177.194][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.316][INFO]: Waiting for pending navigations...
+[1616044177.319][INFO]: Done waiting for pending navigations. Status: ok
+[1616044177.319][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044182.336][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND Navigate {
+   "url": "https://consova-core.inlogic.in/account/4000128"
+}
+[1616044182.336][INFO]: Waiting for pending navigations...
+[1616044182.337][INFO]: Done waiting for pending navigations. Status: ok
+[1616044183.154][INFO]: Waiting for pending navigations...
+[1616044187.864][INFO]: Done waiting for pending navigations. Status: ok
+[1616044187.864][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE Navigate
+[1616044190.874][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//button[contains(text(),'Admin Ticket')]"
+}
+[1616044190.874][INFO]: Waiting for pending navigations...
+[1616044190.875][INFO]: Done waiting for pending navigations. Status: ok
+[1616044190.886][INFO]: Waiting for pending navigations...
+[1616044190.887][INFO]: Done waiting for pending navigations. Status: ok
+[1616044190.887][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-1"
+}
+[1616044190.893][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-1"
+}
+[1616044190.893][INFO]: Waiting for pending navigations...
+[1616044190.894][INFO]: Done waiting for pending navigations. Status: ok
+[1616044190.908][INFO]: Waiting for pending navigations...
+[1616044190.909][INFO]: Done waiting for pending navigations. Status: ok
+[1616044190.909][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044190.913][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-1"
+}
+[1616044190.913][INFO]: Waiting for pending navigations...
+[1616044190.915][INFO]: Done waiting for pending navigations. Status: ok
+[1616044190.922][INFO]: Waiting for pending navigations...
+[1616044190.922][INFO]: Done waiting for pending navigations. Status: ok
+[1616044190.922][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044190.926][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-1"
+}
+[1616044190.926][INFO]: Waiting for pending navigations...
+[1616044190.927][INFO]: Done waiting for pending navigations. Status: ok
+[1616044191.098][INFO]: Waiting for pending navigations...
+[1616044191.137][INFO]: Done waiting for pending navigations. Status: ok
+[1616044191.137][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044194.144][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(text(),'Create Admin Ticket')]"
+}
+[1616044194.144][INFO]: Waiting for pending navigations...
+[1616044194.145][INFO]: Done waiting for pending navigations. Status: ok
+[1616044194.157][INFO]: Waiting for pending navigations...
+[1616044194.157][INFO]: Done waiting for pending navigations. Status: ok
+[1616044194.157][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-2"
+}
+[1616044194.161][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-2"
+}
+[1616044194.161][INFO]: Waiting for pending navigations...
+[1616044194.162][INFO]: Done waiting for pending navigations. Status: ok
+[1616044194.172][INFO]: Waiting for pending navigations...
+[1616044194.173][INFO]: Done waiting for pending navigations. Status: ok
+[1616044194.173][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044194.176][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-2"
+}
+[1616044194.176][INFO]: Waiting for pending navigations...
+[1616044194.177][INFO]: Done waiting for pending navigations. Status: ok
+[1616044194.184][INFO]: Waiting for pending navigations...
+[1616044194.185][INFO]: Done waiting for pending navigations. Status: ok
+[1616044194.185][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044197.191][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//strong[contains(text(),'4000128')]"
+}
+[1616044197.192][INFO]: Waiting for pending navigations...
+[1616044197.192][INFO]: Done waiting for pending navigations. Status: ok
+[1616044197.205][INFO]: Waiting for pending navigations...
+[1616044197.205][INFO]: Done waiting for pending navigations. Status: ok
+[1616044197.205][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-3"
+}
+[1616044197.209][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-3"
+}
+[1616044197.209][INFO]: Waiting for pending navigations...
+[1616044197.210][INFO]: Done waiting for pending navigations. Status: ok
+[1616044197.221][INFO]: Waiting for pending navigations...
+[1616044197.222][INFO]: Done waiting for pending navigations. Status: ok
+[1616044197.222][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044197.225][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-3"
+}
+[1616044197.225][INFO]: Waiting for pending navigations...
+[1616044197.226][INFO]: Done waiting for pending navigations. Status: ok
+[1616044197.234][INFO]: Waiting for pending navigations...
+[1616044197.234][INFO]: Done waiting for pending navigations. Status: ok
+[1616044197.234][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044200.242][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Select Ticket Owner')]"
+}
+[1616044200.242][INFO]: Waiting for pending navigations...
+[1616044200.242][INFO]: Done waiting for pending navigations. Status: ok
+[1616044200.255][INFO]: Waiting for pending navigations...
+[1616044200.256][INFO]: Done waiting for pending navigations. Status: ok
+[1616044200.256][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-4"
+}
+[1616044200.259][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-4"
+}
+[1616044200.259][INFO]: Waiting for pending navigations...
+[1616044200.260][INFO]: Done waiting for pending navigations. Status: ok
+[1616044200.270][INFO]: Waiting for pending navigations...
+[1616044200.271][INFO]: Done waiting for pending navigations. Status: ok
+[1616044200.271][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044200.275][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-4"
+}
+[1616044200.275][INFO]: Waiting for pending navigations...
+[1616044200.275][INFO]: Done waiting for pending navigations. Status: ok
+[1616044200.281][INFO]: Waiting for pending navigations...
+[1616044200.281][INFO]: Done waiting for pending navigations. Status: ok
+[1616044200.281][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044200.287][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-4"
+}
+[1616044200.287][INFO]: Waiting for pending navigations...
+[1616044200.288][INFO]: Done waiting for pending navigations. Status: ok
+[1616044200.461][INFO]: Waiting for pending navigations...
+[1616044200.473][INFO]: Done waiting for pending navigations. Status: ok
+[1616044200.474][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044203.481][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[@role='dialog']//span[contains(text(),'Priya Raj')]"
+}
+[1616044203.481][INFO]: Waiting for pending navigations...
+[1616044203.482][INFO]: Done waiting for pending navigations. Status: ok
+[1616044203.492][INFO]: Waiting for pending navigations...
+[1616044203.492][INFO]: Done waiting for pending navigations. Status: ok
+[1616044203.492][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-5"
+}
+[1616044203.495][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-5"
+}
+[1616044203.495][INFO]: Waiting for pending navigations...
+[1616044203.496][INFO]: Done waiting for pending navigations. Status: ok
+[1616044203.508][INFO]: Waiting for pending navigations...
+[1616044203.508][INFO]: Done waiting for pending navigations. Status: ok
+[1616044203.508][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044203.511][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-5"
+}
+[1616044203.511][INFO]: Waiting for pending navigations...
+[1616044203.512][INFO]: Done waiting for pending navigations. Status: ok
+[1616044203.517][INFO]: Waiting for pending navigations...
+[1616044203.518][INFO]: Done waiting for pending navigations. Status: ok
+[1616044203.518][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044203.522][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-5"
+}
+[1616044203.522][INFO]: Waiting for pending navigations...
+[1616044203.522][INFO]: Done waiting for pending navigations. Status: ok
+[1616044203.636][INFO]: Waiting for pending navigations...
+[1616044203.642][INFO]: Done waiting for pending navigations. Status: ok
+[1616044203.642][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044206.649][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Select Ticket Reason')]"
+}
+[1616044206.649][INFO]: Waiting for pending navigations...
+[1616044206.650][INFO]: Done waiting for pending navigations. Status: ok
+[1616044206.659][INFO]: Waiting for pending navigations...
+[1616044206.659][INFO]: Done waiting for pending navigations. Status: ok
+[1616044206.659][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-6"
+}
+[1616044206.663][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-6"
+}
+[1616044206.663][INFO]: Waiting for pending navigations...
+[1616044206.663][INFO]: Done waiting for pending navigations. Status: ok
+[1616044206.673][INFO]: Waiting for pending navigations...
+[1616044206.673][INFO]: Done waiting for pending navigations. Status: ok
+[1616044206.673][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044206.676][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-6"
+}
+[1616044206.677][INFO]: Waiting for pending navigations...
+[1616044206.678][INFO]: Done waiting for pending navigations. Status: ok
+[1616044206.683][INFO]: Waiting for pending navigations...
+[1616044206.683][INFO]: Done waiting for pending navigations. Status: ok
+[1616044206.684][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044206.687][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-6"
+}
+[1616044206.687][INFO]: Waiting for pending navigations...
+[1616044206.687][INFO]: Done waiting for pending navigations. Status: ok
+[1616044206.751][INFO]: Waiting for pending navigations...
+[1616044206.761][INFO]: Done waiting for pending navigations. Status: ok
+[1616044206.761][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044209.767][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(text(),'Employee audit Inquiry')]"
+}
+[1616044209.767][INFO]: Waiting for pending navigations...
+[1616044209.768][INFO]: Done waiting for pending navigations. Status: ok
+[1616044209.777][INFO]: Waiting for pending navigations...
+[1616044209.778][INFO]: Done waiting for pending navigations. Status: ok
+[1616044209.778][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-7"
+}
+[1616044209.782][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-7"
+}
+[1616044209.782][INFO]: Waiting for pending navigations...
+[1616044209.783][INFO]: Done waiting for pending navigations. Status: ok
+[1616044209.792][INFO]: Waiting for pending navigations...
+[1616044209.793][INFO]: Done waiting for pending navigations. Status: ok
+[1616044209.793][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044209.796][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-7"
+}
+[1616044209.796][INFO]: Waiting for pending navigations...
+[1616044209.796][INFO]: Done waiting for pending navigations. Status: ok
+[1616044209.802][INFO]: Waiting for pending navigations...
+[1616044209.802][INFO]: Done waiting for pending navigations. Status: ok
+[1616044209.802][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044209.806][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-7"
+}
+[1616044209.806][INFO]: Waiting for pending navigations...
+[1616044209.807][INFO]: Done waiting for pending navigations. Status: ok
+[1616044209.863][INFO]: Waiting for pending navigations...
+[1616044209.874][INFO]: Done waiting for pending navigations. Status: ok
+[1616044209.874][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044212.880][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Select Audit')]"
+}
+[1616044212.880][INFO]: Waiting for pending navigations...
+[1616044214.032][INFO]: Done waiting for pending navigations. Status: ok
+[1616044214.045][INFO]: Waiting for pending navigations...
+[1616044214.046][INFO]: Done waiting for pending navigations. Status: ok
+[1616044214.046][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-8"
+}
+[1616044214.052][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-8"
+}
+[1616044214.052][INFO]: Waiting for pending navigations...
+[1616044214.053][INFO]: Done waiting for pending navigations. Status: ok
+[1616044214.066][INFO]: Waiting for pending navigations...
+[1616044214.067][INFO]: Done waiting for pending navigations. Status: ok
+[1616044214.067][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044214.071][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-8"
+}
+[1616044214.071][INFO]: Waiting for pending navigations...
+[1616044214.072][INFO]: Done waiting for pending navigations. Status: ok
+[1616044214.077][INFO]: Waiting for pending navigations...
+[1616044214.078][INFO]: Done waiting for pending navigations. Status: ok
+[1616044214.078][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044214.081][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-8"
+}
+[1616044214.081][INFO]: Waiting for pending navigations...
+[1616044214.082][INFO]: Done waiting for pending navigations. Status: ok
+[1616044214.152][INFO]: Waiting for pending navigations...
+[1616044214.434][INFO]: Done waiting for pending navigations. Status: ok
+[1616044214.434][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044219.440][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//li[contains(@class,'ui-dropdown-item')]"
+}
+[1616044219.440][INFO]: Waiting for pending navigations...
+[1616044219.441][INFO]: Done waiting for pending navigations. Status: ok
+[1616044219.451][INFO]: Waiting for pending navigations...
+[1616044219.451][INFO]: Done waiting for pending navigations. Status: ok
+[1616044219.451][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-9"
+} ]
+[1616044219.457][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//li[contains(@class,'ui-dropdown-item')]"
+}
+[1616044219.457][INFO]: Waiting for pending navigations...
+[1616044219.458][INFO]: Done waiting for pending navigations. Status: ok
+[1616044219.463][INFO]: Waiting for pending navigations...
+[1616044219.464][INFO]: Done waiting for pending navigations. Status: ok
+[1616044219.464][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-9"
+} ]
+[1616044219.468][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-9"
+}
+[1616044219.468][INFO]: Waiting for pending navigations...
+[1616044219.469][INFO]: Done waiting for pending navigations. Status: ok
+[1616044219.478][INFO]: Waiting for pending navigations...
+[1616044219.479][INFO]: Done waiting for pending navigations. Status: ok
+[1616044219.479][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044219.482][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-9"
+}
+[1616044219.482][INFO]: Waiting for pending navigations...
+[1616044219.483][INFO]: Done waiting for pending navigations. Status: ok
+[1616044219.590][INFO]: Waiting for pending navigations...
+[1616044219.596][INFO]: Done waiting for pending navigations. Status: ok
+[1616044219.596][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044222.603][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(text(),'Select Dependent')]"
+}
+[1616044222.603][INFO]: Waiting for pending navigations...
+[1616044222.604][INFO]: Done waiting for pending navigations. Status: ok
+[1616044222.614][INFO]: Waiting for pending navigations...
+[1616044222.614][INFO]: Done waiting for pending navigations. Status: ok
+[1616044222.615][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-10"
+}
+[1616044222.618][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-10"
+}
+[1616044222.618][INFO]: Waiting for pending navigations...
+[1616044222.619][INFO]: Done waiting for pending navigations. Status: ok
+[1616044222.628][INFO]: Waiting for pending navigations...
+[1616044222.629][INFO]: Done waiting for pending navigations. Status: ok
+[1616044222.629][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044222.631][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-10"
+}
+[1616044222.631][INFO]: Waiting for pending navigations...
+[1616044222.632][INFO]: Done waiting for pending navigations. Status: ok
+[1616044222.637][INFO]: Waiting for pending navigations...
+[1616044222.638][INFO]: Done waiting for pending navigations. Status: ok
+[1616044222.638][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044222.641][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-10"
+}
+[1616044222.641][INFO]: Waiting for pending navigations...
+[1616044222.642][INFO]: Done waiting for pending navigations. Status: ok
+[1616044222.706][INFO]: Waiting for pending navigations...
+[1616044222.716][INFO]: Done waiting for pending navigations. Status: ok
+[1616044222.716][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044227.721][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-chkbox ui-widget')]"
+}
+[1616044227.722][INFO]: Waiting for pending navigations...
+[1616044227.722][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.732][INFO]: Waiting for pending navigations...
+[1616044227.732][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.732][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-11"
+}, {
+   "ELEMENT": "0.14679439845002884-12"
+} ]
+[1616044227.735][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-chkbox ui-widget')]"
+}
+[1616044227.735][INFO]: Waiting for pending navigations...
+[1616044227.736][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.741][INFO]: Waiting for pending navigations...
+[1616044227.742][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.742][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-11"
+}, {
+   "ELEMENT": "0.14679439845002884-12"
+} ]
+[1616044227.745][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-11"
+}
+[1616044227.745][INFO]: Waiting for pending navigations...
+[1616044227.746][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.755][INFO]: Waiting for pending navigations...
+[1616044227.756][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.756][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044227.759][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-11"
+}
+[1616044227.759][INFO]: Waiting for pending navigations...
+[1616044227.760][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.865][INFO]: Waiting for pending navigations...
+[1616044227.870][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.870][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044227.876][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//textarea"
+}
+[1616044227.876][INFO]: Waiting for pending navigations...
+[1616044227.877][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.886][INFO]: Waiting for pending navigations...
+[1616044227.887][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.887][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-13"
+}
+[1616044227.890][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-13"
+}
+[1616044227.890][INFO]: Waiting for pending navigations...
+[1616044227.891][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.900][INFO]: Waiting for pending navigations...
+[1616044227.901][INFO]: Done waiting for pending navigations. Status: ok
+[1616044227.901][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044230.904][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//textarea"
+}
+[1616044230.905][INFO]: Waiting for pending navigations...
+[1616044230.906][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.910][INFO]: Waiting for pending navigations...
+[1616044230.911][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.911][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-13"
+}
+[1616044230.914][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-13"
+}
+[1616044230.914][INFO]: Waiting for pending navigations...
+[1616044230.915][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.920][INFO]: Waiting for pending navigations...
+[1616044230.921][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.921][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044230.923][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//textarea"
+}
+[1616044230.923][INFO]: Waiting for pending navigations...
+[1616044230.924][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.929][INFO]: Waiting for pending navigations...
+[1616044230.930][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.930][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-13"
+}
+[1616044230.932][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-13"
+}
+[1616044230.932][INFO]: Waiting for pending navigations...
+[1616044230.933][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.938][INFO]: Waiting for pending navigations...
+[1616044230.939][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.939][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044230.942][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//textarea"
+}
+[1616044230.942][INFO]: Waiting for pending navigations...
+[1616044230.943][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.948][INFO]: Waiting for pending navigations...
+[1616044230.949][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.949][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-13"
+}
+[1616044230.951][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND GetElementText {
+   "id": "0.14679439845002884-13"
+}
+[1616044230.951][INFO]: Waiting for pending navigations...
+[1616044230.952][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.963][INFO]: Waiting for pending navigations...
+[1616044230.964][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.964][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE GetElementText ""
+[1616044230.966][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//textarea"
+}
+[1616044230.966][INFO]: Waiting for pending navigations...
+[1616044230.967][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.973][INFO]: Waiting for pending navigations...
+[1616044230.973][INFO]: Done waiting for pending navigations. Status: ok
+[1616044230.973][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-13"
+}
+[1616044230.977][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.14679439845002884-13",
    "value": [ "a" ]
 }
-[1615466835.784][INFO]: Waiting for pending navigations...
-[1615466835.785][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.827][INFO]: Waiting for pending navigations...
-[1615466835.828][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.828][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466835.831][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "LastName"
+[1616044230.978][INFO]: Waiting for pending navigations...
+[1616044230.978][INFO]: Done waiting for pending navigations. Status: ok
+[1616044231.030][INFO]: Waiting for pending navigations...
+[1616044231.031][INFO]: Done waiting for pending navigations. Status: ok
+[1616044231.031][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044231.034][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//textarea"
 }
-[1615466835.831][INFO]: Waiting for pending navigations...
-[1615466835.832][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.837][INFO]: Waiting for pending navigations...
-[1615466835.837][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.837][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-1"
+[1616044231.034][INFO]: Waiting for pending navigations...
+[1616044231.034][INFO]: Done waiting for pending navigations. Status: ok
+[1616044231.040][INFO]: Waiting for pending navigations...
+[1616044231.041][INFO]: Done waiting for pending navigations. Status: ok
+[1616044231.041][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-13"
 }
-[1615466835.847][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-1",
-   "value": [ "Thomas" ]
+[1616044231.045][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.14679439845002884-13",
+   "value": [ "Ticket created" ]
 }
-[1615466835.847][INFO]: Waiting for pending navigations...
-[1615466835.848][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.890][INFO]: Waiting for pending navigations...
-[1615466835.890][INFO]: Done waiting for pending navigations. Status: ok
-[1615466835.890][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466838.945][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "ConsovaPIN"
+[1616044231.045][INFO]: Waiting for pending navigations...
+[1616044231.046][INFO]: Done waiting for pending navigations. Status: ok
+[1616044231.195][INFO]: Waiting for pending navigations...
+[1616044231.196][INFO]: Done waiting for pending navigations. Status: ok
+[1616044231.196][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044234.201][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//button[contains(text(),'Submit')]"
 }
-[1615466838.945][INFO]: Waiting for pending navigations...
-[1615466838.950][INFO]: Done waiting for pending navigations. Status: ok
-[1615466838.962][INFO]: Waiting for pending navigations...
-[1615466838.963][INFO]: Done waiting for pending navigations. Status: ok
-[1615466838.963][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044234.201][INFO]: Waiting for pending navigations...
+[1616044234.202][INFO]: Done waiting for pending navigations. Status: ok
+[1616044234.211][INFO]: Waiting for pending navigations...
+[1616044234.211][INFO]: Done waiting for pending navigations. Status: ok
+[1616044234.211][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-14"
 }
-[1615466838.966][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-2"
+[1616044234.214][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-14"
 }
-[1615466838.966][INFO]: Waiting for pending navigations...
-[1615466838.967][INFO]: Done waiting for pending navigations. Status: ok
-[1615466838.976][INFO]: Waiting for pending navigations...
-[1615466838.977][INFO]: Done waiting for pending navigations. Status: ok
-[1615466838.977][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466841.980][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "ConsovaPIN"
+[1616044234.214][INFO]: Waiting for pending navigations...
+[1616044234.215][INFO]: Done waiting for pending navigations. Status: ok
+[1616044234.225][INFO]: Waiting for pending navigations...
+[1616044234.225][INFO]: Done waiting for pending navigations. Status: ok
+[1616044234.225][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044234.228][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-14"
 }
-[1615466841.980][INFO]: Waiting for pending navigations...
-[1615466841.981][INFO]: Done waiting for pending navigations. Status: ok
-[1615466841.987][INFO]: Waiting for pending navigations...
-[1615466841.990][INFO]: Done waiting for pending navigations. Status: ok
-[1615466841.990][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044234.229][INFO]: Waiting for pending navigations...
+[1616044234.229][INFO]: Done waiting for pending navigations. Status: ok
+[1616044234.234][INFO]: Waiting for pending navigations...
+[1616044234.235][INFO]: Done waiting for pending navigations. Status: ok
+[1616044234.235][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044234.238][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-14"
 }
-[1615466841.993][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-2"
+[1616044234.238][INFO]: Waiting for pending navigations...
+[1616044234.238][INFO]: Done waiting for pending navigations. Status: ok
+[1616044234.350][INFO]: Waiting for pending navigations...
+[1616044234.447][INFO]: Done waiting for pending navigations. Status: ok
+[1616044234.447][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044237.455][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//button[contains(text(),'OK')]"
 }
-[1615466841.993][INFO]: Waiting for pending navigations...
-[1615466841.994][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.000][INFO]: Waiting for pending navigations...
-[1615466842.001][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.001][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466842.004][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "ConsovaPIN"
+[1616044237.455][INFO]: Waiting for pending navigations...
+[1616044237.456][INFO]: Done waiting for pending navigations. Status: ok
+[1616044237.465][INFO]: Waiting for pending navigations...
+[1616044237.466][INFO]: Done waiting for pending navigations. Status: ok
+[1616044237.466][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-15"
 }
-[1615466842.004][INFO]: Waiting for pending navigations...
-[1615466842.005][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.011][INFO]: Waiting for pending navigations...
-[1615466842.011][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.011][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044237.469][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-15"
 }
-[1615466842.014][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-2"
+[1616044237.469][INFO]: Waiting for pending navigations...
+[1616044237.469][INFO]: Done waiting for pending navigations. Status: ok
+[1616044237.480][INFO]: Waiting for pending navigations...
+[1616044237.481][INFO]: Done waiting for pending navigations. Status: ok
+[1616044237.481][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044237.485][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-15"
 }
-[1615466842.014][INFO]: Waiting for pending navigations...
-[1615466842.015][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.022][INFO]: Waiting for pending navigations...
-[1615466842.023][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.023][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466842.026][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "ConsovaPIN"
+[1616044237.485][INFO]: Waiting for pending navigations...
+[1616044237.486][INFO]: Done waiting for pending navigations. Status: ok
+[1616044237.490][INFO]: Waiting for pending navigations...
+[1616044237.491][INFO]: Done waiting for pending navigations. Status: ok
+[1616044237.491][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044237.495][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-15"
 }
-[1615466842.026][INFO]: Waiting for pending navigations...
-[1615466842.027][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.033][INFO]: Waiting for pending navigations...
-[1615466842.034][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.034][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044237.495][INFO]: Waiting for pending navigations...
+[1616044237.496][INFO]: Done waiting for pending navigations. Status: ok
+[1616044237.547][INFO]: Waiting for pending navigations...
+[1616044237.553][INFO]: Done waiting for pending navigations. Status: ok
+[1616044237.553][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044244.559][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Home']"
 }
-[1615466842.037][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND GetElementText {
-   "id": "0.2930964456549774-2"
+[1616044244.559][INFO]: Waiting for pending navigations...
+[1616044244.560][INFO]: Done waiting for pending navigations. Status: ok
+[1616044244.569][INFO]: Waiting for pending navigations...
+[1616044244.570][INFO]: Done waiting for pending navigations. Status: ok
+[1616044244.570][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-16"
 }
-[1615466842.037][INFO]: Waiting for pending navigations...
-[1615466842.038][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.055][INFO]: Waiting for pending navigations...
-[1615466842.056][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.056][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE GetElementText ""
-[1615466842.059][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "ConsovaPIN"
+[1616044244.573][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-16"
 }
-[1615466842.059][INFO]: Waiting for pending navigations...
-[1615466842.060][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.065][INFO]: Waiting for pending navigations...
-[1615466842.066][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.066][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044244.573][INFO]: Waiting for pending navigations...
+[1616044244.574][INFO]: Done waiting for pending navigations. Status: ok
+[1616044244.583][INFO]: Waiting for pending navigations...
+[1616044244.583][INFO]: Done waiting for pending navigations. Status: ok
+[1616044244.583][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044244.587][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Home']"
 }
-[1615466842.069][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-2",
+[1616044244.587][INFO]: Waiting for pending navigations...
+[1616044244.588][INFO]: Done waiting for pending navigations. Status: ok
+[1616044244.593][INFO]: Waiting for pending navigations...
+[1616044244.594][INFO]: Done waiting for pending navigations. Status: ok
+[1616044244.594][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-16"
+}
+[1616044244.597][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.14679439845002884-16",
+      "element-6066-11e4-a52e-4f735466cecf": "0.14679439845002884-16"
+   } ],
+   "script": "arguments[0].click();"
+}
+[1616044244.597][INFO]: Waiting for pending navigations...
+[1616044244.598][INFO]: Done waiting for pending navigations. Status: ok
+[1616044244.726][INFO]: Waiting for pending navigations...
+[1616044244.745][INFO]: Done waiting for pending navigations. Status: ok
+[1616044244.745][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ExecuteScript
+[1616044247.751][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(text(),'Assigned to Client')]"
+}
+[1616044247.751][INFO]: Waiting for pending navigations...
+[1616044247.752][INFO]: Done waiting for pending navigations. Status: ok
+[1616044247.762][INFO]: Waiting for pending navigations...
+[1616044247.763][INFO]: Done waiting for pending navigations. Status: ok
+[1616044247.763][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-17"
+}
+[1616044247.766][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-17"
+}
+[1616044247.766][INFO]: Waiting for pending navigations...
+[1616044247.767][INFO]: Done waiting for pending navigations. Status: ok
+[1616044247.776][INFO]: Waiting for pending navigations...
+[1616044247.777][INFO]: Done waiting for pending navigations. Status: ok
+[1616044247.777][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044247.781][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-17"
+}
+[1616044247.781][INFO]: Waiting for pending navigations...
+[1616044247.782][INFO]: Done waiting for pending navigations. Status: ok
+[1616044247.787][INFO]: Waiting for pending navigations...
+[1616044247.787][INFO]: Done waiting for pending navigations. Status: ok
+[1616044247.787][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044247.791][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-17"
+}
+[1616044247.791][INFO]: Waiting for pending navigations...
+[1616044247.792][INFO]: Done waiting for pending navigations. Status: ok
+[1616044247.887][INFO]: Waiting for pending navigations...
+[1616044247.895][INFO]: Done waiting for pending navigations. Status: ok
+[1616044247.895][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044250.903][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//input[contains(@placeholder,'Filter by')]"
+}
+[1616044250.903][INFO]: Waiting for pending navigations...
+[1616044250.904][INFO]: Done waiting for pending navigations. Status: ok
+[1616044250.914][INFO]: Waiting for pending navigations...
+[1616044250.915][INFO]: Done waiting for pending navigations. Status: ok
+[1616044250.915][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-18"
+}, {
+   "ELEMENT": "0.14679439845002884-19"
+}, {
+   "ELEMENT": "0.14679439845002884-20"
+}, {
+   "ELEMENT": "0.14679439845002884-21"
+}, {
+   "ELEMENT": "0.14679439845002884-22"
+}, {
+   "ELEMENT": "0.14679439845002884-23"
+}, {
+   "ELEMENT": "0.14679439845002884-24"
+} ]
+[1616044250.918][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//input[contains(@placeholder,'Filter by')]"
+}
+[1616044250.918][INFO]: Waiting for pending navigations...
+[1616044250.919][INFO]: Done waiting for pending navigations. Status: ok
+[1616044250.924][INFO]: Waiting for pending navigations...
+[1616044250.925][INFO]: Done waiting for pending navigations. Status: ok
+[1616044250.925][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-18"
+}, {
+   "ELEMENT": "0.14679439845002884-19"
+}, {
+   "ELEMENT": "0.14679439845002884-20"
+}, {
+   "ELEMENT": "0.14679439845002884-21"
+}, {
+   "ELEMENT": "0.14679439845002884-22"
+}, {
+   "ELEMENT": "0.14679439845002884-23"
+}, {
+   "ELEMENT": "0.14679439845002884-24"
+} ]
+[1616044253.929][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-21"
+}
+[1616044253.929][INFO]: Waiting for pending navigations...
+[1616044253.931][INFO]: Done waiting for pending navigations. Status: ok
+[1616044253.941][INFO]: Waiting for pending navigations...
+[1616044253.941][INFO]: Done waiting for pending navigations. Status: ok
+[1616044253.942][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044253.945][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-21"
+}
+[1616044253.945][INFO]: Waiting for pending navigations...
+[1616044253.946][INFO]: Done waiting for pending navigations. Status: ok
+[1616044253.951][INFO]: Waiting for pending navigations...
+[1616044253.952][INFO]: Done waiting for pending navigations. Status: ok
+[1616044253.952][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044253.955][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND GetElementText {
+   "id": "0.14679439845002884-21"
+}
+[1616044253.955][INFO]: Waiting for pending navigations...
+[1616044253.956][INFO]: Done waiting for pending navigations. Status: ok
+[1616044253.968][INFO]: Waiting for pending navigations...
+[1616044253.968][INFO]: Done waiting for pending navigations. Status: ok
+[1616044253.968][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE GetElementText ""
+[1616044253.971][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.14679439845002884-21",
    "value": [ "a" ]
 }
-[1615466842.069][INFO]: Waiting for pending navigations...
-[1615466842.070][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.120][INFO]: Waiting for pending navigations...
-[1615466842.124][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.124][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466842.128][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "ConsovaPIN"
+[1616044253.971][INFO]: Waiting for pending navigations...
+[1616044253.972][INFO]: Done waiting for pending navigations. Status: ok
+[1616044254.298][INFO]: Waiting for pending navigations...
+[1616044254.299][INFO]: Done waiting for pending navigations. Status: ok
+[1616044254.299][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044254.302][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.14679439845002884-21",
+   "value": [ "4000128" ]
 }
-[1615466842.128][INFO]: Waiting for pending navigations...
-[1615466842.129][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.140][INFO]: Waiting for pending navigations...
-[1615466842.141][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.141][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-2"
+[1616044254.302][INFO]: Waiting for pending navigations...
+[1616044254.303][INFO]: Done waiting for pending navigations. Status: ok
+[1616044254.561][INFO]: Waiting for pending navigations...
+[1616044254.570][INFO]: Done waiting for pending navigations. Status: ok
+[1616044254.570][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044257.575][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(text(),'There is no data available')]"
 }
-[1615466842.145][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-2",
-   "value": [ "4000004" ]
+[1616044257.575][INFO]: Waiting for pending navigations...
+[1616044257.576][INFO]: Done waiting for pending navigations. Status: ok
+[1616044257.585][INFO]: Waiting for pending navigations...
+[1616044257.586][INFO]: Done waiting for pending navigations. Status: ok
+[1616044257.586][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-25"
 }
-[1615466842.145][INFO]: Waiting for pending navigations...
-[1615466842.146][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.214][INFO]: Waiting for pending navigations...
-[1615466842.215][INFO]: Done waiting for pending navigations. Status: ok
-[1615466842.215][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466845.219][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
+[1616044257.598][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-25"
 }
-[1615466845.219][INFO]: Waiting for pending navigations...
-[1615466845.219][INFO]: Done waiting for pending navigations. Status: ok
-[1615466845.232][INFO]: Waiting for pending navigations...
-[1615466845.232][INFO]: Done waiting for pending navigations. Status: ok
-[1615466845.233][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
+[1616044257.598][INFO]: Waiting for pending navigations...
+[1616044257.599][INFO]: Done waiting for pending navigations. Status: ok
+[1616044257.610][INFO]: Waiting for pending navigations...
+[1616044257.611][INFO]: Done waiting for pending navigations. Status: ok
+[1616044257.611][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044257.613][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-25"
 }
-[1615466845.235][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-3"
+[1616044257.613][INFO]: Waiting for pending navigations...
+[1616044257.614][INFO]: Done waiting for pending navigations. Status: ok
+[1616044257.620][INFO]: Waiting for pending navigations...
+[1616044257.621][INFO]: Done waiting for pending navigations. Status: ok
+[1616044257.621][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044260.627][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(text(),'Resolved')]"
 }
-[1615466845.235][INFO]: Waiting for pending navigations...
-[1615466845.236][INFO]: Done waiting for pending navigations. Status: ok
-[1615466845.249][INFO]: Waiting for pending navigations...
-[1615466845.250][INFO]: Done waiting for pending navigations. Status: ok
-[1615466845.250][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466848.254][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
+[1616044260.627][INFO]: Waiting for pending navigations...
+[1616044260.628][INFO]: Done waiting for pending navigations. Status: ok
+[1616044260.637][INFO]: Waiting for pending navigations...
+[1616044260.638][INFO]: Done waiting for pending navigations. Status: ok
+[1616044260.638][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-26"
 }
-[1615466848.254][INFO]: Waiting for pending navigations...
-[1615466848.255][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.261][INFO]: Waiting for pending navigations...
-[1615466848.262][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.262][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
+[1616044260.641][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-26"
 }
-[1615466848.266][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-3"
+[1616044260.641][INFO]: Waiting for pending navigations...
+[1616044260.642][INFO]: Done waiting for pending navigations. Status: ok
+[1616044260.651][INFO]: Waiting for pending navigations...
+[1616044260.652][INFO]: Done waiting for pending navigations. Status: ok
+[1616044260.652][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044260.655][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-26"
 }
-[1615466848.266][INFO]: Waiting for pending navigations...
-[1615466848.266][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.272][INFO]: Waiting for pending navigations...
-[1615466848.272][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.272][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466848.276][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
+[1616044260.656][INFO]: Waiting for pending navigations...
+[1616044260.656][INFO]: Done waiting for pending navigations. Status: ok
+[1616044260.661][INFO]: Waiting for pending navigations...
+[1616044260.662][INFO]: Done waiting for pending navigations. Status: ok
+[1616044260.662][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044260.666][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-26"
 }
-[1615466848.276][INFO]: Waiting for pending navigations...
-[1615466848.277][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.283][INFO]: Waiting for pending navigations...
-[1615466848.284][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.284][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
+[1616044260.666][INFO]: Waiting for pending navigations...
+[1616044260.666][INFO]: Done waiting for pending navigations. Status: ok
+[1616044260.760][INFO]: Waiting for pending navigations...
+[1616044260.762][INFO]: Done waiting for pending navigations. Status: ok
+[1616044260.762][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044263.768][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//input[contains(@placeholder,'Filter by')]"
 }
-[1615466848.288][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND IsElementDisplayed {
-   "id": "0.2930964456549774-3"
+[1616044263.768][INFO]: Waiting for pending navigations...
+[1616044263.769][INFO]: Done waiting for pending navigations. Status: ok
+[1616044263.777][INFO]: Waiting for pending navigations...
+[1616044263.778][INFO]: Done waiting for pending navigations. Status: ok
+[1616044263.778][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-18"
+}, {
+   "ELEMENT": "0.14679439845002884-19"
+}, {
+   "ELEMENT": "0.14679439845002884-20"
+}, {
+   "ELEMENT": "0.14679439845002884-21"
+}, {
+   "ELEMENT": "0.14679439845002884-22"
+}, {
+   "ELEMENT": "0.14679439845002884-23"
+}, {
+   "ELEMENT": "0.14679439845002884-24"
+} ]
+[1616044263.782][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//input[contains(@placeholder,'Filter by')]"
 }
-[1615466848.288][INFO]: Waiting for pending navigations...
-[1615466848.288][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.297][INFO]: Waiting for pending navigations...
-[1615466848.298][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.298][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE IsElementDisplayed true
-[1615466848.302][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
+[1616044263.782][INFO]: Waiting for pending navigations...
+[1616044263.783][INFO]: Done waiting for pending navigations. Status: ok
+[1616044263.788][INFO]: Waiting for pending navigations...
+[1616044263.791][INFO]: Done waiting for pending navigations. Status: ok
+[1616044263.791][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-18"
+}, {
+   "ELEMENT": "0.14679439845002884-19"
+}, {
+   "ELEMENT": "0.14679439845002884-20"
+}, {
+   "ELEMENT": "0.14679439845002884-21"
+}, {
+   "ELEMENT": "0.14679439845002884-22"
+}, {
+   "ELEMENT": "0.14679439845002884-23"
+}, {
+   "ELEMENT": "0.14679439845002884-24"
+} ]
+[1616044266.796][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-22"
 }
-[1615466848.302][INFO]: Waiting for pending navigations...
-[1615466848.303][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.309][INFO]: Waiting for pending navigations...
-[1615466848.310][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.310][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
+[1616044266.796][INFO]: Waiting for pending navigations...
+[1616044266.797][INFO]: Done waiting for pending navigations. Status: ok
+[1616044266.806][INFO]: Waiting for pending navigations...
+[1616044266.807][INFO]: Done waiting for pending navigations. Status: ok
+[1616044266.807][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044266.810][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-22"
 }
-[1615466848.313][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND GetElementText {
-   "id": "0.2930964456549774-3"
+[1616044266.810][INFO]: Waiting for pending navigations...
+[1616044266.811][INFO]: Done waiting for pending navigations. Status: ok
+[1616044266.816][INFO]: Waiting for pending navigations...
+[1616044266.816][INFO]: Done waiting for pending navigations. Status: ok
+[1616044266.816][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044266.820][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND GetElementText {
+   "id": "0.14679439845002884-22"
 }
-[1615466848.313][INFO]: Waiting for pending navigations...
-[1615466848.314][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.330][INFO]: Waiting for pending navigations...
-[1615466848.331][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.331][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE GetElementText ""
-[1615466848.335][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
-}
-[1615466848.335][INFO]: Waiting for pending navigations...
-[1615466848.335][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.341][INFO]: Waiting for pending navigations...
-[1615466848.342][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.342][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
-}
-[1615466848.346][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-3",
+[1616044266.820][INFO]: Waiting for pending navigations...
+[1616044266.821][INFO]: Done waiting for pending navigations. Status: ok
+[1616044266.832][INFO]: Waiting for pending navigations...
+[1616044266.833][INFO]: Done waiting for pending navigations. Status: ok
+[1616044266.833][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE GetElementText ""
+[1616044266.837][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.14679439845002884-22",
    "value": [ "a" ]
 }
-[1615466848.346][INFO]: Waiting for pending navigations...
-[1615466848.347][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.403][INFO]: Waiting for pending navigations...
-[1615466848.404][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.404][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466848.408][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND FindElement {
-   "using": "id",
-   "value": "EmployeeSSN"
+[1616044266.837][INFO]: Waiting for pending navigations...
+[1616044266.838][INFO]: Done waiting for pending navigations. Status: ok
+[1616044266.903][INFO]: Waiting for pending navigations...
+[1616044266.904][INFO]: Done waiting for pending navigations. Status: ok
+[1616044266.904][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044266.907][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.14679439845002884-22",
+   "value": [ "4000128" ]
 }
-[1615466848.408][INFO]: Waiting for pending navigations...
-[1615466848.409][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.416][INFO]: Waiting for pending navigations...
-[1615466848.417][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.417][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE FindElement {
-   "ELEMENT": "0.2930964456549774-3"
+[1616044266.907][INFO]: Waiting for pending navigations...
+[1616044266.907][INFO]: Done waiting for pending navigations. Status: ok
+[1616044267.027][INFO]: Waiting for pending navigations...
+[1616044267.030][INFO]: Done waiting for pending navigations. Status: ok
+[1616044267.030][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE TypeElement
+[1616044270.034][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(text(),'Assigned to Consova')]"
 }
-[1615466848.421][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND TypeElement {
-   "id": "0.2930964456549774-3",
-   "value": [ "6935" ]
+[1616044270.034][INFO]: Waiting for pending navigations...
+[1616044270.035][INFO]: Done waiting for pending navigations. Status: ok
+[1616044270.044][INFO]: Waiting for pending navigations...
+[1616044270.044][INFO]: Done waiting for pending navigations. Status: ok
+[1616044270.044][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElement {
+   "ELEMENT": "0.14679439845002884-27"
 }
-[1615466848.421][INFO]: Waiting for pending navigations...
-[1615466848.422][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.494][INFO]: Waiting for pending navigations...
-[1615466848.495][INFO]: Done waiting for pending navigations. Status: ok
-[1615466848.495][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE TypeElement
-[1615466848.515][INFO]: [b19de487fd6d144bccf715423dde0f1a] COMMAND Quit {
-
+[1616044270.047][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-27"
 }
-[1615466848.597][INFO]: [b19de487fd6d144bccf715423dde0f1a] RESPONSE Quit
+[1616044270.047][INFO]: Waiting for pending navigations...
+[1616044270.047][INFO]: Done waiting for pending navigations. Status: ok
+[1616044270.057][INFO]: Waiting for pending navigations...
+[1616044270.057][INFO]: Done waiting for pending navigations. Status: ok
+[1616044270.057][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044270.061][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-27"
+}
+[1616044270.061][INFO]: Waiting for pending navigations...
+[1616044270.062][INFO]: Done waiting for pending navigations. Status: ok
+[1616044270.067][INFO]: Waiting for pending navigations...
+[1616044270.067][INFO]: Done waiting for pending navigations. Status: ok
+[1616044270.067][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044270.071][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND ClickElement {
+   "id": "0.14679439845002884-27"
+}
+[1616044270.071][INFO]: Waiting for pending navigations...
+[1616044270.072][INFO]: Done waiting for pending navigations. Status: ok
+[1616044270.127][INFO]: Waiting for pending navigations...
+[1616044270.162][INFO]: Done waiting for pending navigations. Status: ok
+[1616044270.162][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE ClickElement
+[1616044273.168][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//input[contains(@placeholder,'Filter by')]"
+}
+[1616044273.168][INFO]: Waiting for pending navigations...
+[1616044273.169][INFO]: Done waiting for pending navigations. Status: ok
+[1616044273.178][INFO]: Waiting for pending navigations...
+[1616044273.178][INFO]: Done waiting for pending navigations. Status: ok
+[1616044273.178][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-18"
+}, {
+   "ELEMENT": "0.14679439845002884-19"
+}, {
+   "ELEMENT": "0.14679439845002884-20"
+}, {
+   "ELEMENT": "0.14679439845002884-21"
+}, {
+   "ELEMENT": "0.14679439845002884-22"
+}, {
+   "ELEMENT": "0.14679439845002884-23"
+}, {
+   "ELEMENT": "0.14679439845002884-24"
+} ]
+[1616044273.182][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//input[contains(@placeholder,'Filter by')]"
+}
+[1616044273.182][INFO]: Waiting for pending navigations...
+[1616044273.183][INFO]: Done waiting for pending navigations. Status: ok
+[1616044273.191][INFO]: Waiting for pending navigations...
+[1616044273.192][INFO]: Done waiting for pending navigations. Status: ok
+[1616044273.192][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE FindElements [ {
+   "ELEMENT": "0.14679439845002884-18"
+}, {
+   "ELEMENT": "0.14679439845002884-19"
+}, {
+   "ELEMENT": "0.14679439845002884-20"
+}, {
+   "ELEMENT": "0.14679439845002884-21"
+}, {
+   "ELEMENT": "0.14679439845002884-22"
+}, {
+   "ELEMENT": "0.14679439845002884-23"
+}, {
+   "ELEMENT": "0.14679439845002884-24"
+} ]
+[1616044276.196][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-20"
+}
+[1616044276.196][INFO]: Waiting for pending navigations...
+[1616044278.107][INFO]: Done waiting for pending navigations. Status: ok
+[1616044278.150][INFO]: Waiting for pending navigations...
+[1616044278.151][INFO]: Done waiting for pending navigations. Status: ok
+[1616044278.151][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044278.154][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND IsElementDisplayed {
+   "id": "0.14679439845002884-20"
+}
+[1616044278.154][INFO]: Waiting for pending navigations...
+[1616044278.155][INFO]: Done waiting for pending navigations. Status: ok
+[1616044280.512][INFO]: Waiting for pending navigations...
+[1616044280.637][INFO]: Done waiting for pending navigations. Status: ok
+[1616044280.637][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE IsElementDisplayed true
+[1616044280.644][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND GetElementText {
+   "id": "0.14679439845002884-20"
+}
+[1616044280.644][INFO]: Waiting for pending navigations...
+[1616044280.649][INFO]: Done waiting for pending navigations. Status: ok
+[1616044280.672][INFO]: Waiting for pending navigations...
+[1616044280.673][INFO]: Done waiting for pending navigations. Status: ok
+[1616044280.673][INFO]: [632b965b5f2dd22c720a63a523f13c11] RESPONSE GetElementText ""
+[1616044280.678][INFO]: [632b965b5f2dd22c720a63a523f13c11] COMMAND TypeElement {
+   "id": "0.14679439845002884-20",
+   "value": [ "a" ]
+}
+[1616044280.678][INFO]: Waiting for pending navigations...
+[1616044280.679][INFO]: Done waiting for pending navigations. Status: ok

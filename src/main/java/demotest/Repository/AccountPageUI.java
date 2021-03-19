@@ -30,6 +30,9 @@ public class AccountPageUI {
     @FindBy(how = How.NAME, using = "FirstName")
     protected WebElement FirstNameTxtBox;
 
+    @FindBy(how = How.NAME, using = "address1")
+    protected WebElement AddressTxtBoxOne;
+
     @FindBy(how = How.NAME, using = "address2")
     protected WebElement AddressTxtBox;
 
@@ -84,11 +87,8 @@ public class AccountPageUI {
     @FindBy(how = How.XPATH, using = "//img[contains(@src,'filter_clear')]")
     protected WebElement ClearFilterIcon;
 
-    @FindBy(how = How.XPATH, using = "//button[contains(@class,'notesLink')]")
-    protected WebElement EmployeeAlert;
-
-    @FindBy(how = How.XPATH, using = "//span[contains(@class,'notesLink')]")
-    protected WebElement DependentAlert;
+    @FindBy(how = How.XPATH, using = "//img[contains(@src,'ic_notes')]")
+    protected List<WebElement> EmployeeAndDependentAlert;
 
     @FindBy(how = How.XPATH, using = "//div[@role='dialog']//i[contains(@class,'fa-check')]")
     protected WebElement AlertsCheckEnabled;
@@ -156,6 +156,9 @@ public class AccountPageUI {
 
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-arrow-left')]")
     protected WebElement ArrowLeft;
+
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-arrow-right')]")
+    protected WebElement ArrowRight;
 
     @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-check')]")
     protected List<WebElement> DependentTypes;
@@ -262,9 +265,11 @@ public class AccountPageUI {
     @FindBy(how = How.XPATH, using = "//label[contains(@class,'ui-dropdown-label ui-inputtext')]")
     protected List<WebElement> AuditorDropdown;
 
-//    @FindBy(how = How.XPATH, using = "//span[contains(text(),'Not Received')]")
     @FindBy(how = How.XPATH, using = "//span[@class='position-relative cursor-pointer']")
     protected List<WebElement> DocumentStatus;
+
+    @FindBy(how = How.XPATH, using = "//tr//td")
+    protected List<WebElement> TableData;
 
     @FindBy(how = How.XPATH, using = "//li[@class='list-group-item cursor-pointer text-success']")
     protected WebElement DoneIcon;
@@ -280,5 +285,32 @@ public class AccountPageUI {
 
     @FindBy(how = How.XPATH, using = "//button[@ptooltip='Purge Employee']")
     protected WebElement PurgeEmployee;
+
+    @FindBy(how = How.XPATH, using = "//a[text()='Activity Log']")
+    protected WebElement ActivityLog;
+
+    @FindBy(how = How.XPATH, using = "//h4[text()='Activity Logs']")
+    protected WebElement ActivityLogHeader;
+
+    @FindBy(how = How.XPATH, using = "//input[@type='date']")
+    protected WebElement DateFilter;
+
+    @FindBy(how = How.XPATH, using = "//div[@class='ui-multiselect-label-container']")
+    protected WebElement AuditorsDropdown;
+
+    @FindBy(how = How.XPATH, using = "//i[contains(@class,'fa-external-link')]")
+    protected WebElement LaunchAllAuditIcon;
+
+    @FindBy(how = How.XPATH, using = "//button[@disabled='']//strong[text()='Save']")
+    protected WebElement DisabledSaveButtonInModal;
+
+    @FindBy(how = How.XPATH, using = "//li[contains(@class,'ui-dropdown-item')]")
+    protected List<WebElement> DropdownList;
+
+    @FindBy(how = How.XPATH, using = "//div[contains(@class,'ui-chkbox ui-widget')]")
+    protected List<WebElement> CheckboxList;
+
+    @FindBy(how = How.XPATH, using = "//span[contains(@class,'pull-right anchor-span')]")
+    protected List<WebElement> AdminTicketNo;
 
 }

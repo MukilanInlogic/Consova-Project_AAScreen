@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeba7f17-48d7-4872-b9ef-199e2e500a81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/IrisPageUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demotest/action/IrisPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IrisPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/drivers/chromedriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/resources/drivers/chromedriver.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/testdata/testdata.yml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/testdata/testdata.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/AccountPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/AccountPageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/HomePageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/HomePageUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/Repository/IrisPageUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/Repository/IrisPageUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/AccountPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/AccountPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/IvacPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/IvacPageActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/util/ActionContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/util/ActionContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/HomePageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/HomePageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demotest/action/IrisPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demotest/action/IrisPageActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/AccountPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/AccountPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/HomePageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/HomePageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IrisPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IrisPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IvacPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demotest/stepdefinition/IvacPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/Repository/AccountPageUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/Repository/AccountPageUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demotest/Repository/HomePageUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/Repository/HomePageUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/AccountPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/AccountPageActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/IvacPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/IvacPageActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demotest/util/ActionContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/util/ActionContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/demotest/action/HomePageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demotest/action/HomePageActions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/AccountPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/AccountPageSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/HomePageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/HomePageSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/IvacPageSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/demotest/stepdefinition/IvacPageSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" afterDir="false" />
     </list>
@@ -59,7 +61,7 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="framework" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="D:/Consova_Dev_Branch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Consova-Project_IVAC" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -83,16 +85,16 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: EVS-2792:As a user, I should be able to purge an Employee">
-    <configuration name="Scenario: EVS-134:As a user, I should capture dependent types for SP" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Scenario: EVS-279245:As a user, admin ticket">
+    <configuration name="Scenario: EVS-1433:As a user, I should be able to change dependent relationship" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-134\:As a user\, I should capture dependent types for SP$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-134\:As a user\, I should capture dependent types for SP$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-134:As a user, I should capture dependent types for SP" />
+      <option name="NAME_FILTER" value="^EVS\-1433\:As a user\, I should be able to change dependent relationship$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-1433\:As a user\, I should be able to change dependent relationship$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-1433:As a user, I should be able to change dependent relationship" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -103,15 +105,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-1820:As a user, I should see the captured Complete Date - iVerifyPro" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-1575:As a user, I should see employee mile stones on the account screen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-1820\:As a user\, I should see the captured Complete Date \- iVerifyPro$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-1820\:As a user\, I should see the captured Complete Date \- iVerifyPro$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-1820:As a user, I should see the captured Complete Date - iVerifyPro" />
+      <option name="NAME_FILTER" value="^EVS\-1575\:As a user\, I should see employee mile stones on the account screen$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-1575\:As a user\, I should see employee mile stones on the account screen$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-1575:As a user, I should see employee mile stones on the account screen" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -122,15 +124,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-2150:As a user, I should be able to purge a dependent" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-279245:As a user, admin ticket" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-2150\:As a user\, I should be able to purge a dependent$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-2150\:As a user\, I should be able to purge a dependent$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-2150:As a user, I should be able to purge a dependent" />
+      <option name="NAME_FILTER" value="^EVS\-279245\:As a user\, admin ticket$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-279245\:As a user\, admin ticket$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-279245:As a user, admin ticket" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -141,15 +143,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-2443:As a user, I should be able to capture complete date manually on the account and audit screen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-58:As a user I should see dependent information on the account and auditing screen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-2443\:As a user\, I should be able to capture complete date manually on the account and audit screen$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-2443\:As a user\, I should be able to capture complete date manually on the account and audit screen$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-2443:As a user, I should be able to capture complete date manually on the account and audit screen" />
+      <option name="NAME_FILTER" value="^EVS\-58\:As a user I should see dependent information on the account and auditing screen$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-58\:As a user I should see dependent information on the account and auditing screen$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-58:As a user I should see dependent information on the account and auditing screen" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -160,15 +162,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: EVS-2792:As a user, I should be able to purge an Employee" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: EVS-66:As a user I should see all history information for the account in the History menu" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/test/resources/Feature/Core_AA.feature" />
       <option name="GLUE" value="demotest.util demotest.stepdefinition" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="Consova-Project_A&amp;AScreen" />
-      <option name="NAME_FILTER" value="^EVS\-2792\:As a user\, I should be able to purge an Employee$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-2792\:As a user\, I should be able to purge an Employee$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: EVS-2792:As a user, I should be able to purge an Employee" />
+      <option name="NAME_FILTER" value="^EVS\-66\:As a user I should see all history information for the account in the History menu$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^EVS\-66\:As a user I should see all history information for the account in the History menu$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: EVS-66:As a user I should see all history information for the account in the History menu" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -193,19 +195,19 @@
     <list>
       <item itemvalue="JUnit.SmokeModuleCukesTest" />
       <item itemvalue="Maven.AAScreen" />
-      <item itemvalue="Cucumber java.Scenario: EVS-134:As a user, I should capture dependent types for SP" />
-      <item itemvalue="Cucumber java.Scenario: EVS-2443:As a user, I should be able to capture complete date manually on the account and audit screen" />
-      <item itemvalue="Cucumber java.Scenario: EVS-1820:As a user, I should see the captured Complete Date - iVerifyPro" />
-      <item itemvalue="Cucumber java.Scenario: EVS-2150:As a user, I should be able to purge a dependent" />
-      <item itemvalue="Cucumber java.Scenario: EVS-2792:As a user, I should be able to purge an Employee" />
+      <item itemvalue="Cucumber java.Scenario: EVS-66:As a user I should see all history information for the account in the History menu" />
+      <item itemvalue="Cucumber java.Scenario: EVS-58:As a user I should see dependent information on the account and auditing screen" />
+      <item itemvalue="Cucumber java.Scenario: EVS-1433:As a user, I should be able to change dependent relationship" />
+      <item itemvalue="Cucumber java.Scenario: EVS-1575:As a user, I should see employee mile stones on the account screen" />
+      <item itemvalue="Cucumber java.Scenario: EVS-279245:As a user, admin ticket" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Scenario: EVS-2792:As a user, I should be able to purge an Employee" />
-        <item itemvalue="Cucumber java.Scenario: EVS-2150:As a user, I should be able to purge a dependent" />
-        <item itemvalue="Cucumber java.Scenario: EVS-1820:As a user, I should see the captured Complete Date - iVerifyPro" />
-        <item itemvalue="Cucumber java.Scenario: EVS-2443:As a user, I should be able to capture complete date manually on the account and audit screen" />
-        <item itemvalue="Cucumber java.Scenario: EVS-134:As a user, I should capture dependent types for SP" />
+        <item itemvalue="Cucumber java.Scenario: EVS-279245:As a user, admin ticket" />
+        <item itemvalue="Cucumber java.Scenario: EVS-1575:As a user, I should see employee mile stones on the account screen" />
+        <item itemvalue="Cucumber java.Scenario: EVS-1433:As a user, I should be able to change dependent relationship" />
+        <item itemvalue="Cucumber java.Scenario: EVS-58:As a user I should see dependent information on the account and auditing screen" />
+        <item itemvalue="Cucumber java.Scenario: EVS-66:As a user I should see all history information for the account in the History menu" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615268056547</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Commit now">
+      <created>1615467428472</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1615467428473</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -413,40 +422,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="388" width="397" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1606886148602" />
-    <state x="2456" y="117" key="CommitChangelistDialog2" timestamp="1615268049421">
+    <state x="2456" y="117" key="CommitChangelistDialog2" timestamp="1615467419910">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="536" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614604211013" />
-    <state x="2456" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615268049421" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1615205598743">
+    <state x="2456" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615467419910" />
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1615966806274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1613182730886" />
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1615966806274" />
     <state x="740" y="277" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615205598743" />
-    <state width="1875" height="223" key="GridCell.Tab.0.bottom" timestamp="1615466613821">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1875" height="223" key="GridCell.Tab.0.bottom" timestamp="1616044063699">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
+    <state width="1875" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1616044063699" />
     <state width="1875" height="223" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615446916438" />
-    <state width="1875" height="223" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615466613821" />
-    <state width="1875" height="223" key="GridCell.Tab.0.center" timestamp="1615466613820">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1875" height="223" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615553414767" />
+    <state width="1875" height="223" key="GridCell.Tab.0.center" timestamp="1616044063699">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
+    <state width="1875" height="223" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1616044063699" />
     <state width="1875" height="223" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615446916438" />
-    <state width="1875" height="223" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615466613820" />
-    <state width="1875" height="223" key="GridCell.Tab.0.left" timestamp="1615466613820">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1875" height="223" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615553414767" />
+    <state width="1875" height="223" key="GridCell.Tab.0.left" timestamp="1616044063699">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
+    <state width="1875" height="223" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1616044063699" />
     <state width="1875" height="223" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615446916438" />
-    <state width="1875" height="223" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615466613820" />
-    <state width="1875" height="223" key="GridCell.Tab.0.right" timestamp="1615466613821">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1875" height="223" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615553414767" />
+    <state width="1875" height="223" key="GridCell.Tab.0.right" timestamp="1616044063699">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1875" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1613122930347" />
+    <state width="1875" height="223" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1616044063699" />
     <state width="1875" height="223" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615446916438" />
-    <state width="1875" height="223" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615466613821" />
+    <state width="1875" height="223" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615553414767" />
     <state width="1875" height="357" key="GridCell.Tab.1.bottom" timestamp="1615453833389">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -463,11 +472,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="357" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615453833389" />
-    <state x="2472" y="255" key="Vcs.Push.Dialog.v2" timestamp="1614690469972">
+    <state x="2472" y="255" key="Vcs.Push.Dialog.v2" timestamp="1615467477843">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="255" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613727618030" />
-    <state x="2472" y="255" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614690469972" />
+    <state x="2472" y="255" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615467477843" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1613715544892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -482,14 +491,15 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2532" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1614152431186" />
-    <state x="616" y="235" width="672" height="677" key="run.anything.popup" timestamp="1614862524869">
+    <state x="616" y="235" width="672" height="677" key="run.anything.popup" timestamp="1615951786177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612940958399" />
+    <state x="616" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1615951786177" />
     <state x="616" y="235" width="672" height="677" key="run.anything.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614862524869" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606986101491">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615539763999">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606986101491" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615539763999" />
   </component>
 </project>

@@ -32,6 +32,8 @@ public class HomePageActions extends HomePageUI {
 
     public boolean EnterLoginUserName(String strUsername) {
         boolean isEntred = false;
+        Sync.Delay(15000);
+        System.out.println(strUsername);
         if (TxtBoxUserName.isDisplayed()) {
             Textbox.enterValue(driver,TxtBoxUserName,strUsername);
             isEntred = true;
@@ -41,6 +43,7 @@ public class HomePageActions extends HomePageUI {
 
     public boolean EnterPassword(String strPassword) {
         boolean isEntred = false;
+        System.out.println(strPassword);
         if (TxtBoxUserName.isDisplayed()) {
             Textbox.enterValue(driver,TxtBoxPassword,strPassword);
             isEntred = true;
@@ -169,6 +172,27 @@ public class HomePageActions extends HomePageUI {
         return isClicked;
     }
 
+    public boolean clickInSpanDialog(String inSpan){
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        if(driver!=null){
+            Element.click(driver,elementInSpanDialog,inSpan);
+            isClicked=true;
+        }
+        return isClicked;
+    }
+
+    public boolean verifyInSpanDialog(String inSpan){
+        boolean isClicked = false;
+        Sync.Delay(3000);
+        System.out.println(inSpan);
+        if(driver!=null){
+            Element.verifyElements(driver,elementInSpanDialog,inSpan);
+            isClicked=true;
+        }
+        return isClicked;
+    }
+
     public boolean clickInButton(String inButton){
         boolean isClicked = false;
         Sync.Delay(3000);
@@ -267,6 +291,26 @@ public class HomePageActions extends HomePageUI {
         return isClicked;
     }
 
+    public boolean FirstFilterBy(String filterItem){
+        boolean isEntered = false;
+        Sync.Delay(7000);
+        if(FilterByTxtbox.size()!=0){
+            Textbox.enterValue(driver,FilterByTxtbox.get(0),filterItem);
+            isEntered=true;
+        }
+        return isEntered;
+    }
+
+    public boolean SecondFilterBy(String filterItem){
+        boolean isEntered = false;
+        Sync.Delay(7000);
+        if(FilterByTxtbox.size()!=0){
+            Textbox.enterValue(driver,FilterByTxtbox.get(1),filterItem);
+            isEntered=true;
+        }
+        return isEntered;
+    }
+
     public boolean ThirdFilterBy(String filterItem){
         boolean isEntered = false;
         Sync.Delay(3000);
@@ -277,11 +321,30 @@ public class HomePageActions extends HomePageUI {
         return isEntered;
     }
 
-    public boolean FirstFilterBy(String filterItem){
+    public boolean FourthFilterBy(String filterItem){
         boolean isEntered = false;
-        Sync.Delay(7000);
+        Sync.Delay(3000);
         if(FilterByTxtbox.size()!=0){
-            Textbox.enterValue(driver,FilterByTxtbox.get(0),filterItem);
+            Textbox.enterValue(driver,FilterByTxtbox.get(3),filterItem);
+            isEntered=true;
+        }
+        return isEntered;
+    }
+
+    public boolean FifthFilterBy(String filterItem){
+        boolean isEntered = false;
+        Sync.Delay(3000);
+        if(FilterByTxtbox.size()!=0){
+            Textbox.enterValue(driver,FilterByTxtbox.get(4),filterItem);
+            isEntered=true;
+        }
+        return isEntered;
+    }
+
+    public boolean verifyFilterByTextbox(){
+        boolean isEntered = false;
+        Sync.Delay(3000);
+        if(FilterByTxtbox.size()!=0){
             isEntered=true;
         }
         return isEntered;
@@ -357,6 +420,16 @@ public class HomePageActions extends HomePageUI {
         return isClicked;
     }
 
+    public boolean clickHomeTab() {
+        boolean isClicked = false;
+        Sync.Delay(7000);
+        if (HomeTab.isDisplayed()){
+            js.executeScript("arguments[0].click();",HomeTab);
+          isClicked = true;
+        }
+        return isClicked;
+    }
+
     public boolean clickMyInventory() {
         boolean isClicked = false;
         Sync.Delay(7000);
@@ -372,7 +445,18 @@ public class HomePageActions extends HomePageUI {
         Sync.Delay(3000);
         if (driver!=null) {
             tabs_windows = new ArrayList<String>(driver.getWindowHandles());
-            driver.switchTo().window(tabs_windows.get(1));
+            driver.switchTo().window(tabs_windows.get(tabs_windows.size()-1));
+            isDisplayed = true;
+        }
+        return isDisplayed;
+    }
+
+    public boolean navigateToSecondNewTabOrWindow() {
+        boolean isDisplayed = false;
+        Sync.Delay(3000);
+        if (driver!=null) {
+            tabs_windows = new ArrayList<String>(driver.getWindowHandles());
+            driver.switchTo().window(tabs_windows.get(2));
             isDisplayed = true;
         }
         return isDisplayed;
@@ -382,8 +466,9 @@ public class HomePageActions extends HomePageUI {
         boolean isClosed = false;
         Sync.ImplicityDelay(driver,3000);
         if (driver!=null){
+            tabs_windows = new ArrayList<String>(driver.getWindowHandles());
             driver.close();
-            driver.switchTo().window(tabs_windows.get(0));
+            driver.switchTo().window(tabs_windows.get(tabs_windows.size()-2));
             isClosed = true;
         }
         return isClosed;
@@ -391,6 +476,7 @@ public class HomePageActions extends HomePageUI {
 
     public boolean EnterCommentInTextarea(String Comment) {
         boolean isEntred = false;
+        System.out.println(Comment);
         if (Textarea.isDisplayed()) {
             Textbox.enterValue(driver,Textarea,Comment);
             isEntred = true;

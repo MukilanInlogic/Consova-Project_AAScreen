@@ -55,4 +55,9 @@ public class IvacPageSteps {
     public void iShouldClickOnEmployeeProfileName() {
         assertTrue(actionContainer.ivacPageActions.clickProfileIcon());
     }
+
+    @And("^I should verify dependent first name updated$")
+    public void iShouldVerifyDependentFirstNameUpdated() {
+
+    }
 }
