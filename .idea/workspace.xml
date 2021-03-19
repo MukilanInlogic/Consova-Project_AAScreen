@@ -356,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615467428473</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Commit now">
+      <created>1616146653955</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1616146653955</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -403,15 +410,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="388" width="397" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1606886148602" />
-    <state x="2456" y="117" key="CommitChangelistDialog2" timestamp="1615467419910">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="536" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614604211013" />
-    <state x="2456" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615467419910" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1616146611099">
+    <state x="536" y="117" key="CommitChangelistDialog2" timestamp="1616146648468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616146611099" />
+    <state x="536" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1616146648468" />
+    <state x="536" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1614604211013" />
+    <state x="2456" y="117" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615467419910" />
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1616149444355">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616149444355" />
     <state x="740" y="277" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615205598743" />
     <state width="1875" height="223" key="GridCell.Tab.0.bottom" timestamp="1616044063699">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -453,9 +461,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1875" height="357" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615453833389" />
-    <state x="2472" y="255" key="Vcs.Push.Dialog.v2" timestamp="1615467477843">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1616146693600">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616146693600" />
     <state x="552" y="255" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1613727618030" />
     <state x="2472" y="255" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615467477843" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1613715544892">
@@ -482,9 +491,17 @@
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606986101491" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1615539763999" />
+    <state x="790" y="313" key="svn.repositoryBrowser" timestamp="1616149451836">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="313" key="svn.repositoryBrowser/0.0.1920.1040@0.0.1920.1040" timestamp="1616149451836" />
     <state x="697" y="394" key="svn4idea.checkout.options" timestamp="1616146623692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="697" y="394" key="svn4idea.checkout.options/0.0.1920.1040@0.0.1920.1040" timestamp="1616146623692" />
+    <state x="705" y="306" key="svn4idea.import.options" timestamp="1616149448282">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="705" y="306" key="svn4idea.import.options/0.0.1920.1040@0.0.1920.1040" timestamp="1616149448282" />
   </component>
 </project>
