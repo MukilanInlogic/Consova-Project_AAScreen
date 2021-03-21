@@ -1989,13 +1989,6 @@ Feature: Smoke Module
     And I should verify Activity Occurred Datetime  text in Table Header
     And I should verify Employee Pin Accessed  text in Table Header
     And I should verify Employee Name  text in Table Header
-    And I should verify Client Name  text in Table Header
-    And I should click on Clear Filters In Span
-    And I should verify filterBy textbox
-    And I should enter <date> date in the date filter box
-    And I should verify <date> text in Table Data
-    And I should click on Clear Filters In Span
-    And I should click on Activity Type  text in Table Header
     And I should click on Employee Pin Accessed  text in Table Header
     And I should click on Employee Name  text in Table Header
     And I should click on Client Name  text in Table Header
